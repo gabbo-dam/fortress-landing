@@ -1,0 +1,193 @@
+@import 'partials/text';
+@import 'partials/variables';
+@import 'partials/colors';
+
+.single-page-action-item-wrapper {
+  background: $gray-gradient;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  height: fit-content;
+
+  &:first-child { margin-right: 30px; }
+
+  .header-wrapper-single {
+    display: flex;
+    flex-direction: column;
+
+    .rect {
+      padding: 26px 30px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      display: flex;
+      align-items: center;
+      background: #323232;
+
+      &.deposit-issue .token .issue-text {
+        color: $yellow;
+        margin-left: 10px;
+      }
+
+      .lp-icon-wrapper {
+        margin-right: 20px;
+
+        svg {
+          margin-right: 0;
+
+          &:last-child { left: -20px; }
+        }
+      }
+
+      svg {
+        width: 48px;
+        height: 42px;
+        margin-right: 15px;
+      }
+
+      .token {
+        color: $white;
+        font-size: 37px;
+      }
+    }
+
+    .yellow-rect {
+      background: $yellow;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 5px;
+    }
+  }
+
+  .single-content-wrapper {
+    padding: 20px;
+
+    .value-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .value {
+        color: $dark-white;
+        font-size: $font-size-epic;
+
+        .message-box-container {
+          min-height: 116px;
+          height: 100%;
+
+          .message-box-wrapper { margin-top: 0; }
+        }
+      }
+
+      .value-desc {
+        color: $gray-main;
+        font-size: $font-size-giant + 0.3;
+      }
+    }
+
+    .buttons-wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 20px;
+
+      .button {
+        min-width: 147px;
+        width: fit-content;
+        padding: 0 10px;
+        height: 45px;
+        text-transform: uppercase;
+        max-height: 45px;
+
+        &.other { margin-right: 20px; }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    flex-direction: row;
+    display: flex;
+    min-height: 260px;
+
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    .header-wrapper-single {
+      justify-content: center;
+
+      .rect {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        max-width: 120px;
+        text-align: center;
+        padding: 10px 20px;
+
+        .lp-icon-wrapper {
+          position: relative;
+          left: -4px;
+          margin-right: 0;
+        }
+
+        svg { margin-right: 0; }
+
+        .token { font-size: 22px; }
+      }
+    }
+
+    .single-content-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .value-wrapper .value {
+        line-height: 6rem;
+        font-size: 50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    flex-direction: column;
+
+    .single-content-wrapper { padding: 10px; }
+
+    .header-wrapper-single .rect {
+      max-width: 100% ;
+      flex-direction: row;
+      padding: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .header-wrapper-single .rect.deposit-issue .token {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      font-size: $font-size-large;
+
+      .issue-text {
+        margin-left: 0;
+        text-align: left;
+      }
+    }
+
+    .single-content-wrapper .value-wrapper {
+      .value { font-size: 40px; }
+
+      .value-desc { font-size: $font-size-medium; }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .header-wrapper-single .rect.deposit-issue {
+      flex-direction: column;
+      align-items: flex-start;
+
+      svg {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

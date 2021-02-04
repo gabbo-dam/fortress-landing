@@ -1,0 +1,68 @@
+$red: #C02727;
+$black: #000000;
+$black-hover: lighten($black, 25);
+$background-black: #0F0F0F;
+
+$blue: #2684FF;
+
+$dark-brown: #282828;
+$dark-brown-hover: lighten(#282828, 20);
+
+$dark-white: #E5E5E5;
+$dark-white-hover: darken($dark-white, 15);
+$white: #FFFFFF;
+$white-hover: darken($white, 30);
+
+$gray: #272727;
+$gray2: #1C1C1C;
+$gray-nav: #6F6F6F;
+$gray-nav-hover: lighten($gray-nav, 15);
+$gray-main: #66696C;
+$gray-main-hover: lighten($gray-main, 15);
+$gray3: #323232;
+$gray3-hover: lighten($gray3, 15);
+$gray4: #3B3B3B;
+$gray5: #363636;
+$gray6: #999999;
+
+$table-row-gradient: linear-gradient(270deg, #6B5400 -1.89%, #2B2B2B 33.78%);
+
+$rainbow: linear-gradient(to left, #FEC803 0%, #08FC12 21.35%, #15D5BE 47.4%, #618FBA 65.1%, #7E75A1 80.21%, #F61BD3 100%);
+
+$green: #2AD000;
+$green-hover: darken($green, 15);
+$green-gradient: linear-gradient(135deg, #00FF19 0%, #0A8300 100%);
+
+$gray-gradient: linear-gradient(135deg, #272727 0%, #1C1C1C 100%);
+$gray-gradient-2: linear-gradient(135deg, #3E3E3E 0%, #222222 100%);
+
+$yellow: #FEC803;
+$yellow-hover: darken($yellow, 15);
+
+$teal: #03fec8;
+
+$browser: $gray3-hover;
+$mathWallet: $gray3-hover;
+$safePal: $gray3-hover;
+$tokenPocket: lighten(#2485F2, 10);
+$metaMask: #F89B55;
+$status: #4360DF;
+$imToken: #068EBD;
+$trust: #3476BB;
+$coinbase: #1253F5;
+$tokenary: #2C7CF5;
+$opera: #EA1227;
+
+$provider-colors: (
+  MetaMask: $metaMask,
+  browser: $browser,
+  Status: $status,
+  imToken: $imToken,
+  Trust: $trust,
+  Coinbase: $coinbase,
+  Tokenary: $tokenary,
+  Opera: $opera,
+  MathWallet: $mathWallet,
+  SafePal: $safePal,
+  TokenPocket: $tokenPocket,
+);

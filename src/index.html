@@ -1,0 +1,47 @@
+<html lang="en-US">
+  <head>
+    <!-- Facebook sharing meta tags -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Fortress.Finance" />
+    <meta property="og:description" content="Welcome to Fortress.Finance! You can put your LP tokens to work to farm Fuel." />
+    <meta property="og:url" content="https://fortress.finance" />
+    <meta property="og:image" content="https://fortress.finance/assets/images/share-image.png" />
+    <meta property="og:site_name" content="Fortress.Finance" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter sharing meta tags -->
+    <meta name="twitter:title" content="Fortress.Finance" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Welcome to Fortress.Finance! You can put your LP tokens to work to farm Fuel." />
+    <meta name="twitter:image" content="https://fortress.finance/assets/images/share-image.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to Fortress.Finance! You can put your LP tokens to work to farm Fuel.">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5Z5K68DVP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L5Z5K68DVP');
+    </script>
+
+    <% for (var chunk in htmlWebpackPlugin.files.css) { %>
+      <link rel="preload" href="<%= htmlWebpackPlugin.files.css[chunk] %>" as="style" onload="this.rel='stylesheet'">
+    <% } %>
+
+    <title>Fortress.Finance</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <% for (var chunk in htmlWebpackPlugin.files.js) { %>
+      <link rel="preload" href="<%= htmlWebpackPlugin.files.js[chunk] %>" as="script">
+      <script src="<%= htmlWebpackPlugin.files.js[chunk] %>"></script>
+    <% } %>
+  </body>
+</html>

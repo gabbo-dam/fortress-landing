@@ -1,0 +1,206 @@
+@import 'partials/colors';
+@import 'partials/variables';
+@import 'partials/text';
+
+.total-table-wrapper, .staking-page-table-content {
+  background: $gray3;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .total-table-mobile-header { display: none; }
+
+  .table-header-title:first-child { min-width: 460px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table-header {
+    font-size: $font-size-extra-large;
+    color: $gray6;
+    padding: 17px 20px;
+    text-align: left;
+    display: flex;
+  }
+
+  .table-row {
+    display: flex;
+    align-items: center;
+    background: $table-row-gradient;
+    padding: 16px 20px;
+    border-bottom: 1px solid $white;
+    width: 100%;
+    @include hover-transition;
+
+    &:not(.staking) { justify-content: space-between; }
+
+    &.no-fill .title-icon-cell .icon svg { fill: none; }
+
+    &:not(.total):not(.isNotLink) {
+
+      &:hover {
+        background: #6B5400;
+        cursor: pointer;
+      }
+    }
+
+    &.radius {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    &.total {
+      color: $white;
+      border-bottom: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      cursor: auto;
+
+      .title-icon-cell  .title { font-size: 25px; }
+
+      .value {
+        font-size: $font-size-title-home-page + 0.5;
+        font-weight: $font-weight-bold;
+
+        &.staking {
+          .value-content, .loading { font-size: $font-size-extra-large; }
+        }
+      }
+    }
+
+    .loading.staking { font-size: $font-size-extra-large; }
+
+    .title-icon-cell {
+      display: flex;
+      align-items: center;
+      min-width: 400px;
+
+
+      .icon-title-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .title-about { display: none; }
+
+      .title {
+        font-size: $font-size-extra-large;
+        color: $white;
+      }
+      .icon {
+        background: $gray;
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: 15px;
+
+        &.stroke svg { fill: none; }
+
+        svg {
+          height: 15px;
+          width: 15px;
+          stroke: $gray-nav;
+          fill: $gray-nav;
+        }
+      }
+    }
+
+    .value {
+      font-size: $font-size-title-home-page;
+      color: $white;
+
+      .value-mobile-title { display: none; }
+
+      .amount { margin-left: 10px; }
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .table-header.staking { display: none; }
+  }
+
+  @media only screen and (max-width: 730px) {
+    .table-header {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .table-row {
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 200px;
+
+      &:not(.staking) {
+        background: #2B2B2B;
+        border: 0;
+        border-radius: 10px;
+
+        .message-box-wrapper .message-box { font-size: 15px; }
+
+        &:not(:last-child) { margin-bottom: 15px; }
+      }
+
+      &.total { background: linear-gradient(180deg, #6B5400 -1.89%, #2B2B2B 70%) }
+
+      .value-mobile-title {
+        display: flex !important;
+        margin-bottom: 0;
+        font-size: 20px;
+        color: $gray6;
+      }
+
+      .title-icon-cell {
+        min-width: auto !important;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+
+        .title-about {
+          display: flex !important;
+          color: $gray6;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    background: #323232;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    .table-header {
+      font-size: $font-size-large;
+      padding: 13px 18px;
+    }
+
+    .table-row {
+      padding: 13px 16px;
+
+      &.total {
+        .title-icon-cell  .title {
+          font-size: $font-size-extra-large;
+          font-weight: $font-weight-bold;
+        }
+
+        .project-icon-cell .title { font-size: $font-size-extra-large !important; }
+      }
+
+      .value .value-mobile-title { font-size: $font-size-large; }
+
+       .title-icon-cell {
+         .title-about { font-size: $font-size-large; }
+
+         .title { font-size: $font-size-large; }
+       }
+
+       .project-icon-cell .title { font-size: $font-size-large; }
+
+       .feature-icon-cell .title { font-size: $font-size-large; }
+
+      .value-content, .loading { font-size: $font-size-giant + 0.3; }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@function vh($quantity) {
+  @return calc(var(--vh, 1vh) * #{$quantity});
+}
+
+@mixin rotate() {
+  @keyframes rotating {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(1deg); }
+  }
+
+  animation: rotating 1s linear infinite;
+}
+
+@mixin for-sm-iphone {
+  @media only screen and (max-width: 320px) { @content; }
+}
+
+@mixin for-sm-phone {
+  @media only screen and (max-width: 360px) { @content; }
+}
+
+@mixin for-iphone {
+  @media only screen and (max-width: 375px) { @content; }
+}
+
+@mixin for-phone {
+  @media only screen and (max-width: 414px) { @content; }
+}
+
+@mixin for-sm-screen {
+  @media only screen and (max-width: 550px) { @content; }
+}
+
+@mixin for-ipad {
+  @media only screen and (max-width: 768px) { @content; }
+}
+
+@mixin hover-transition {
+  transition: all 420ms cubic-bezier(.165,.84,.44,1);
+}
+
+@mixin selectCheckboxTransition {
+  transition: all 520ms cubic-bezier(.165,.84,.44,1);
+}
+
+@mixin nav-transition {
+  transition: all 620ms cubic-bezier(.165,.84,.44,1);
+}
+
+@mixin hello($duration) {
+  @keyframes hello {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  animation: hello $duration;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+  white-space: nowrap;
+}
+
+@mixin inPage-provider-hover-bg($name) {
+  @each $selectorName, $actualSelector in $provider-colors {
+    &.#{$selectorName} {
+      #{$name}: $actualSelector;
+
+      &:hover {
+        background: lighten($actualSelector, 10);
+      }
+    }
+  }
+}
