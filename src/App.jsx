@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 import { setDocHeight } from './services/utilsService';
 import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 
 import './App.scss';
 import './common/tooltip.scss';
@@ -18,6 +19,7 @@ const App = ({ store }) => {
     <Provider store={store}>
       <div className="app">
         <Header />
+        <Hero />
       </div>
     </Provider>
   );
