@@ -1,0 +1,73 @@
+@import 'partials/text';
+@import 'partials/variables';
+@import 'partials/colors';
+
+.pluses-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .width-container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .pluses-items {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -20px;
+      transform: translateY(30%);
+
+      @media only screen and (max-width: 850px) {
+        transform: none;
+        display: block;
+        margin: 50px 0 0;
+        transform: none;
+      }
+
+      .pluses-item {
+        width: calc(33.333% - 20px);
+        margin: 0 10px;
+        background: linear-gradient(135deg, #272727 0%, #1C1C1C 100%);
+        transition: .3s ease;
+        box-shadow: 0px 4px 54px rgba(106, 106, 106, 0.17);
+        border-radius: 20px;
+
+        @media only screen and (max-width: 850px) {
+          width: 100%;
+          margin: 0;
+        }
+
+        .pluses-item-header {
+          margin: 10px;
+          padding: 10px;
+          background: #323232;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+          }
+
+          span {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 90%;
+            color: #FFFFFF;
+          }
+        }
+
+        .pluses-item-body {
+          margin: 0 20px 20px;
+          font-size: 18px;
+          line-height: 27px;
+          color: #66696C;
+        }
+      }
+    }
+  }
+}
