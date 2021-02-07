@@ -5,6 +5,7 @@ import { setDocHeight } from './services/utilsService';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Pluses from './components/Pluses/Pluses';
+import Stable from './components/Stable/Stable';
 
 import './App.scss';
 import './common/tooltip.scss';
@@ -22,6 +23,7 @@ const App = ({ store }) => {
         <Header />
         <Hero />
         <Pluses />
+        <Stable />
       </div>
     </Provider>
   );
