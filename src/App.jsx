@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Pluses from './components/Pluses/Pluses';
 import Stable from './components/Stable/Stable';
+import Coins from './components/Coins/Coins';
 
 import './App.scss';
 import './common/tooltip.scss';
@@ -24,6 +25,7 @@ const App = ({ store }) => {
         <Hero />
         <Pluses />
         <Stable />
+        <Coins />
       </div>
     </Provider>
   );
