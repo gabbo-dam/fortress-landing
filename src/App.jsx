@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero';
 import Pluses from './components/Pluses/Pluses';
 import Stable from './components/Stable/Stable';
 import Coins from './components/Coins/Coins';
+import Market from './components/Market/Market';
 
 import './App.scss';
 import './common/tooltip.scss';
@@ -26,6 +27,7 @@ const App = ({ store }) => {
         <Pluses />
         <Stable />
         <Coins />
+        <Market />
       </div>
     </Provider>
   );
