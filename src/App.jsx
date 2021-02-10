@@ -8,6 +8,7 @@ import Pluses from './components/Pluses/Pluses';
 import Stable from './components/Stable/Stable';
 import Coins from './components/Coins/Coins';
 import Market from './components/Market/Market';
+import Footer from './components/Footer/Footer';
 
 import './App.scss';
 import './common/tooltip.scss';
@@ -28,6 +29,7 @@ const App = ({ store }) => {
         <Stable />
         <Coins />
         <Market />
+        <Footer />
       </div>
     </Provider>
   );
