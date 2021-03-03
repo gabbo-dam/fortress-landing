@@ -1,0 +1,38 @@
+.two-column-section-container {
+  .two-column-section {
+    .left-section,
+    .right-section {
+      .content {
+        .description {
+          font-size: 1rem;
+          line-height: 1.69;
+          margin: $standard-margin * 5 0;
+          white-space: pre-line;
+          &.narrow-margins {
+            margin: $standard-margin * 3 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .two-column-section-container {
+    .two-column-section {
+      .left-section,
+      .right-section {
+        .content {
+          .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: $standard-margin * 4 0;
+            &.narrow-margins {
+              margin: $standard-margin * 2 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

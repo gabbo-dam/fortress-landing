@@ -1,0 +1,36 @@
+.two-column-section-container {
+  color: $text-color-120;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .two-column-section {
+    display: flex;
+    .left-section,
+    .right-section {
+      position: relative;
+    }
+  }
+}
+
+.mobile {
+  .two-column-section-container {
+    .two-column-section {
+      flex-direction: column;
+      &.reverse {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+/* Don't change the order of imports here */
+@import 'title';
+@import 'sub-title';
+@import 'description';
+@import 'html';
+@import 'note';
+@import 'list';
+@import 'table';
+@import 'content';
+@import 'image';
+@import 'video';

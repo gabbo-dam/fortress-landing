@@ -1,0 +1,158 @@
+$vertical-scrollbar-width: calc(100vw - 100%);
+
+:root {
+  --container-width: 100vh;
+  --device-type: desktop;
+  --device-orientation: portait;
+}
+
+/* Never use variables starting with bw outside this file */
+$bw-color-000: #000;
+$bw-color-100: #111;
+$bw-color-120: #14131d;
+$bw-color-200: #222;
+$bw-color-230: #2a2a31;
+$bw-color-240: #2b2a32;
+$bw-color-300: #333;
+$bw-color-400: #444;
+$bw-color-500: #555;
+$bw-color-590: #514c59;
+$bw-color-600: #666;
+$bw-color-650: #66696C; //
+$bw-color-700: #777;
+$bw-color-800: #888;
+$bw-color-900: #999;
+$bw-color-950: #979797;
+$bw-color-975: #9b9b9b;
+$bw-color-1000: #aaa;
+$bw-color-1100: #bbb;
+$bw-color-1150: #b8b8b8;
+$bw-color-1200: #ccc;
+$bw-color-1250: #c1c1c1;
+$bw-color-1300: #ddd;
+$bw-color-1320: #dcdcdc;
+$bw-color-1400: #eee;
+$bw-color-1450: #e1e2e1;
+$bw-color-1500: #fff; //
+$bw-color-1520: #f3f3f7;
+$bw-color-1540: #f6f6f6; 
+$bw-color-1550: #f8f8f8; 
+
+$background-000: $bw-color-000;
+$background-100: $bw-color-100;
+$background-120: $bw-color-120;
+$background-200: $bw-color-200;
+$background-230: $bw-color-230;
+$background-240: $bw-color-240;
+$background-300: $bw-color-300;
+$background-400: $bw-color-400;
+$background-500: $bw-color-500;
+$background-590: $bw-color-590;
+$background-600: $bw-color-600;
+$background-650: $bw-color-650;
+$background-700: $bw-color-700;
+$background-800: $bw-color-800;
+$background-900: $bw-color-900;
+$background-950: $bw-color-950;
+$background-975: $bw-color-975;
+$background-1000: $bw-color-1000;
+$background-1100: $bw-color-1100;
+$background-1150: $bw-color-1150;
+$background-1200: $bw-color-1200;
+$background-1250: $bw-color-1250;
+$background-1300: $bw-color-1300;
+$background-1320: $bw-color-1320;
+$background-1400: $bw-color-1400;
+$background-1450: $bw-color-1450;
+$background-1500: $bw-color-1500;
+$background-1520: $bw-color-1520;
+$background-1540: $bw-color-1540;
+$background-1550: $bw-color-1550;
+
+$text-color-000: $bw-color-000;
+$text-color-100: $bw-color-100;
+$text-color-120: $bw-color-120;
+$text-color-200: $bw-color-200;
+$text-color-230: $bw-color-230;
+$text-color-240: $bw-color-240;
+$text-color-300: $bw-color-300;
+$text-color-400: $bw-color-400;
+$text-color-500: $bw-color-500;
+$text-color-590: $bw-color-590;
+$text-color-600: $bw-color-600;
+$text-color-650: $bw-color-650;
+$text-color-700: $bw-color-700;
+$text-color-800: $bw-color-800;
+$text-color-900: $bw-color-900;
+$text-color-950: $bw-color-950;
+$text-color-975: $bw-color-975;
+$text-color-1000: $bw-color-1000;
+$text-color-1100: $bw-color-1100;
+$text-color-1150: $bw-color-1150;
+$text-color-1200: $bw-color-1200;
+$text-color-1250: $bw-color-1250;
+$text-color-1300: $bw-color-1300;
+$text-color-1320: $bw-color-1320;
+$text-color-1400: $bw-color-1400;
+$text-color-1450: $bw-color-1450;
+$text-color-1500: $bw-color-1500;
+$text-color-1520: $bw-color-1520;
+$text-color-1540: $bw-color-1540;
+$text-color-1550: $bw-color-1550;
+
+$border-color-000: $bw-color-000;
+$border-color-100: $bw-color-100;
+$border-color-120: $bw-color-120;
+$border-color-200: $bw-color-200;
+$border-color-230: $bw-color-230;
+$border-color-240: $bw-color-240;
+$border-color-300: $bw-color-300;
+$border-color-400: $bw-color-400;
+$border-color-500: $bw-color-500;
+$border-color-590: $bw-color-590;
+$border-color-600: $bw-color-600;
+$border-color-650: $bw-color-650;
+$border-color-700: $bw-color-700;
+$border-color-800: $bw-color-800;
+$border-color-900: $bw-color-900;
+$border-color-950: $bw-color-950;
+$border-color-975: $bw-color-975;
+$border-color-1000: $bw-color-1000;
+$border-color-1100: $bw-color-1100;
+$border-color-1150: $bw-color-1150;
+$border-color-1200: $bw-color-1200;
+$border-color-1250: $bw-color-1250;
+$border-color-1300: $bw-color-1300;
+$border-color-1320: $bw-color-1320;
+$border-color-1400: $bw-color-1400;
+$border-color-1450: $bw-color-1450;
+$border-color-1500: $bw-color-1500;
+$border-color-1520: $bw-color-1520;
+$border-color-1540: $bw-color-1540;
+$border-color-1550: $bw-color-1550;
+
+// $accent-color-primary: #6d3fdf;
+$accent-color-primary: #F7C408;
+// $accent-color-dark: #392b70; 
+$accent-color-dark: #141414; 
+// $accent-color-medium-1: #7e4fac;
+$accent-color-medium-1: #1B1B1B;
+$accent-color-medium-2: #1E1E1E;
+
+// $accent-color-medium-2: #785bc0;
+$accent-color-medium-3: #aa80ff;
+$accent-color-light-1: #ebe8f9;
+$accent-color-light-2: #d6d6e1;
+$accent-color-light-3: #ced4da;
+
+$font-family: 'Poppins';
+
+$standard-padding: 8px;
+$standard-margin: 8px;
+
+$primary-slope: 40px;
+$app-header-height: 50px;
+
+:export {
+  accentColorPrimary: $accent-color-primary
+}

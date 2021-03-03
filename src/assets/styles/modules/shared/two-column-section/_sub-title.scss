@@ -1,0 +1,33 @@
+.two-column-section-container {
+  .two-column-section {
+    .left-section,
+    .right-section {
+      .content {
+        .sub-title {
+          font-size: 1.375rem;
+          font-weight: 500;
+          line-height: 1.55;
+          margin: $standard-margin * 3 0;
+          white-space: pre-line;
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .two-column-section-container {
+    .two-column-section {
+      .left-section,
+      .right-section {
+        .content {
+          .sub-title {
+            font-size: 1.125rem;
+            line-height: 1.44;
+            margin: $standard-margin * 2 0;
+          }
+        }
+      }
+    }
+  }
+}

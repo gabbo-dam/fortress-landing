@@ -1,0 +1,358 @@
+.landing {
+  background-color: $accent-color-medium-1;
+  .money-market-wrapper {
+    background-image: url('../../../../icons/moneymarket-background.svg');
+    background-color: $accent-color-medium-1;
+    color: $text-color-1500;
+    padding-bottom: 100px;
+    .moneymarket-section-container {
+      padding: 0 10%;
+      .moneymarket-section {
+        .two-column-section-container {
+          .left-section {
+            .sub-title {
+              color: $accent-color-primary;
+              font-size: 1.7rem;
+              margin: 0;
+              font-weight: 400;
+            }
+            .title {
+              margin: -15px 0 0 0;
+              color: $text-color-1500;
+              font-weight: 700;
+            }
+            .description {
+              color: $text-color-650;
+              margin: 10px 0;
+              font-size: 16px;
+              line-height: 20px;
+              .description-content {
+                width: 60%;
+              }
+              .launchapp-wrapper {
+                margin-top: 30px;
+              }
+            }
+          }
+          .right-section {
+            .content {
+              padding: 80px 0;
+              .description {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                .piston-aircraft-image {
+                  position: absolute;
+                  height: 455px;
+                  width: 575px;
+                  top: 0px;
+                  left: 20px;
+                }
+                .yellow-vector-image {
+                  height: 392px;
+                  width: 392px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .market-info-wrapper {
+        .market-info-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 3;
+        }
+        .market-info {
+          width: calc((100% / 3) - 20px);
+          margin: 0 10px;
+          background-color: $accent-color-medium-2;
+          border-radius: 20px;
+          padding: 20px;
+          .title-wrapper {
+            background-color: #323232;
+            border-radius: 10px;
+            padding: 5px 20px;
+            color: $text-color-1500;
+            display: flex;
+            align-items: center;
+            .icon {
+              background-color: $background-000;
+              border-radius: 50%;
+              padding: 5px;
+              height: 17px;
+              width: 17px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                height: 14px;
+                width: 14px;
+              }
+            }
+            .title {
+              padding-left: 10px;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          .description {
+            font-size: 12px;
+            line-height: 1rem;
+            margin: 18px 0 16px 0;
+          }
+        }
+      }
+    }
+  }
+  .stablecoin-section-container {
+    margin: 0 10%;
+    border-bottom: 1px solid #3D3D3D;
+    .two-column-section-container {
+      .left-section {
+        .content {
+          padding: 50px 0;
+        }
+        .icon {
+          width: 60px;
+          height: 60px;
+          background-color: $accent-color-primary;
+          border-radius: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            height: 30px;
+            width: 30px;
+          }
+        }
+        .description {
+          color: $text-color-650;
+        }
+      }
+      .right-section {
+        .content {
+          padding: 50px 0;
+        }
+        .description {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .stablecoin-image {
+            position: absolute;
+          }
+          .rectangle {
+            margin: 200px 0 0 170px;
+          }
+        }
+      }
+    }
+  }
+
+  .earninterest-section-container {
+    margin: 0 10%;
+    border-bottom: 1px solid #3D3D3D;
+    .two-column-section-container {
+      .left-section {
+        .content {
+          padding: 0 0 0 10%;
+          .sub-title {
+            color: $text-color-1500;
+            font-size: 16px;
+            margin: 0;
+            font-weight: 400;
+          }
+          .title {
+            margin: -10px 0 0 0;
+            color: $text-color-1500;
+            font-weight: 700;
+            line-height: 31px;
+            margin-top: 4px;
+          }
+          .description {
+            color: $text-color-650;
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 20px;
+            .description-content {
+              width: 60%;
+            }
+            .launchfortress-wrapper {
+              margin-top: 30px;
+              .launch-fortress-btn {
+                border: 1px solid $accent-color-primary;
+                background-color: $accent-color-medium-1 !important;
+                color:$accent-color-primary !important;
+                font-weight: normal;
+                box-sizing: border-box;
+                filter: drop-shadow(-3.40642px -3.40642px 20.4385px #3D3D3D), drop-shadow(3.40642px 3.40642px 22.92px rgba(0, 0, 0, 0.65));
+                border-radius: 10px;
+                padding-left: 20px;
+                height: 50px;
+                > span {
+                  font-weight: 500;
+                }
+                .arrow-button {
+                  background-color: $accent-color-medium-1 !important;
+                  color: $accent-color-primary !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right-section {
+        .content {
+          padding: 80px 0;
+          .description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .tokens-data-wrapper {
+              width: 70%;
+              .tokens-data {
+                .token-wrapper {
+                  display: flex;
+                  justify-content: space-between;
+                  color: #fff;
+                  align-items: center;
+                  padding: 10px;
+                  background: rgba(27, 27, 27, 0.86);
+                  border: 1px solid #2E2E2E;
+                  box-sizing: border-box;
+                  backdrop-filter: blur(6px);
+                  border-radius: 10px;
+                  margin-top: 20px;
+                  .token-details {
+                    display: flex;
+                    .token-icon-wrapper {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      height: 60px;
+                      width: 60px;
+                    }
+                    .token-info {
+                      padding-left: 10px;
+                      .name {
+                        font-weight: 500;
+                      }
+                      .symbol {
+                        color: rgba(255, 255, 255, 0.3);
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                  .apy-details {
+                    .apy-perc {
+                      color: #70FF64;
+                    }
+                    .apy-label {
+                      font-size: 12px;
+                      display: flex;
+                      justify-content: flex-end;
+                      color: rgba(234, 234, 234, 0.3);
+                    }
+                  }
+                }
+              }
+              .viewmore-wrapper {
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                .viewmore-btn {
+                  border: 1px solid $accent-color-primary;
+                  background-color: $accent-color-medium-1 !important;
+                  color:$accent-color-primary !important;
+                  font-weight: normal;
+                  box-sizing: border-box;
+                  filter: drop-shadow(-3.40642px -3.40642px 20.4385px #3D3D3D), drop-shadow(3.40642px 3.40642px 22.92px rgba(0, 0, 0, 0.65));
+                  border-radius: 10px;
+                  padding: 0 20px;
+                  height: 50px;
+                  > span {
+                    font-weight: 500;
+                  }
+                  .arrow-button {
+                    background-color: $accent-color-medium-1 !important;
+                    color: $accent-color-primary !important;
+                    padding-right: 0;
+                  }
+                }
+              }
+              .with-fts {
+                color: #fff;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .protocolinfo-section-container {
+    margin: 0 10%;
+    border-bottom: 1px solid #3D3D3D;
+    .protocolinfo-section {
+      .two-column-section-container {
+        .left-section {
+          .title {
+            .icon {
+              img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .right-section {
+          .title {
+            .sub-title {
+              margin: 0;
+              color: $text-color-1500;
+              font-size: 17px;
+              font-weight: normal;
+            }
+            .title {
+              margin: 0;
+              color: $text-color-1500;
+              line-height: 31px;
+              font-size: 27px;
+            }
+          }
+          .description {
+            .description {
+              color: $text-color-1500;
+              font-size: 14px;
+            }
+            .whitepaper-wrapper {
+              .read-whitepaper-btn {
+                border: 1px solid $accent-color-primary;
+                background-color: $accent-color-medium-1 !important;
+                color:$accent-color-primary !important;
+                font-weight: normal;
+                box-sizing: border-box;
+                filter: drop-shadow(-3.40642px -3.40642px 20.4385px #3D3D3D), drop-shadow(3.40642px 3.40642px 22.92px rgba(0, 0, 0, 0.65));
+                border-radius: 10px;
+                padding-left: 20px;
+                height: 50px;
+                > span {
+                  font-weight: 500;
+                }
+                .arrow-button {
+                  background-color: $accent-color-medium-1 !important;
+                  color: $accent-color-primary !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

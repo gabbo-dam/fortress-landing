@@ -1,0 +1,49 @@
+.two-column-section-container {
+  .two-column-section {
+    .left-section,
+    .right-section {
+      .content {
+        .list {
+          margin: $standard-margin * 5 0;
+          .list-item {
+            display: flex;
+            margin: $standard-margin 0;
+            svg {
+              min-width: 32px;
+              margin: $standard-margin * 0.5 $standard-margin * 2 0 0;
+            }
+            h3 {
+              font-size: 1.4rem;
+              line-height: 1.55;
+              font-weight: 600;
+              color: $accent-color-dark;
+            }
+            span {
+              line-height: 1.69;
+            }
+            ul {
+              li {
+                margin: $standard-margin 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .two-column-section-container {
+    .two-column-section {
+      .left-section,
+      .right-section {
+        .content {
+          .list {
+            margin: $standard-margin * 1.5 0;
+          }
+        }
+      }
+    }
+  }
+}

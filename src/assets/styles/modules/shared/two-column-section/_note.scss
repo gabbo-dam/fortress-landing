@@ -1,0 +1,47 @@
+.two-column-section-container {
+  .two-column-section {
+    .left-section,
+    .right-section {
+      .content {
+        .note {
+          border-top: 1px solid $border-color-950;
+          border-bottom: 1px solid $border-color-950;
+          padding: $standard-padding * 2.5 0;
+          .note-title {
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: $text-color-590;
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding-bottom: $standard-padding * 2;
+          }
+          .note-description {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.57;
+            color: $accent-color-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile {
+  .two-column-section-container {
+    .two-column-section {
+      .left-section,
+      .right-section {
+        .content {
+          .note {
+            padding: $standard-padding 0;
+            .note-title {
+              font-size: 0.8rem;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
