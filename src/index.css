@@ -3,6 +3,14 @@ body {
   font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1B1B1B;
+  
+}
+
+body .selected-token {
+  display: flex;
+  color: #fff;
+  align-items: center;
 }
 
 /* code {

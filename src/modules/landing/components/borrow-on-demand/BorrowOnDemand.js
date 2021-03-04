@@ -6,7 +6,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import TokenData from '../earn-interest/TokenData';
 
 const BorrowOnDemand = () => (
-  <section className="earninterest-section-container">
+  <section className="earninterest-section-container borrow-on-demand-container">
     <TwoColumnSectionContainer
       className="earninterest-two-column-section"
       leftSection={{
@@ -52,7 +52,7 @@ const BorrowOnDemand = () => (
                       </div>
                     </div>
                     <div className="apy-details">
-                      <div className="apy-perc">{token.availableLiquidity}</div>
+                      <div className="apy-perc">${token.availableLiquidity}</div>
                       <div className="apy-label">Available Liquidity</div>
                     </div>
                   </div>
@@ -60,7 +60,7 @@ const BorrowOnDemand = () => (
               }
             </div>
             <div className="viewmore-wrapper">
-              <Button className="viewmore-btn">
+              <Button className="viewmore-btn yellow-border-btn">
                 View More
               </Button>
             </div>

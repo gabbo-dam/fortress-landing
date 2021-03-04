@@ -34,11 +34,20 @@ const overrides = {
         backgroundColor: '#F7C408 !important',
         color: '#000 !important',
         fontWeight: 'bold !important',
+        height: '50px',
+        minWidth: '180px !important',
+        fontSize: '16px !important'
       }
       // focusVisible: {
       //   outline: `auto 5px ${variables.outline}`,
       // },
     },
+    MuiIconButton: {
+      root: {
+        height: '40px',
+        minWidth: 'unset !important'
+      }
+    }
     // MuiFormLabel: {
     //   root: {
     //     color: `${variables.textColor800} !important`,

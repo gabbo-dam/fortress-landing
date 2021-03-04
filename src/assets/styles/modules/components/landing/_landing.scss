@@ -12,7 +12,7 @@
           .left-section {
             .sub-title {
               color: $accent-color-primary;
-              font-size: 1.7rem;
+              font-size: 2.1rem;
               margin: 0;
               font-weight: 400;
             }
@@ -20,15 +20,12 @@
               margin: -15px 0 0 0;
               color: $text-color-1500;
               font-weight: 700;
+              font-size: 3rem;
             }
             .description {
               color: $text-color-650;
               margin: 10px 0;
-              font-size: 16px;
-              line-height: 20px;
-              .description-content {
-                width: 60%;
-              }
+              font-size: 18px;
               .launchapp-wrapper {
                 margin-top: 30px;
               }
@@ -47,7 +44,7 @@
                   height: 455px;
                   width: 575px;
                   top: 0px;
-                  left: 20px;
+                  left: 165px;
                 }
                 .yellow-vector-image {
                   height: 392px;
@@ -66,11 +63,25 @@
           flex: 3;
         }
         .market-info {
-          width: calc((100% / 3) - 20px);
-          margin: 0 10px;
+          width: calc(100% / 3);
           background-color: $accent-color-medium-2;
           border-radius: 20px;
-          padding: 20px;
+          padding: 30px;
+          height: 150px;
+          transition: all .3s ease;
+          &:hover {
+            background: #100f0f !important;
+            box-shadow: 0 9px 15px rgb(0 0 0 / 2%);
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+            // transition-property: all;
+            // transition-duration: 0.3s;
+            // transition-timing-function: ease;
+            // transition-delay: 0s
+          }
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
           .title-wrapper {
             background-color: #323232;
             border-radius: 10px;
@@ -78,30 +89,31 @@
             color: $text-color-1500;
             display: flex;
             align-items: center;
+            height: 55px;
             .icon {
               background-color: $background-000;
               border-radius: 50%;
               padding: 5px;
-              height: 17px;
-              width: 17px;
+              height: 40px;
+              width: 40px;
               display: flex;
               justify-content: center;
               align-items: center;
               img {
-                height: 14px;
-                width: 14px;
+                height: 20px;
+                width: 20px;
               }
             }
             .title {
-              padding-left: 10px;
-              font-size: 14px;
-              font-weight: 500;
+              padding-left: 20px;
+              font-size: 20px;
+              font-weight: bold;
             }
           }
           .description {
-            font-size: 12px;
-            line-height: 1rem;
-            margin: 18px 0 16px 0;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 27px 0 16px 0;
           }
         }
       }
@@ -109,42 +121,54 @@
   }
   .stablecoin-section-container {
     margin: 0 10%;
-    border-bottom: 1px solid #3D3D3D;
-    .two-column-section-container {
-      .left-section {
-        .content {
-          padding: 50px 0;
-        }
-        .icon {
-          width: 60px;
-          height: 60px;
-          background-color: $accent-color-primary;
-          border-radius: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          img {
-            height: 30px;
-            width: 30px;
+    padding: 50px 0;
+    .stablecoin-section {
+      background: #1B1B1B;
+      border-radius: 17px;
+      padding: 0 60px 20px 60px;
+      .two-column-section-container {
+        .left-section {
+          .content {
+            padding: 0;
+          }
+          .icon {
+            width: 90px;
+            height: 90px;
+            background-color: $accent-color-primary;
+            border-radius: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              height: 46px;
+              width: 46px;
+            }
+          }
+          .description {
+            color: $text-color-650;
+            font-size: 18px;
+            line-height: 27px;
+            .learnmore-wrapper {
+              .learnmore-btn {
+                font-size: 18px;
+              }
+            }
           }
         }
-        .description {
-          color: $text-color-650;
-        }
-      }
-      .right-section {
-        .content {
-          padding: 50px 0;
-        }
-        .description {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .stablecoin-image {
-            position: absolute;
+        .right-section {
+          .content {
+            padding: 0 0 0 10%;
           }
-          .rectangle {
-            margin: 200px 0 0 170px;
+          .description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .stablecoin-image {
+              position: absolute;
+            }
+            .rectangle {
+              margin: 200px 0 0 170px;
+            }
           }
         }
       }
@@ -153,14 +177,13 @@
 
   .earninterest-section-container {
     margin: 0 10%;
-    border-bottom: 1px solid #3D3D3D;
     .two-column-section-container {
       .left-section {
         .content {
           padding: 0 0 0 10%;
           .sub-title {
-            color: $text-color-1500;
-            font-size: 16px;
+            color: #66696C;
+            font-size: 22px;
             margin: 0;
             font-weight: 400;
           }
@@ -170,18 +193,22 @@
             font-weight: 700;
             line-height: 31px;
             margin-top: 4px;
+            font-size: 34px;
           }
           .description {
-            color: $text-color-650;
-            margin: 20px 0;
+            color: #fff;
+            margin: 40px 0;
             font-size: 16px;
             line-height: 20px;
             .description-content {
-              width: 60%;
+              width: 80%;
+              font-size: 18px;
+              line-height: 27px;
             }
             .launchfortress-wrapper {
               margin-top: 30px;
               .launch-fortress-btn {
+                font-size: 16px;
                 border: 1px solid $accent-color-primary;
                 background-color: $accent-color-medium-1 !important;
                 color:$accent-color-primary !important;
@@ -218,15 +245,17 @@
                   justify-content: space-between;
                   color: #fff;
                   align-items: center;
-                  padding: 10px;
+                  padding: 20px 25px;
                   background: rgba(27, 27, 27, 0.86);
                   border: 1px solid #2E2E2E;
                   box-sizing: border-box;
                   backdrop-filter: blur(6px);
                   border-radius: 10px;
                   margin-top: 20px;
+                  height: 93px;
                   .token-details {
                     display: flex;
+                    align-items: center;
                     .token-icon-wrapper {
                       display: flex;
                       align-items: center;
@@ -235,22 +264,25 @@
                       width: 60px;
                     }
                     .token-info {
-                      padding-left: 10px;
+                      padding-left: 25px;
                       .name {
                         font-weight: 500;
+                        font-size: 22px;
                       }
                       .symbol {
                         color: rgba(255, 255, 255, 0.3);
-                        font-size: 14px;
+                        font-size: 18px;
+                        font-weight: bold;
                       }
                     }
                   }
                   .apy-details {
                     .apy-perc {
                       color: #70FF64;
+                      font-size: 26px;
                     }
                     .apy-label {
-                      font-size: 12px;
+                      font-size: 18px;
                       display: flex;
                       justify-content: flex-end;
                       color: rgba(234, 234, 234, 0.3);
@@ -314,21 +346,23 @@
           .title {
             .sub-title {
               margin: 0;
-              color: $text-color-1500;
-              font-size: 17px;
+              font-size: 22px;
+              line-height: 33px;
+              color: #66696C;
               font-weight: normal;
             }
             .title {
               margin: 0;
               color: $text-color-1500;
-              line-height: 31px;
-              font-size: 27px;
+              font-size: 34px;
+              line-height: 96.7%;
             }
           }
           .description {
             .description {
               color: $text-color-1500;
-              font-size: 14px;
+              font-size: 18px;
+              line-height: 27px;
             }
             .whitepaper-wrapper {
               .read-whitepaper-btn {
@@ -354,5 +388,118 @@
         }
       }
     }
+  }
+
+  .market-stats-info-wrapper {
+    padding: 40px 5% 100px;
+    background-color: #141414;
+    .market-stats-info-content {
+      padding: 5%;
+      .title {
+        color: $text-color-1500;
+        font-size: 40px;
+        padding-left: 35px;
+      }
+      .market-stats-info {
+        background: #141414;
+        border: 1px solid #323232;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 30px;
+        .token-select-price {
+          display: flex;
+          justify-content: space-between;
+          .token-price-dropdown {
+            width: 23%;
+            > div {
+              border: 1px solid #323232;
+              box-sizing: border-box;
+              border-radius: 20px;
+              height: 63px;
+            }
+            .selected-token {
+              display: flex;
+              align-items: center;
+              // display: flex;
+              // color: #fff;
+              // align-items: center;
+              img {
+                height: 40px;
+                width: 40px;
+              }
+              .token-symbol {
+                padding-left: 12px;
+                color: $text-color-1500;
+                font-size: 20px;
+                font-weight: bold;
+              }
+            }
+          }
+          .token-price {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .price-label {
+              font-size: 16px;
+              color: rgba(234, 234, 234, 0.3);
+            }
+            .token-price {
+              color: $text-color-1500;
+              font-size: 18px;
+              font-weight: 500;
+            }
+          }
+        }
+        .token-details {
+          margin: 20px 0;
+          display: flex;
+          justify-content: space-between;
+          background: #323232;
+          border-radius: 20px;
+          padding: 27px;
+          .label {
+            font-size: 15px;
+            color: #6F6F6F;
+            font-weight: 500;
+          }
+          .value {
+            font-size: 20px;
+            color: $text-color-1500;
+            font-weight: bold;
+          }
+          .token-address-value {
+            color: $accent-color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .borrow-on-demand-container {
+    .earninterest-two-column-section {
+      .two-column-section {
+        .right-section {
+          .tokens-data-wrapper {
+            .tokens-data {
+              .token-wrapper {
+                .apy-details {
+                  color: #E1B30A !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .yellow-border-btn {
+    font-size: 16px;
+  }
+
+  .selected-token {
+    display: flex;
+    color: #fff;
+    align-items: center;
   }
 }

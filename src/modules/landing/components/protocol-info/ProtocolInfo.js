@@ -31,7 +31,7 @@ const ProtocolInfo = () => (
               <div className="whitepaper-wrapper">
                 <Button
                   // variant="primary"
-                  className="read-whitepaper-btn"
+                  className="read-whitepaper-btn yellow-border-btn"
                 >
                   Read the white paper
                   <IconButton

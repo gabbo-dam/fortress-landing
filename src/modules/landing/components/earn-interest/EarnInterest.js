@@ -61,7 +61,7 @@ const EarnIntereset = () => (
               }
             </div>
             <div className="viewmore-wrapper">
-              <Button className="viewmore-btn">
+              <Button className="viewmore-btn yellow-border-btn">
                 View More
                 <IconButton
                   className="arrow-button"
@@ -72,7 +72,7 @@ const EarnIntereset = () => (
                 </IconButton>
               </Button>
             </div>
-            <div className="with-fts">
+            {/* <div className="with-fts">
               <FormControlLabel
                 control={
                   <IOSSwitch
@@ -83,7 +83,7 @@ const EarnIntereset = () => (
                 }
                 label="🔥 with FTS"
               />
-            </div>
+            </div> */}
           </div>
         ),
       }}
