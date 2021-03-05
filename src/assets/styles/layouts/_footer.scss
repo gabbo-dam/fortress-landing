@@ -2,11 +2,13 @@
   color: #fff;
   margin: 50px 14%;
   .app-header-container {
+    margin-top: 30px;
+    padding-top: 0;
     .app-header {
       border-bottom: 1px solid #323232;
       padding: 16px 0 35px 0;
       justify-content: space-between;
-
+      height: unset;
       .logo {
         .app-name {
           margin: -2px 0px 0px 5px;

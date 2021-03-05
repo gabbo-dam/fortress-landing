@@ -4,35 +4,41 @@ import Switch from '@material-ui/core/Switch';
 
 const IOSSwitch = withStyles((theme) => ({
   root: {
-    width: 42,
-    height: 26,
+    width: 45,
+    height: 28,
     padding: 0,
     margin: theme.spacing(1),
   },
   switchBase: {
-    padding: 1,
+    padding: '3px 0 0 3px',
     '&$checked': {
       transform: 'translateX(16px)',
       color: theme.palette.common.white,
       '& + $track': {
-        backgroundColor: '#52d869',
+        backgroundColor: '#949090',
         opacity: 1,
         border: 'none',
       },
     },
     '&$focusVisible $thumb': {
-      color: '#52d869',
+      color: '#949090',
       border: '6px solid #fff',
     },
+    height: '22px !important',
+    backgroundColor: 'unset !important',
+    color: '#C4C4C4 !important',
   },
+  // buttonBase: {
+  //   height: '26px !important'
+  // },
   thumb: {
     width: 24,
     height: 24,
   },
   track: {
     borderRadius: 26 / 2,
-    border: `1px solid ${theme.palette.grey[400]}`,
-    backgroundColor: theme.palette.grey[50],
+    border: `1px solid 353535`,
+    backgroundColor: '#353535',
     opacity: 1,
     transition: theme.transitions.create(['background-color', 'border']),
   },

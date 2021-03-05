@@ -4,6 +4,9 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import TwoColumnSectionContainer from '../../../../shared/components/TwoColumnSection/TwoColumnSectionContainer';
 import ProtocolInfoImage from '../../../../assets/icons/protocol.svg';
+import FUELImage from '../../../../assets/icons/fuel.svg';
+import BUSDImage from '../../../../assets/icons/busd.svg';
+import FortressImage from '../../../../assets/icons/fortress.svg';
 
 const ProtocolInfo = () => (
   <section className="protocolinfo-section-container">
@@ -14,6 +17,16 @@ const ProtocolInfo = () => (
           title: (
             <div className="icon">
               <img src={ProtocolInfoImage} alt="protocolinfo" className="protocolinfo-image" />
+              {/* <div class="info-anime__logos">
+                <div class="info-anime__logo"><span class="svg-image-binance-logo"></span></div>
+                <div class="info-anime__logo"><span class="svg-image-swipe-logo"></span></div>
+                <div class="info-anime__logo"><span class="svg-image-vai-logo"></span></div>
+              </div> */}
+              <div className="protocol-logos">
+                <div className="fuel-wrapper logo-wrapper"><img src={FUELImage} alt="fuel" className="fuel-image img" /></div>
+                <div className="busd-wrapper logo-wrapper"><img src={BUSDImage} alt="busd" className="busd-image img" /></div>
+                <div className="fortress-wrapper logo-wrapper"><img src={FortressImage} alt="fortress" className="fortress-image img" /></div>
+              </div>
             </div>
           ),
         }}

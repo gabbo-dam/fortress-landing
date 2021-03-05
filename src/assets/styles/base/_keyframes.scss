@@ -1,0 +1,116 @@
+@keyframes floating { 
+  0% { transform: translate(0,  0px); } 
+  50%  { transform: translate(0, 15px); } 
+  100%   { transform: translate(0, -0px); }     
+}
+
+@keyframes rotateAnim {
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  // 75% {
+  //   transform: rotate(5deg);
+  // }
+  // 100% {
+  //   transform: rotate(0deg);
+  // }
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  // 75% {
+  //   transform: rotate(5deg);
+  // }
+  // 100% {
+  //   transform: rotate(0deg);
+  // }
+}
+
+@keyframes infoLogoAnimeLoop2 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+  }
+  60% {
+    -webkit-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+  67% {
+    -webkit-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+  85% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes infoLogoAnimeLoop3 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  37% {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+  65% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  72% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  95% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes infoLogoAnimeLoop1 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  23% {
+    -webkit-transform: translateY(40%);
+    transform: translateY(40%);
+  }
+  50% {
+    -webkit-transform: translateY(-18%);
+    transform: translateY(-18%);
+  }
+  57% {
+    -webkit-transform: translateY(-18%);
+    transform: translateY(-18%);
+  }
+  75% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

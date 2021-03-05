@@ -5,6 +5,7 @@ import TwoColumnSectionContainer from '../../../../shared/components/TwoColumnSe
 import StablecoinIcon from '../../../../assets/icons/stablecoin-icon.svg';
 import StablecoinImage from '../../../../assets/icons/stablecoin-image.png';
 import RectangleShadow from '../../../../assets/icons/rectangle-shadow.png';
+import DotDotImage from '../../../../assets/icons/dot-dot.svg';
 
 const StableCoinInfoSection = () => (
   <section className="stablecoin-section-container">
@@ -19,7 +20,7 @@ const StableCoinInfoSection = () => (
           ),
           description: (
             <>
-              <div className="description">Fortress enables the world's first decentralized stablecoin, SFT, 
+              <div className="description">Fortress enables the world's first decentralized stablecoin, FAI, 
               built on Binance Smart Chain that is backed by a basket of stablecoins and crypto assets without centralized control.</div>
               <div className="learnmore-wrapper">
                 <Button
@@ -35,8 +36,9 @@ const StableCoinInfoSection = () => (
         rightSection={{
           description: (
             <>
-              <img src={StablecoinImage} alt="stablecoin" className="stablecoin-image" />
+              <img src={DotDotImage} alt="dotdot" className="dotdot" />
               <img src={RectangleShadow} alt="rectangle" className="rectangle" />
+              <img src={StablecoinImage} alt="stablecoin" className="stablecoin-image" />
             </>
           ),
         }}

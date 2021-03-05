@@ -2,6 +2,9 @@ import React from 'react';
 import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
 
 import fortressIcon from '../../../../assets/icons/fortress.svg';
+import RectangleYellowVector from '../../../../assets/icons/rectangle-yellow-vector.svg';
+import TurboFanImage from '../../../../assets/icons/turbofan.png';
+import DotDotImage from '../../../../assets/icons/dot-dot.svg';
 
 const options = [
   {
@@ -18,7 +21,16 @@ const options = [
 
 const MarketInfo = () => (
   <div className="market-stats-info-wrapper">
+    <div className="turbo_img_vector">
+      <img src={TurboFanImage} alt="turbo" className="turbo" />
+    </div>
     <div className="market-stats-info-content">
+      <div className="img_vector">
+        <img src={RectangleYellowVector} alt="rectangle vector" className="rectangle" />
+      </div>
+      <div className="dot_img_vector">
+        <img src={DotDotImage} alt="dot dot" className="dot-dot" />
+      </div>
       <h2 className="title">Marketinfo</h2>
       <div className="market-stats-info">
         <div className="token-select-price">
@@ -63,6 +75,10 @@ const MarketInfo = () => (
         </div>
       </div>
     </div>
+    {/* <div className="vector-images"> */}
+      {/* <img src={RectangleYellowVector} alt="black can" className="black-can" /> */}
+      {/* <img src={TurboFanImage} alt="black can" className="turbofan" /> */}
+    {/* </div> */}
   </div>
 );
 
