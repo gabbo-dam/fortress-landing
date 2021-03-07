@@ -1,17 +1,18 @@
 import React from 'react';
 import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import fortressIcon from '../../../../assets/icons/fortress.svg';
 import RectangleYellowVector from '../../../../assets/icons/rectangle-yellow-vector.svg';
-import TurboFanImage from '../../../../assets/icons/turbofan.png';
+import TurboFanImage from '../../../../assets/icons/trubofan.svg';
 import DotDotImage from '../../../../assets/icons/dot-dot.svg';
+import FUELImage from '../../../../assets/icons/fuel.svg';
 
 const options = [
   {
     key: 'fuel',
     text: (
       <div className="selected-token">
-        <img src={fortressIcon} className="ui avatar image" alt="coin" />
+        <img src={FUELImage} className="ui avatar image" alt="coin" />
         <div className="token-symbol">FUEL</div>
       </div>
     ),
@@ -20,7 +21,7 @@ const options = [
 ];
 
 const MarketInfo = () => (
-  <div className="market-stats-info-wrapper">
+  <div className="market-stats-info-wrapper" id="market-stats-info-wrapper">
     <div className="turbo_img_vector">
       <img src={TurboFanImage} alt="turbo" className="turbo" />
     </div>
@@ -38,10 +39,14 @@ const MarketInfo = () => (
             <Select
               // onChange={(event) => handleState({ token: event.target.value })}
               defaultValue={options[0].value}
+              IconComponent={ExpandMoreIcon}
+              classes={{
+                icon: 'expand-more-icon'
+              }}
             >
               {
                 options.map((option) => (
-                  <MenuItem value={option.value}>{option.text}</MenuItem>
+                  <MenuItem classes={{ root: 'token-price-menu-item' }} value={option.value}>{option.text}</MenuItem>
                 ))
               }
             </Select>

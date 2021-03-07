@@ -16,14 +16,29 @@ import Ellipse5 from '../../../assets/icons/ellipse5.svg';
 const Landing = () => (
   <div className="landing" >
     <div className="money-market-wrapper">
-      <div className="ellipse_img_vector">
-        <img src={Ellipse1} alt="ellipse1" className="ellipse1 ellipse" />
-        <img src={Ellipse2} alt="ellipse1" className="ellipse2 ellipse" />
-        <img src={Ellipse3} alt="ellipse1" className="ellipse3 ellipse" />
-        <img src={Ellipse4} alt="ellipse1" className="ellipse4 ellipse" />
-        {/* <div> */}
-          <img src={Ellipse5} alt="ellipse1" className="ellipse5 ellipse" />
-        {/* </div> */}
+      <div className="ellipse_img_vector-wrapper">
+        <div className="ellipse_img_vector">
+          <div className="ellipse1-wrapper">
+            <img src={Ellipse1} alt="ellipse1" className="ellipse1 ellipse" />
+            <div className="ellipse1-white-dot white-dot" />
+          </div>
+          <div className="ellipse2-wrapper">
+            <img src={Ellipse2} alt="ellipse1" className="ellipse2 ellipse" />
+            <div className="ellipse2-white-dot white-dot" />
+          </div>
+          <div className="ellipse3-wrapper">
+            <img src={Ellipse3} alt="ellipse1" className="ellipse3 ellipse" />
+            <div className="ellipse3-white-dot white-dot" />
+          </div>
+          <div className="ellipse4-wrapper">
+            <img src={Ellipse4} alt="ellipse1" className="ellipse4 ellipse" />
+            <div className="ellipse4-white-dot white-dot" />
+          </div>
+          <div className="ellipse5-wrapper">
+            <img src={Ellipse5} alt="ellipse5" className="ellipse5 ellipse" />
+            <div className="ellipse5-white-dot white-dot" />
+          </div>
+        </div>
       </div>
       <AppHeader />
       <MoneyMarketsSection />

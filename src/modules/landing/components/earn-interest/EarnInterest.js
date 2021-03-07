@@ -3,7 +3,7 @@ import { Button, FormControlLabel, IconButton } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import TwoColumnSectionContainer from '../../../../shared/components/TwoColumnSection/TwoColumnSectionContainer';
-import TokenData from './TokenData';
+import { TokenIconData } from './TokenData';
 import IOSSwitch from '../../../../shared/components/IOSSwitch';
 import EarnInterestYellowVector from '../../../../assets/icons/earninterest-yellow-vector.svg';
 import YellowCircleVector from '../../../../assets/icons/yellow-cirlce-vector.svg';
@@ -12,8 +12,11 @@ import Wave1 from '../../../../assets/icons/wave1.svg';
 import Wave2 from '../../../../assets/icons/wave2.svg';
 import Wave3 from '../../../../assets/icons/wave3.svg';
 
-const EarnIntereset = () => (
-  <section className="earninterest-section-container">
+const EarnIntereset = ({
+  newTokenData, viewMoreToggle, handleState,
+  onViewMoreClick, withFAI, onWithFAIChange,
+}) => (
+  <section className="earninterest-section-container" id="earninterest-section-container">
     <div className="wave_img_vector">
       <img src={Wave1} alt="wave" className="wave1 wave" />
       <img src={Wave2} alt="wave" className="wave2 wave" />
@@ -62,19 +65,19 @@ const EarnIntereset = () => (
             <div className="tokens-data-wrapper">
               <div className="tokens-data">
                 {
-                  TokenData.map(token => (
+                  newTokenData.map(token => (
                     <div className="token-wrapper">
                       <div className="token-details">
                         <div className="token-icon-wrapper">
-                          <img src={token.icon} alt={token.name} className="token-icon" />
+                          <img src={TokenIconData[token.underlyingSymbol]} alt={token.name} className="token-icon" />
                         </div>
                         <div className="token-info">
-                          <div className="name">{token.name}</div>
-                          <div className="symbol">{token.symbol}</div>
+                          <div className="name">{token.underlyingName}</div>
+                          <div className="symbol">{token.underlyingSymbol}</div>
                         </div>
                       </div>
                       <div className="apy-details">
-                        <div className="apy-perc">{token.apy}</div>
+                        <div className="apy-perc">{withFAI ? (Number(token.supplyApy) + Number(token.supplyVenusApy)).toFixed(2) : Number(token.supplyApy).toFixed(2)}%</div>
                         <div className="apy-label">APY</div>
                       </div>
                     </div>
@@ -82,28 +85,31 @@ const EarnIntereset = () => (
                 }
               </div>
               <div className="viewmore-wrapper">
-                <Button className="viewmore-btn yellow-border-btn">
-                  View More
-                  <IconButton
-                    className="arrow-button"
-                    disableTouchRipple
-                    disableFocusRipple
-                  >
-                    <ArrowForwardIcon />
-                  </IconButton>
+                <Button
+                  className="viewmore-btn yellow-border-btn"
+                  onClick={() => onViewMoreClick()}
+                >
+                  {viewMoreToggle ? 'View Less' : 'View More'}
                 </Button>
               </div>
               <div className="with-fts">
                 <FormControlLabel
                   control={
                     <IOSSwitch
-                      // checked={state.checkedB}
-                      // onChange={handleChange}
+                      checked={withFAI}
                       name="checkedB"
+                      onChange={() => onWithFAIChange()}
                     />
                   }
-                  label="🔥 with FTS"
+                  label=""
+                  classes={{
+                    root: 'with-fts-form-label'
+                  }}
                 />
+                <div className={`with-fts-label ${withFAI ? 'active' : 'inactive'}`}>
+                  <div className="lit">🔥&nbsp;</div>
+                  <div className="fai">{withFAI ? 'with' : 'without'} FAI</div>
+                </div>
               </div>
             </div>
           </div>

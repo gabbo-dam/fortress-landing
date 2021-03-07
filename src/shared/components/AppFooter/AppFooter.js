@@ -27,7 +27,7 @@ const socialLinks = [
 
 const AppFooter = () => (
   <div className="footer">
-    <AppHeader />
+    <AppHeader isFooter />
     <div className="app-details">
       <div className="licence-details">
         © 2021 Developed by Jetfuel.

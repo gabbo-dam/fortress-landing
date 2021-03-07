@@ -2,12 +2,12 @@ import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import { reducer as formReducer } from 'redux-form';
 
-// import landingReducer from '../modules/landing/redux/reducer';
+import landingReducer from '../modules/landing/redux/reducer';
 
 const appReducer = combineReducers({
   form: formReducer,
   routing: routerReducer,
-  // landing: landingReducer,
+  landing: landingReducer,
 });
 
 const rootReducer = (state, action) => {

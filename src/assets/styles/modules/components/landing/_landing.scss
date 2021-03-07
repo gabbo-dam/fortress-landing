@@ -6,36 +6,89 @@
     color: $text-color-1500;
     position: relative;
     overflow: hidden;
+    .ellipse_img_vector-wrapper {
+      position: absolute;
+      height: 1424px;
+      width: 100%;
+      overflow: hidden;
+    }
     .ellipse_img_vector {
       height: 100%;
       width: 100%;
       .ellipse {
         position: absolute;
       }
+      .white-dot {
+        height: 8px;
+        width: 8px;
+        background-color: #fff;
+        border-radius: 4px;
+        position: absolute;
+      }
+      // .ellipse1-wrapper {
+      //   height: 100%;
+      //   width: 100%;
+      // }
+      // .ellipse2-wrapper {
+      //   height: 100%;
+      //   width: 100%;
+      // }
+      // .ellipse3-wrapper {
+      //   height: 100%;
+      //   width: 100%;
+      // }
+      // .ellipse4-wrapper {
+      //   height: 100%;
+      //   width: 100%;
+      // }
+      // .ellipse5-wrapper {
+      //   height: 100%;
+      //   width: 100%;
+      // }
       .ellipse1 {
-        height: 55%;
-        width: 31%;
+        height: 800px;
+        width: 700px;
+      }
+      .ellipse1-white-dot {
+        left: 500px;
+        top: 125px;
       }
       .ellipse2 {
         height: 960px;
         width: 900px;
       }
+      .ellipse2-white-dot {
+        left: 691px;
+        top: 580px;
+      }
       .ellipse3 {
         height: 1200px;
         width: 1200px;
       }
+      .ellipse3-white-dot {
+        left: 957px;
+        top: 160px;
+      }
       .ellipse4 {
         width: 1500px;
         height: 1400px;
+      }
+      .ellipse4-white-dot {
+        left: 1210px;
+        top: 626px;
       }
       .ellipse5 {
         height: 2000px;
         width: 1400px;
         margin-left: 200px;
       }
+      .ellipse5-white-dot {
+        left: 1537px;
+        top: 100px;
+      }
     }
     .moneymarket-section-container {
-      padding: 0 10%;
+      padding: 0 16%;
       position: relative;
       .moneymarket-section {
         .two-column-section-container {
@@ -74,7 +127,7 @@
                   height: 455px;
                   width: 575px;
                   top: 0px;
-                  left: 165px;
+                  left: 100px;
                   animation: floating 3s infinite ease-in-out;
                 }
                 .yellow-vector-image {
@@ -147,7 +200,7 @@
     }
   }
   .stablecoin-section-container {
-    margin: 0 10%;
+    margin: 0 16%;
     padding: 50px 0;
     position: relative;
     .stablecoin-section {
@@ -209,7 +262,7 @@
   }
 
   .earninterest-section-container {
-    padding: 0 10%;
+    padding: 0 16%;
     position: relative;
     .wave_img_vector {
       .wave {
@@ -304,14 +357,14 @@
           padding: 80px 0;
           .description {
             .tokens-data-wrapper-container {
-              width: 70%;
+              width: 80%;
               position: relative;
               .yellow-vector-wrapper {
                 position: absolute;
                 width: 100%;
                 display: flex;
                 justify-content: flex-end;
-                margin: -45px 0px 0 145px;
+                margin: -45px 0px 0 130px;
               }
               .tokens-data-wrapper {
                 width: 100%;
@@ -344,12 +397,17 @@
                         justify-content: center;
                         height: 60px;
                         width: 60px;
+                        .token-icon {
+                          height: 100%;
+                          width: 100%;
+                        }
                       }
                       .token-info {
                         padding-left: 25px;
                         .name {
                           font-weight: 500;
                           font-size: 22px;
+                          line-height: 20px;
                         }
                         .symbol {
                           color: rgba(255, 255, 255, 0.3);
@@ -382,6 +440,7 @@
                     color:$accent-color-primary !important;
                     font-weight: normal;
                     box-sizing: border-box;
+                    cursor: pointer;
                     filter: drop-shadow(-3.40642px -3.40642px 20.4385px #3D3D3D), drop-shadow(3.40642px 3.40642px 22.92px rgba(0, 0, 0, 0.65));
                     border-radius: 10px;
                     padding: 0 20px;
@@ -389,19 +448,38 @@
                     > span {
                       font-weight: 500;
                     }
-                    .arrow-button {
-                      background-color: $accent-color-medium-1 !important;
-                      color: $accent-color-primary !important;
-                      padding-right: 0;
-                    }
+                    // .arrow-button {
+                    //   background-color: $accent-color-medium-1 !important;
+                    //   color: $accent-color-primary !important;
+                    //   padding-right: 0;
+                    // }
                   }
                 }
                 .with-fts {
                   color: #fff;
                   font-size: 15px;
                   display: flex;
-                  justify-content: center;
                   margin-top: 10px;
+                  .with-fts-label {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 18px;
+                    &.inactive {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      font-size: 18px;
+                      .lit {
+                        color: transparent;
+                        text-shadow: #c2c2c2 0 0 0;
+                      }
+                    }
+                  }
+                  .with-fts-form-label {
+                    margin-right: 0;
+                    margin-left: 30%;
+                  }
                 }
               }
             }
@@ -412,7 +490,7 @@
   }
 
   .protocolinfo-section-container {
-    margin: 0 10%;
+    margin: 0 16%;
     .protocolinfo-section {
       .two-column-section-container {
         .left-section {
@@ -527,12 +605,12 @@
 
 
   .market-stats-info-wrapper {
-    padding: 40px 5% 100px;
+    padding: 40px 10% 100px;
     background-color: #141414;
     position: relative;
     .turbo_img_vector {
       position: absolute;
-      top: -50%;
+      top: -100%;
       right: 0;
       display: flex;
       justify-content: flex-end;
@@ -549,7 +627,7 @@
       .dot_img_vector {
         position: absolute;
         top: 112px;
-        left: -15px;
+        left: -5px;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
@@ -599,6 +677,10 @@
                 font-size: 20px;
                 font-weight: bold;
               }
+            }
+            .expand-more-icon {
+              color: #fff;
+              right: 20px;
             }
           }
           .token-price {
@@ -671,7 +753,7 @@
           .tokens-data-wrapper-container {
             width: 100%;
             .yellow-vector-wrapper {
-              margin: -25px 0px 0 90px;
+              margin: -25px 0px 0 90px !important;
             }
             .tokens-data-wrapper {
               .tokens-data {
@@ -698,3 +780,18 @@
     align-items: center;
   }
 }
+
+.token-price-menu-item {
+  .selected-token {
+    .image {
+      height: 45px;
+      width: 45px;
+    }
+    .token-symbol {
+      padding-left: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+// document.getElementById('about-right-content').scrollTo(0, 0)

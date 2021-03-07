@@ -8,8 +8,8 @@ import RectangleShadow from '../../../../assets/icons/rectangle-shadow.png';
 import DotDotImage from '../../../../assets/icons/dot-dot.svg';
 
 const StableCoinInfoSection = () => (
-  <section className="stablecoin-section-container">
-    <div className="stablecoin-section">
+  <section className="stablecoin-section-container" id="stablecoin-section-container">
+    <div className="stablecoin-section" id="stablecoin-section">
       <TwoColumnSectionContainer
         className="stablecoin-two-column-section"
         leftSection={{

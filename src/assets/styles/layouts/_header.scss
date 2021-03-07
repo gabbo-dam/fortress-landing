@@ -1,12 +1,13 @@
 .app-header-container {
   padding-top: 30px;
+  margin: 0 16%;
+  position: relative;
   .app-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: $standard-padding * 2;
     height: $app-header-height;
-    // background-color: $accent-color-medium-1;
-    // color: $text-color-1500;
+    align-items: center;
     .logo {
       display: flex;
       .app-name {
@@ -25,7 +26,9 @@
       align-items: center;
       cursor: pointer;
       .menu-item {
-        margin: 0 0 0 $standard-margin * 4;
+        &:not(:first-child) {
+          margin: 0 0 0 $standard-margin * 8;
+        }
       }
     }
     .whitepaper-wrapper {

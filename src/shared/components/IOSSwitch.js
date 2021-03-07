@@ -10,23 +10,23 @@ const IOSSwitch = withStyles((theme) => ({
     margin: theme.spacing(1),
   },
   switchBase: {
-    padding: '3px 0 0 3px',
+    padding: '6px 0 0 3px',
     '&$checked': {
       transform: 'translateX(16px)',
       color: theme.palette.common.white,
       '& + $track': {
-        backgroundColor: '#949090',
+        backgroundColor: '#F7C408',
         opacity: 1,
         border: 'none',
       },
     },
     '&$focusVisible $thumb': {
-      color: '#949090',
+      color: '#F7C408',
       border: '6px solid #fff',
     },
     height: '22px !important',
     backgroundColor: 'unset !important',
-    color: '#C4C4C4 !important',
+    color: 'dimgrey !important',
   },
   // buttonBase: {
   //   height: '26px !important'

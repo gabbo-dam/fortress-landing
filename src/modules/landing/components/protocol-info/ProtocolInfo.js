@@ -9,7 +9,7 @@ import BUSDImage from '../../../../assets/icons/busd.svg';
 import FortressImage from '../../../../assets/icons/fortress.svg';
 
 const ProtocolInfo = () => (
-  <section className="protocolinfo-section-container">
+  <section className="protocolinfo-section-container" id="protocolinfo-section-container">
     <div className="protocolinfo-section">
       <TwoColumnSectionContainer
         className="protocolinfo-two-column-section"
@@ -40,7 +40,7 @@ const ProtocolInfo = () => (
           description: (
             <>
               <div className="description">You can now tokenize your assets utilizing the Binance Smart Chain and receive portable
-               vTokens that you can freely move around to cold storage, transfer to other users, and more.</div>
+               fTokens that you can freely move around to cold storage, transfer to other users, and more.</div>
               <div className="whitepaper-wrapper">
                 <Button
                   // variant="primary"

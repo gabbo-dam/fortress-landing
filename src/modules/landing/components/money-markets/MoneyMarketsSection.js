@@ -17,7 +17,7 @@ const marketInfoStates = [
   {
     icon: BEP20VectorIcon,
     title: 'BEP-20',
-    description: 'All Venus Protocol assets are bound by the BEP-20 standard.'
+    description: 'All Fortress Protocol assets are bound by the BEP-20 standard.'
   },
   {
     icon: ScalableVectorIcon,
