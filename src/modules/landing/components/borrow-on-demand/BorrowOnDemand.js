@@ -8,6 +8,7 @@ import BorrowYellowVector from '../../../../assets/icons/borrow-yellow-vector.sv
 import BlackPlanImage from '../../../../assets/icons/black-plane.svg';
 import YellowCircleVector from '../../../../assets/icons/yellow-cirlce-vector.svg';
 import HalfYellowVector from '../../../../assets/icons/half-yellow-vector.svg';
+import { addComma, numbersAfterDecimal } from '../../../../utils/helper';
 
 const BorrowOnDemand = ({ newTokenData, viewMoreToggle, onViewMoreClick }) => (
   <section className="earninterest-section-container borrow-on-demand-container" id="borrow-on-demand-container">
@@ -56,7 +57,6 @@ const BorrowOnDemand = ({ newTokenData, viewMoreToggle, onViewMoreClick }) => (
             </div>
             <div className="tokens-data-wrapper">
               <div className="tokens-data">
-                {console.log('newTokenData inside=====', newTokenData)}
                 {
                   newTokenData && newTokenData.map(token => (
                     <div className="token-wrapper">
@@ -70,7 +70,7 @@ const BorrowOnDemand = ({ newTokenData, viewMoreToggle, onViewMoreClick }) => (
                         </div>
                       </div>
                       <div className="apy-details">
-                        <div className="apy-perc">${(Number(token.liquidity)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}%</div>
+                        <div className="apy-perc">${addComma(numbersAfterDecimal(token.liquidity))}</div>
                         <div className="apy-label">Available Liquidity</div>
                       </div>
                     </div>

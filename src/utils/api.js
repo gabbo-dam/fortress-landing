@@ -13,7 +13,6 @@ function makeHeaders() {
 }
 
 const axiosApi = axios.create({
-  // withCredentials: true,
   baseURL: `${BASE_URL}/`,
 });
 
@@ -26,19 +25,6 @@ axiosApi.interceptors.request.use((request) => {
 
 axiosApi.interceptors.response.use(response => response, (err) => {
   showNotification('Unknown server error', 'error', 5000);
-  console.log('err=====', err);
-  // if (err.response && err.response.status === 401) {
-  //   localStorage.clear();
-  //   showNotification('Your session has expired. Please log in again', 'error', 5000);
-  //   // history.push('/login');
-  //   return true;
-  // }
-  // if (err.response && err.response.status === 403) {
-  //   showNotification(err.response.data.msg, 'error', 5000);
-  // }
-  // if (err.response && err.response.status === 500) {
-  //   showNotification('Unknown server error', 'error', 5000);
-  // }
   return Promise.reject(err);
 });
 

@@ -6,21 +6,10 @@ import RectangleYellowVector from '../../../../assets/icons/rectangle-yellow-vec
 import TurboFanImage from '../../../../assets/icons/trubofan.svg';
 import DotDotImage from '../../../../assets/icons/dot-dot.svg';
 import FUELImage from '../../../../assets/icons/fuel.svg';
+import { TokenIconData } from '../earn-interest/TokenData';
+import { addComma, numbersAfterDecimal, startAndEnd } from '../../../../utils/helper';
 
-const options = [
-  {
-    key: 'fuel',
-    text: (
-      <div className="selected-token">
-        <img src={FUELImage} className="ui avatar image" alt="coin" />
-        <div className="token-symbol">FUEL</div>
-      </div>
-    ),
-    value: 'FUEL',
-  },
-];
-
-const MarketInfo = () => (
+const MarketInfo = ({ tokenData, selectedToken, hanldeSelectedToken, selectedTokenDetails }) => (
   <div className="market-stats-info-wrapper" id="market-stats-info-wrapper">
     <div className="turbo_img_vector">
       <img src={TurboFanImage} alt="turbo" className="turbo" />
@@ -37,53 +26,54 @@ const MarketInfo = () => (
         <div className="token-select-price">
           <FormControl color="#fff" variant="outlined" classes={{ root: 'token-price-dropdown' }}>
             <Select
-              // onChange={(event) => handleState({ token: event.target.value })}
-              defaultValue={options[0].value}
+              onChange={(e) => hanldeSelectedToken(e)}
+              defaultValue={selectedToken}
               IconComponent={ExpandMoreIcon}
               classes={{
                 icon: 'expand-more-icon'
               }}
             >
               {
-                options.map((option) => (
-                  <MenuItem classes={{ root: 'token-price-menu-item' }} value={option.value}>{option.text}</MenuItem>
+                tokenData.map((token) => (
+                  <MenuItem classes={{ root: 'token-price-menu-item' }} value={token.underlyingSymbol}>
+                    <div className="selected-token">
+                      <img src={TokenIconData[token.underlyingSymbol]} className="ui avatar image" alt="coin" />
+                      <div className="token-symbol">{token.underlyingSymbol}</div>
+                    </div>
+                  </MenuItem>
                 ))
               }
             </Select>
           </FormControl>
           <div className="token-price">
             <div className="price-label">Price</div>
-            <div className="token-price">$2.23</div>
+            <div className="token-price">${numbersAfterDecimal(selectedTokenDetails && selectedTokenDetails.tokenPrice, 2)}</div>
           </div>
         </div>
         <div className="token-details">
           <div className="total-supply">
             <div className="label">Total Supply</div>
-            <div className="value">$185,703,825.31</div>
+            <div className="value">${addComma(numbersAfterDecimal(selectedTokenDetails && selectedTokenDetails.totalSupplyUsd, 2))}</div>
           </div>
           <div className="no-of-suppliers">
             <div className="label">Number of Suppliers</div>
-            <div className="value">644</div>
+            <div className="value">{(selectedTokenDetails && selectedTokenDetails.supplierCount) || 0}</div>
           </div>
           <div className="total-borrowed">
             <div className="label">Total Borrowed</div>
-            <div className="value">$115,341,430.80</div>
+            <div className="value">${addComma(numbersAfterDecimal(selectedTokenDetails && selectedTokenDetails.totalBorrowsUsd, 2))}</div>
           </div>
           <div className="Number of Borrowers">
             <div className="label">Number of Borrowers</div>
-            <div className="value">831</div>
+            <div className="value">{(selectedTokenDetails && selectedTokenDetails.borrowerCount) || 0}</div>
           </div>
           <div className="token-address">
             <div className="label">Token Address</div>
-            <div className="token-address-value value">0xeca8...67c8</div>
+            <div className="token-address-value value">{selectedTokenDetails && startAndEnd(selectedTokenDetails.address)}</div>
           </div>
         </div>
       </div>
     </div>
-    {/* <div className="vector-images"> */}
-      {/* <img src={RectangleYellowVector} alt="black can" className="black-can" /> */}
-      {/* <img src={TurboFanImage} alt="black can" className="turbofan" /> */}
-    {/* </div> */}
   </div>
 );
 

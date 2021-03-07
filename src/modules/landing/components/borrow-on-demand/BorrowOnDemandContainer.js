@@ -38,12 +38,8 @@ class BorrowOnDemandContainer extends Component {
   }
   
   render() {
-    console.log('this.props.tokenData======', this.props.tokenData);
-    console.log('this.state.tokenData======', this.state.tokenData);
-    console.log('this.state.newTokenData======', this.state.newTokenData);
     return(
       <BorrowOnDemand
-        // tokenData={this.state.tokenData}
         newTokenData={this.state.newTokenData}
         viewMoreToggle={this.state.viewMoreToggle}
         onViewMoreClick={this.onViewMoreClick}
@@ -53,12 +49,10 @@ class BorrowOnDemandContainer extends Component {
 };
 
 BorrowOnDemandContainer.propTypes = {
-  // getTokenData: PropTypes.func,
   tokenData: PropTypes.instanceOf(Object),
 };
 
 BorrowOnDemandContainer.defaultProps = {
-  // getTokenData: noop,
   tokenData: {}
 };
 
@@ -67,7 +61,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  // getTokenData: jobId => dispatch(landingActions.getTokenData(jobId)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BorrowOnDemandContainer);
