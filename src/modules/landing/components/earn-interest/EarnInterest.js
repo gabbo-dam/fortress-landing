@@ -63,7 +63,7 @@ const EarnIntereset = ({
               <img src={EarnInterestYellowVector} alt="yellow vector" className="earninterest-yellow-vector" />
             </div>
             <div className="tokens-data-wrapper">
-              <div className="tokens-data">
+              <div className={`tokens-data ${viewMoreToggle ? 'active' : 'inactive'}`}>
                 {
                   newTokenData.map(token => (
                     <div className="token-wrapper">

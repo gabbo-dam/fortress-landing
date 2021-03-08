@@ -3,11 +3,12 @@ import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import RectangleYellowVector from '../../../../assets/icons/rectangle-yellow-vector.svg';
-import TurboFanImage from '../../../../assets/icons/trubofan.svg';
+import TurboFanImage from '../../../../assets/icons/turbofan.png';
 import DotDotImage from '../../../../assets/icons/dot-dot.svg';
 import FUELImage from '../../../../assets/icons/fuel.svg';
 import { TokenIconData } from '../earn-interest/TokenData';
 import { addComma, numbersAfterDecimal, startAndEnd } from '../../../../utils/helper';
+import { Link } from 'react-router-dom';
 
 const MarketInfo = ({ tokenData, selectedToken, hanldeSelectedToken, selectedTokenDetails }) => (
   <div className="market-stats-info-wrapper" id="market-stats-info-wrapper">
@@ -30,6 +31,7 @@ const MarketInfo = ({ tokenData, selectedToken, hanldeSelectedToken, selectedTok
               defaultValue={selectedToken}
               IconComponent={ExpandMoreIcon}
               classes={{
+                root: 'marketinfo-select-token',
                 icon: 'expand-more-icon'
               }}
             >
@@ -69,7 +71,11 @@ const MarketInfo = ({ tokenData, selectedToken, hanldeSelectedToken, selectedTok
           </div>
           <div className="token-address">
             <div className="label">Token Address</div>
-            <div className="token-address-value value">{selectedTokenDetails && startAndEnd(selectedTokenDetails.address)}</div>
+            {/* <Link to={`https://bscscan.com/token/${selectedTokenDetails && selectedTokenDetails.address}`} target={"_blank"}> */}
+            <a rel="noopener noreferrer" href={`https://bscscan.com/token/${selectedTokenDetails && selectedTokenDetails.address}`} target="_blank">
+              <div className="token-address-value value">{selectedTokenDetails && startAndEnd(selectedTokenDetails.address)}</div>
+            </a>
+            {/* </Link> */}
           </div>
         </div>
       </div>

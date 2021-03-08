@@ -3,7 +3,7 @@ import React from 'react';
 
 import TwoColumnSectionContainer from '../../../../shared/components/TwoColumnSection/TwoColumnSectionContainer';
 import StablecoinIcon from '../../../../assets/icons/stablecoin-icon.svg';
-import StablecoinImage from '../../../../assets/icons/stablecoin-image.png';
+import StablecoinImage from '../../../../assets/icons/stablecoin-image.svg';
 import RectangleShadow from '../../../../assets/icons/rectangle-shadow.png';
 import DotDotImage from '../../../../assets/icons/dot-dot.svg';
 

@@ -31,7 +31,7 @@ const AppFooter = () => (
     <div className="app-details">
       <div className="licence-details">
         © 2021 Developed by Jetfuel.
-        Licensed & open-source under the ...
+        Licensed & open-source under the MIT Licence
       </div>
       <div className="social-links">
         {
