@@ -36,6 +36,7 @@ const AppHeader = ({ isFooter }) => {
               className="menu-item"
 
               onClick={() => {
+                setMobileMenuState(false)
                 menuItem.scrollSection &&
                   document
                     .getElementById(menuItem.scrollSection)
