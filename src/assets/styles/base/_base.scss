@@ -25,3 +25,9 @@ html {
 .MuiList-padding {
   padding: none !important;
 }
+
+.MuiButton-label {
+  @media screen and (max-width: 800px) {
+    font-weight: 700 !important;
+  }
+}

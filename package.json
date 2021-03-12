@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.8.0",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
+    "hamburger-react": "^2.4.0",
     "history": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

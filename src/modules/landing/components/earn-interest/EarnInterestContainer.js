@@ -9,7 +9,7 @@ class EarnInterestContainer extends Component {
     tokenData: [],
     newTokenData: [],
     viewMoreToggle: false,
-    withFAI: true,
+    withFTS: true,
   }
 
   componentDidMount() {
@@ -41,9 +41,9 @@ class EarnInterestContainer extends Component {
     });
   }
 
-  onWithFAIChange = () => {
+  onWithFTSChange = () => {
     this.setState(prevState => ({
-      withFAI: !prevState.withFAI,
+      withFTS: !prevState.withFTS,
     }));
   }
 
@@ -54,8 +54,8 @@ class EarnInterestContainer extends Component {
         viewMoreToggle={this.state.viewMoreToggle}
         handleState={this.handleState}
         onViewMoreClick={this.onViewMoreClick}
-        withFAI={this.state.withFAI}
-        onWithFAIChange={this.onWithFAIChange}
+        withFTS={this.state.withFTS}
+        onWithFTSChange={this.onWithFTSChange}
       />
     );
   }

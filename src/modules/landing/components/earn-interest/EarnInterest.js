@@ -14,7 +14,7 @@ import Wave3 from '../../../../assets/icons/wave3.svg';
 
 const EarnIntereset = ({
   newTokenData, viewMoreToggle, handleState,
-  onViewMoreClick, withFAI, onWithFAIChange,
+  onViewMoreClick, withFTS, onWithFTSChange,
 }) => (
   <section className="earninterest-section-container" id="earninterest-section-container">
     <div className="wave_img_vector">
@@ -77,7 +77,7 @@ const EarnIntereset = ({
                         </div>
                       </div>
                       <div className="apy-details">
-                        <div className="apy-perc">{withFAI ? (Number(token.supplyApy) + Number(token.supplyVenusApy)).toFixed(2) : Number(token.supplyApy).toFixed(2)}%</div>
+                        <div className="apy-perc">{withFTS ? (Number(token.supplyApy) + Number(token.supplyVenusApy)).toFixed(2) : Number(token.supplyApy).toFixed(2)}%</div>
                         <div className="apy-label">APY</div>
                       </div>
                     </div>
@@ -96,9 +96,9 @@ const EarnIntereset = ({
                 <FormControlLabel
                   control={
                     <IOSSwitch
-                      checked={withFAI}
+                      checked={withFTS}
                       name="checkedB"
-                      onChange={() => onWithFAIChange()}
+                      onChange={() => onWithFTSChange()}
                     />
                   }
                   label=""
@@ -106,9 +106,9 @@ const EarnIntereset = ({
                     root: 'with-fts-form-label'
                   }}
                 />
-                <div className={`with-fts-label ${withFAI ? 'active' : 'inactive'}`}>
+                <div className={`with-fts-label ${withFTS ? 'active' : 'inactive'}`}>
                   <div className="lit">🔥&nbsp;</div>
-                  <div className="fai">{withFAI ? 'with' : 'without'} FAI</div>
+                  <div className="fai">{withFTS ? 'with' : 'without'} FTS</div>
                 </div>
               </div>
             </div>

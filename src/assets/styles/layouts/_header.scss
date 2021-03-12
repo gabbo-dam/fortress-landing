@@ -1,6 +1,21 @@
 .app-header-container {
   padding-top: 30px;
   margin: 0 16%;
+  .hamburger-react {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    position: fixed;
+    z-index: 999;
+    padding: 0 6%;
+    width: 100%;
+    margin: 0px;
+    background-color: #141414;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    .hamburger-react {
+      display: block;
+    }
+  }
   position: relative;
   .app-header {
     display: flex;
@@ -8,15 +23,33 @@
     padding: $standard-padding * 2 0;
     height: $app-header-height;
     align-items: center;
-    @media screen and (max-width:800px) {
+    @media screen and (max-width: 800px) {
       flex-wrap: wrap;
       height: unset;
       .logo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        width: 80%;
+        float: left;
+      }
+      img {
+        height: 26px;
       }
       .menu-items {
+        @keyframes fade-out {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        display: none;
+        animation: fade-out 0.7s;
+        opacity: 0;
+        &.visible {
+          opacity: 1;
+          display: block;
+        }
+        width: 100%;
         .menu-item {
           margin: 5px 0 !important;
         }
@@ -24,36 +57,58 @@
     }
     .menu-items {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       cursor: pointer;
-      @media screen and (max-width:800px) {
+      @media screen and (max-width: 800px) {
+        display: none;
         // margin: 200px 0 0 100px;
         flex-wrap: wrap;
-        margin: 20px 0; 
+        margin: 5vh 0 50px 0;
         .menu-item {
+          line-height: 33px;
+          font-size: 22px;
           width: 100%;
+          &:not(:first-child) {
+            padding-top: 10%;
+          }
+          &:last-child {
+            padding-top: 15%;
+          }
+          .brightness {
+            font-size: 24px !important;
+          }
           margin: 10px 0;
           justify-content: center;
           display: flex;
         }
       }
       .menu-item {
+        font-weight: 500;
+        line-height: 27px;
         &:not(:first-child) {
-          margin: 0 0 0 $standard-margin * 8;
+          margin: 0 0 0 $standard-margin * 4;
+        }
+        .brightness {
+          font-size: 16px;
         }
       }
     }
     .whitepaper-wrapper {
-      @media screen and (max-width:800px) {
+      @media screen and (max-width: 800px) {
+        display: none;
+        &.visible {
+          display: flex;
+          margin-bottom: 200px;
+        }
         width: 100%;
-        display: flex;
         justify-content: center;
-      } 
+      }
       .whitepaper-btn {
         font-weight: bold;
         height: 50px;
         border-radius: 10px;
-        box-shadow: -3.40642px -3.40642px 20.4385px #3d3d3d, 3.40642px 3.40642px 22.92px rgb(0 0 0 / 65%);
+        box-shadow: -3.40642px -3.40642px 20.4385px #3d3d3d,
+          3.40642px 3.40642px 22.92px rgb(0 0 0 / 65%);
         width: 180px;
       }
     }
