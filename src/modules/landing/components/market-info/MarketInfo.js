@@ -30,6 +30,7 @@ const MarketInfo = ({ tokenData, selectedToken, hanldeSelectedToken, selectedTok
               onChange={(e) => hanldeSelectedToken(e)}
               defaultValue={selectedToken}
               IconComponent={ExpandMoreIcon}
+              className="marketinfo-select-token"
               classes={{
                 root: 'marketinfo-select-token',
                 icon: 'expand-more-icon'
@@ -37,7 +38,7 @@ const MarketInfo = ({ tokenData, selectedToken, hanldeSelectedToken, selectedTok
             >
               {
                 tokenData.map((token) => (
-                  <MenuItem classes={{ root: 'token-price-menu-item' }} value={token.underlyingSymbol}>
+                  <MenuItem className="token-price-menu-item" classes={{ root: 'token-price-menu-item' }} value={token.underlyingSymbol}>
                     <div className="selected-token">
                       <img src={TokenIconData[token.underlyingSymbol]} className="ui avatar image" alt="coin" />
                       <div className="token-symbol">{token.underlyingSymbol}</div>

@@ -2,19 +2,27 @@
   &.dark {
     .MuiButton-text {
       background-color: $accent-color-medium-1 !important;
+      &:hover {
+        box-shadow: -3.40642px -3.40642px 20.4385px #3d3d3d,
+          3.40642px 3.40642px 22.92px rgba(0, 0, 0, 0.65);
+        background-color: rgba(255, 238, 173, 0.2) !important;
+      }
     }
     .arrow-button {
-      background-color: $accent-color-medium-1 !important;
+      background-color: transparent !important;
       color: $accent-color-primary !important;
+    }
+    .MuiButton-contained {
+      background-color: $accent-color-primary !important;
     }
   }
   &.light {
     background-color: white;
-    .app-header-container{
-        @media screen and (max-width: 800px) {   background-color: white !important;
-            box-shadow: none;}
-     
-
+    .app-header-container {
+      @media screen and (max-width: 800px) {
+        background-color: white !important;
+        box-shadow: none;
+      }
     }
     .title {
       color: $accent-color-medium-2 !important;
@@ -34,8 +42,8 @@
       color: $accent-color-primary;
     }
     .MuiButton-contained > .MuiButton-label {
-        color: white !important;
-      }
+      color: white !important;
+    }
     .whitepaper-btn {
       box-shadow: none !important;
     }
@@ -57,6 +65,10 @@
         color: rgba(30, 30, 30, 0.3) !important;
       }
       background: rgba(255, 255, 255, 0.86) !important;
+      &:hover {
+        background: rgba(255, 247, 217, 0.86) !important;
+        backdrop-filter: blur(6px);
+      }
       border: 1px solid #e7e7e7 !important;
       color: $accent-color-medium-2 !important;
     }
@@ -103,18 +115,35 @@
         .value {
           color: #323232 !important;
         }
-        .token-address-value{
-            color: $accent-color-primary !important;
-
+        .token-address-value {
+          color: $accent-color-primary !important;
         }
       }
     }
-    
+    .expand-more-icon {
+      color: black !important;
+    }
   }
 }
 
-.footer{
-    &.light{
-        background-color: red !important;
+.main-template {
+  &.dark {
+    .footer {
+      .whitepaper-btn {
+        background-color: $accent-color-medium-1 !important;
+      }
     }
+  }
+  &.light {
+    .footer {
+      background-color: white !important;
+      position: relative !important;
+      box-shadow: 0px 0px 20px rgba(16, 16, 16, 0.07);
+      margin: 0 !important;
+      padding: 50px 14%;
+      .whitepaper-btn {
+        background-color: white !important;
+      }
+    }
+  }
 }

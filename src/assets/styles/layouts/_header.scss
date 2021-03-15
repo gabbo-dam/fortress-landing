@@ -13,6 +13,7 @@
     background-color: #141414;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
     .hamburger-react {
+      margin-top: -5px !important;
       display: block;
     }
   }
@@ -24,8 +25,13 @@
     height: $app-header-height;
     align-items: center;
     @media screen and (max-width: 800px) {
+      padding: $standard-padding 0;
       flex-wrap: wrap;
-      height: unset;
+      height: 55px;
+      &.true{
+        height: unset !important;
+
+      }
       .logo {
         width: 80%;
         float: left;
