@@ -73,7 +73,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               className="brightness"
               onClick={() => toggleTheme('dark')}
               style={
-                theme === 'dark' ? { color: '#f7c408' } : { color: '#FFFFFF' }
+                theme === 'dark' ? { color: '#f7c408' } : { color: '#1B1B1B' }
               }
             />
           </div>
