@@ -1,42 +1,71 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
 
-import AppHeader from '../../../shared/components/AppHeader/AppHeaderContainer';
-import MoneyMarketsSection from './money-markets/MoneyMarketsSectionContainer';
-import StableCoinInfoSection from './stablecoin-info/StableCoinInfoSectionContainer';
-import ProtocolInfoSection from './protocol-info/ProtocolInfoContainer';
-import EearnInterestSection from './earn-interest/EarnInterestContainer';
-import BorrowOnDemandSection from './borrow-on-demand/BorrowOnDemandContainer';
-import MarketInfoSection from './market-info/MarketInfoContainer';
-import Ellipse1 from '../../../assets/icons/ellipse1.svg';
-import Ellipse2 from '../../../assets/icons/ellipse2.svg';
-import Ellipse3 from '../../../assets/icons/ellipse3.svg';
-import Ellipse4 from '../../../assets/icons/ellipse4.svg';
-import Ellipse5 from '../../../assets/icons/ellipse5.svg';
+import AppHeader from "../../../shared/components/AppHeader/AppHeaderContainer";
+import MoneyMarketsSection from "./money-markets/MoneyMarketsSectionContainer";
+import StableCoinInfoSection from "./stablecoin-info/StableCoinInfoSectionContainer";
+import ProtocolInfoSection from "./protocol-info/ProtocolInfoContainer";
+import EearnInterestSection from "./earn-interest/EarnInterestContainer";
+import BorrowOnDemandSection from "./borrow-on-demand/BorrowOnDemandContainer";
+import MarketInfoSection from "./market-info/MarketInfoContainer";
 
-const Landing = () => (
-  <div className="landing" >
+const Landing = ({ theme }) => (
+  <div className={` landing ${theme}`}>
     <div className="money-market-wrapper">
       <div className="ellipse_img_vector-wrapper">
         <div className="ellipse_img_vector">
-          <div className="ellipse1-wrapper">
-            <img src={Ellipse1} alt="ellipse1" className="ellipse1 ellipse" />
-            <div className="ellipse1-white-dot white-dot" />
-          </div>
-          <div className="ellipse2-wrapper">
-            <img src={Ellipse2} alt="ellipse1" className="ellipse2 ellipse" />
-            <div className="ellipse2-white-dot white-dot" />
-          </div>
-          <div className="ellipse3-wrapper">
-            <img src={Ellipse3} alt="ellipse1" className="ellipse3 ellipse" />
-            <div className="ellipse3-white-dot white-dot" />
-          </div>
-          <div className="ellipse4-wrapper">
-            <img src={Ellipse4} alt="ellipse1" className="ellipse4 ellipse" />
-            <div className="ellipse4-white-dot white-dot" />
-          </div>
-          <div className="ellipse5-wrapper">
-            <img src={Ellipse5} alt="ellipse5" className="ellipse5 ellipse" />
-            <div className="ellipse5-white-dot white-dot" />
+          <div className="ellipse1-wrapper" style={{position:"relative"}}>
+              <div className="ball ball1" style={{position:"absolute"}} />
+              <div className="ball ball2" style={{position:"absolute"}} />
+              <div className="ball ball3" style={{position:"absolute"}} />
+              <div className="ball ball4" style={{position:"absolute"}} />
+              <div className="ball ball5" style={{position:"absolute"}} />
+            <svg width="1920" height="1300" fill="none" color="black">
+              <path
+                d="M-200,300a400,400 0 1,0 800,0a400,400 0 1,0 -800,0"
+                stroke={theme === "dark" ? "white" :"black"}
+                strokeOpacity=".1"
+                strokeWidth="1"
+              />
+               <circle
+                cx="200"
+                cy="300"
+                r="650"
+              
+                stroke={theme === "dark" ? "white" :"black"}
+                strokeOpacity=".1"
+                strokeWidth="1"
+              />
+                <circle
+                cx="200"
+                cy="300"
+                r="900"
+              
+                stroke={theme === "dark" ? "white" :"black"}
+                strokeOpacity=".1"
+                strokeWidth="1"
+              />
+               <circle
+                cx="200"
+                cy="300"
+                r="1250"
+              
+                stroke={theme === "dark" ? "white" :"black"}
+                strokeOpacity=".1"
+                strokeWidth="1"
+              />
+               <circle
+                cx="200"
+                cy="300"
+                r="1550"
+              
+                
+                stroke={theme === "dark" ? "white" :"black"}
+                strokeOpacity=".1"
+                strokeWidth="1"
+              />
+            </svg>
+           
           </div>
         </div>
       </div>
@@ -51,4 +80,8 @@ const Landing = () => (
   </div>
 );
 
-export default Landing;
+const mapStateToProps = (state) => ({
+  theme: state.landing.theme,
+});
+
+export default connect(mapStateToProps)(Landing);

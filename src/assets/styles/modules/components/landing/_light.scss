@@ -1,0 +1,119 @@
+.landing {
+  &.dark {
+    .MuiButton-text {
+      background-color: $accent-color-medium-1 !important;
+    }
+    .arrow-button {
+      background-color: $accent-color-medium-1 !important;
+      color: $accent-color-primary !important;
+    }
+  }
+  &.light {
+    background-color: white;
+    .app-header-container{
+        background-color: white !important;
+        box-shadow: none;
+
+    }
+    .title {
+      color: $accent-color-medium-2 !important;
+    }
+    .money-market-wrapper {
+      color: $accent-color-medium-1 !important;
+    }
+    .stablecoin-section {
+      background-color: $accent-color-light-1 !important;
+      color: $accent-color-medium-1 !important;
+      border: none !important;
+    }
+    .description-content {
+      color: $accent-color-medium-1 !important;
+    }
+    .MuiButton-label {
+      color: $accent-color-primary;
+    }
+    .MuiButton-contained > .MuiButton-label {
+        color: white !important;
+      }
+    .whitepaper-btn {
+      box-shadow: none !important;
+    }
+    .MuiButton-text {
+      background-color: white !important;
+    }
+    .arrow-button {
+      background-color: white !important;
+      color: $accent-color-primary !important;
+    }
+    .token-wrapper {
+      .apy-label {
+        color: #bcbcbc !important;
+      }
+      .apy-perc {
+        color: #42cf50 !important;
+      }
+      .symbol {
+        color: rgba(30, 30, 30, 0.3) !important;
+      }
+      background: rgba(255, 255, 255, 0.86) !important;
+      border: 1px solid #e7e7e7 !important;
+      color: $accent-color-medium-2 !important;
+    }
+    .market-info {
+      background-color: white !important;
+      &:hover {
+        background-color: white !important;
+      }
+      .title-wrapper {
+        background-color: #efefef !important;
+      }
+    }
+    .ball {
+      background-color: black;
+    }
+    .with-fts {
+      .fai {
+        color: #434343;
+      }
+    }
+    .description {
+      color: $accent-color-medium-2 !important;
+    }
+    .market-stats-info-wrapper {
+      background-color: #fafafa !important;
+      .price-label {
+        color: #1b1b1b !important;
+      }
+      .token-price {
+        color: #1b1b1b !important;
+      }
+      .market-stats-info {
+        background-color: white !important;
+        border: 1px solid #e7e7e7 !important;
+      }
+      .token-price-dropdown > div {
+        border: 1px solid #e7e7e7 !important;
+        .token-symbol {
+          color: #323232 !important;
+        }
+      }
+      .token-details {
+        background-color: #ebebeb !important;
+        .value {
+          color: #323232 !important;
+        }
+        .token-address-value{
+            color: $accent-color-primary !important;
+
+        }
+      }
+    }
+    
+  }
+}
+
+.footer{
+    &.light{
+        background-color: red !important;
+    }
+}

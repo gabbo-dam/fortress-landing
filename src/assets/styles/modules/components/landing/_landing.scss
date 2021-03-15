@@ -3,9 +3,36 @@
   .MuiButton-root {
     border-radius: 10px;
   }
+  .ball {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    offset-distance: 100%;
+    &.ball1 {
+      offset-path: path("M-200,300a400,400 0 1,0 800,0a400,400 0 1,0 -800,0");
+      animation: ball 5s linear infinite;
+    }
+    &.ball2 {
+      offset-path: path("M-450,300a650,650 0 1,0 1300,0a650,650 0 1,0 -1300,0");
+      animation: ball 6s linear infinite;
+    }
+    &.ball3 {
+      offset-path: path("M-700,300a900,900 0 1,0 1800,0a900,900 0 1,0 -1800,0");
+      animation: ball 7s linear infinite;
+    }
+    &.ball4 {
+      offset-path: path("M-1050,300a1250,1250 0 1,0 2500,0a1250,1250 0 1,0 -2500,0");
+      animation: ball 8s linear infinite;
+    }
+    &.ball5 {
+      offset-path: path("M-1350,300a1550,1550 0 1,0 3100,0a1550,1550 0 1,0 -3100,0");
+      animation: ball 9s linear infinite;
+    }
+  }
+
   .money-market-wrapper {
-    background-image: url('../../../../icons/moneymarket-background.svg');
-    background-color: $accent-color-medium-1;
+    background-image: url("../../../../icons/moneymarket-background.svg");
     color: $text-color-1500;
     position: relative;
     overflow: hidden;
@@ -212,7 +239,7 @@
           height: 200px;
           transition: all 0.3s ease;
           &:hover {
-            background: #100f0f !important;
+            background: #100f0f;
             box-shadow: 0 9px 15px rgb(0 0 0 / 2%);
             -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
@@ -446,7 +473,7 @@
               .launch-fortress-btn {
                 font-size: 16px;
                 border: 1px solid $accent-color-primary;
-                background-color: $accent-color-medium-1 !important;
+                background-color: $accent-color-medium-1 ;
                 color: $accent-color-primary !important;
                 font-weight: normal;
                 box-sizing: border-box;
@@ -458,10 +485,7 @@
                 > span {
                   font-weight: 500;
                 }
-                .arrow-button {
-                  background-color: $accent-color-medium-1 !important;
-                  color: $accent-color-primary !important;
-                }
+                
               }
             }
           }
@@ -595,7 +619,7 @@
                   justify-content: center;
                   .viewmore-btn {
                     border: 1px solid $accent-color-primary;
-                    background-color: $accent-color-medium-1 !important;
+                    background-color: $accent-color-medium-1;
                     color: $accent-color-primary !important;
                     font-weight: normal;
                     box-sizing: border-box;
@@ -719,8 +743,8 @@
                     height: 70px;
                     width: 70px;
                     position: absolute;
-                    top: 41%;
-                    right: 4%;
+                    top: 38%;
+                    right: 3%;
                     animation: infoLogoAnimeLoop1 6s ease infinite;
                   }
                 }
@@ -783,7 +807,7 @@
               .whitepaper-wrapper {
                 .read-whitepaper-btn {
                   border: 1px solid $accent-color-primary;
-                  background-color: $accent-color-medium-1 !important;
+                  background-color: $accent-color-medium-1 ;
                   color: $accent-color-primary !important;
                   font-weight: normal;
                   box-sizing: border-box;
@@ -794,10 +818,6 @@
                   height: 50px;
                   > span {
                     font-weight: 500;
-                  }
-                  .arrow-button {
-                    background-color: $accent-color-medium-1 !important;
-                    color: $accent-color-primary !important;
                   }
                 }
               }

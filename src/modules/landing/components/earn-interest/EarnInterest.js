@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, FormControlLabel, IconButton } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import { connect } from "react-redux";
 
 import TwoColumnSectionContainer from '../../../../shared/components/TwoColumnSection/TwoColumnSectionContainer';
 import { TokenIconData } from './TokenData';
@@ -9,18 +10,21 @@ import EarnInterestYellowVector from '../../../../assets/icons/earninterest-yell
 import YellowCircleVector from '../../../../assets/icons/yellow-cirlce-vector.svg';
 import BlackCanIcon from '../../../../assets/icons/black-can.svg';
 import Wave1 from '../../../../assets/icons/wave1.svg';
+import Wave1_light from '../../../../assets/icons/wave1_light.svg';
 import Wave2 from '../../../../assets/icons/wave2.svg';
+import Wave2_light from '../../../../assets/icons/wave2_light.svg';
 import Wave3 from '../../../../assets/icons/wave3.svg';
+import Wave3_light from '../../../../assets/icons/wave3_light.svg';
 
 const EarnIntereset = ({
   newTokenData, viewMoreToggle, handleState,
-  onViewMoreClick, withFTS, onWithFTSChange,
+  onViewMoreClick, withFTS, onWithFTSChange, theme
 }) => (
   <section className="earninterest-section-container" id="earninterest-section-container">
     <div className="wave_img_vector">
-      <img src={Wave1} alt="wave" className="wave1 wave" />
-      <img src={Wave2} alt="wave" className="wave2 wave" />
-      <img src={Wave3} alt="wave" className="wave3 wave" />
+      <img src={theme === "dark" ? Wave1 : Wave1_light} alt="wave" className="wave1 wave" />
+      <img src={theme === "dark" ? Wave2 : Wave2_light} alt="wave" className="wave2 wave" />
+      <img src={theme === "dark" ? Wave3 : Wave3_light} alt="wave" className="wave3 wave" />
     </div>
     <TwoColumnSectionContainer
       className="earninterest-two-column-section"
@@ -120,4 +124,8 @@ const EarnIntereset = ({
   </section>
 );
 
-export default EarnIntereset;
+const mapStateToProps = (state) => ({
+  theme: state.landing.theme,
+});
+
+export default connect(mapStateToProps)(EarnIntereset);

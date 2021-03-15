@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from "react-redux";
 import AppHeader from '../../components/AppHeader/AppHeaderContainer';
 import AppFooter from '../../components/AppFooter/AppFooter';
 
 const MainTemplate = ({
   children, className, childrenContainerClassName,
-  hideHeader, hideFooter,
+  hideHeader, hideFooter, theme
 }) => (
-  <div className="main-template">
+  <div className={` main-template ${theme}`}>
     {
       !hideHeader && (
         <AppHeader />
@@ -42,4 +43,9 @@ MainTemplate.defaultProps = {
   hideFooter: false,
 };
 
-export default MainTemplate;
+
+const mapStateToProps = (state) => ({
+  theme: state.landing.theme,
+});
+
+export default connect(mapStateToProps)(MainTemplate);
