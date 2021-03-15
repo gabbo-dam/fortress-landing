@@ -11,8 +11,9 @@
   &.light {
     background-color: white;
     .app-header-container{
-        background-color: white !important;
-        box-shadow: none;
+        @media screen and (max-width: 800px) {   background-color: white !important;
+            box-shadow: none;}
+     
 
     }
     .title {
