@@ -732,27 +732,27 @@
                     }
                   }
                   .fuel-wrapper {
-                    height: 70px;
-                    width: 70px;
+                    height: 18%;
+                    width: 18%;
                     position: absolute;
-                    top: 26%;
-                    left: 13%;
+                    top: 23%;
+                    left: 9.5%;
                     animation: infoLogoAnimeLoop2 6s ease infinite;
                   }
                   .busd-wrapper {
-                    height: 70px;
-                    width: 70px;
+                    height: 18%;
+                    width: 18%;
                     position: absolute;
-                    bottom: 24%;
-                    left: 37%;
+                    bottom: 22%;
+                    left: 34%;
                     animation: infoLogoAnimeLoop3 6s ease infinite;
                   }
                   .fortress-wrapper {
-                    height: 70px;
-                    width: 70px;
+                    height: 15%;
+                    width: 15%;
                     position: absolute;
                     top: 38%;
-                    right: 3%;
+                    right: 1%;
                     animation: infoLogoAnimeLoop1 6s ease infinite;
                   }
                 }
@@ -853,10 +853,10 @@
         height: 275px;
         top: -22%;
       }
-      
-    @media screen and (max-width: 800px) {
-      display: none;
-    }
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
     }
     .market-stats-info-content {
       padding: 0 5%;
@@ -888,6 +888,11 @@
         }
       }
       .title {
+        @media screen and (max-width: 800px) {
+          text-align: center;
+          padding-left: 0px !important;
+          margin-top: 0 !important;
+        }
         color: $text-color-1500;
         font-size: 40px;
         padding-left: 35px;
@@ -1112,7 +1117,7 @@
     border: 1px solid #e0e0e0;
 
     .MuiMenuItem-root {
-      color: #1B1B1B;
+      color: #1b1b1b;
     }
   }
 
