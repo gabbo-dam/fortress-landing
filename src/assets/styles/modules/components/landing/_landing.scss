@@ -1,4 +1,5 @@
 .landing {
+  scroll-behavior: smooth;
   background-color: $accent-color-medium-1;
   .MuiButton-root {
     border-radius: 10px;
@@ -10,29 +11,33 @@
     border-radius: 50%;
     offset-distance: 100%;
     &.ball1 {
-      offset-path: path("M-200,300a400,400 0 1,0 800,0a400,400 0 1,0 -800,0");
+      offset-path: path('M-200,300a400,400 0 1,0 800,0a400,400 0 1,0 -800,0');
       animation: ball 5s linear infinite;
     }
     &.ball2 {
-      offset-path: path("M-450,300a650,650 0 1,0 1300,0a650,650 0 1,0 -1300,0");
+      offset-path: path('M-450,300a650,650 0 1,0 1300,0a650,650 0 1,0 -1300,0');
       animation: ball 6s linear infinite;
     }
     &.ball3 {
-      offset-path: path("M-700,300a900,900 0 1,0 1800,0a900,900 0 1,0 -1800,0");
+      offset-path: path('M-700,300a900,900 0 1,0 1800,0a900,900 0 1,0 -1800,0');
       animation: ball 7s linear infinite;
     }
     &.ball4 {
-      offset-path: path("M-1050,300a1250,1250 0 1,0 2500,0a1250,1250 0 1,0 -2500,0");
+      offset-path: path(
+        'M-1050,300a1250,1250 0 1,0 2500,0a1250,1250 0 1,0 -2500,0'
+      );
       animation: ball 8s linear infinite;
     }
     &.ball5 {
-      offset-path: path("M-1350,300a1550,1550 0 1,0 3100,0a1550,1550 0 1,0 -3100,0");
+      offset-path: path(
+        'M-1350,300a1550,1550 0 1,0 3100,0a1550,1550 0 1,0 -3100,0'
+      );
       animation: ball 9s linear infinite;
     }
   }
 
   .money-market-wrapper {
-    background-image: url("../../../../icons/moneymarket-background.svg");
+    background-image: url('../../../../icons/moneymarket-background.svg');
     color: $text-color-1500;
     position: relative;
     overflow: hidden;
@@ -473,7 +478,7 @@
               .launch-fortress-btn {
                 font-size: 16px;
                 border: 1px solid $accent-color-primary;
-                background-color: $accent-color-medium-1 ;
+                background-color: $accent-color-medium-1;
                 color: $accent-color-primary !important;
                 font-weight: normal;
                 box-sizing: border-box;
@@ -484,11 +489,10 @@
                 height: 50px;
                 > span {
                   font-weight: 500;
-                  >button{
+                  > button {
                     background-color: transparent !important;
                   }
                 }
-                
               }
             }
           }
@@ -552,7 +556,8 @@
                     height: 93px;
                     transition: all 0.3s ease;
                     &:hover {
-                      background: rgba(255, 252, 227, 0.63);
+                      background-color: rgba(12, 12, 12, 0.86);
+                      backdrop-filter: blur(6px);
                       -webkit-transform: translateX(30px);
                       transform: translateX(30px);
                     }
@@ -810,7 +815,7 @@
               .whitepaper-wrapper {
                 .read-whitepaper-btn {
                   border: 1px solid $accent-color-primary;
-                  background-color: $accent-color-medium-1 ;
+                  background-color: $accent-color-medium-1;
                   color: $accent-color-primary !important;
                   font-weight: normal;
                   box-sizing: border-box;
@@ -848,6 +853,10 @@
         height: 275px;
         top: -22%;
       }
+      
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
     }
     .market-stats-info-content {
       padding: 0 5%;
@@ -1071,6 +1080,67 @@
     .token-symbol {
       padding-left: 10px;
       font-size: 20px;
+    }
+  }
+}
+
+.MuiSelect-select {
+  color: white !important;
+  border: 1px solid #323232;
+  background-color: transparent !important;
+  box-sizing: border-box;
+  border-radius: 20px !important;
+  .token-symbol {
+    padding-left: 12px;
+    color: $text-color-1500;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+.paper-list {
+  margin-top: 6px;
+  background-color: #141414 !important;
+  border: 1px solid #323232;
+
+  .MuiMenuItem-root {
+    color: white;
+  }
+  &.light {
+    background-color: white !important;
+    border: 1px solid #e0e0e0;
+
+    .MuiMenuItem-root {
+      color: #1B1B1B;
+    }
+  }
+
+  border-radius: 20px !important;
+  scrollbar-width: 0px !important;
+  .MuiMenu-list {
+    /*For WebKit Browsers*/
+    overflow-y: scroll !important;
+    scrollbar-width: none;
+  }
+}
+.select-list {
+  color: white;
+  .MuiButtonBase-root {
+    background-color: #141414 !important;
+    margin: 8px;
+    margin-bottom: 10px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #323232;
+    }
+  }
+  &.light {
+    .MuiButtonBase-root {
+      background-color: white !important;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e0e0e0;
+      }
     }
   }
 }

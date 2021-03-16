@@ -11,8 +11,8 @@ const overrides = {
   overrides: {
     MuiButtonBase: {
       root: {
-        backgroundColor: '#F7C408 !important',
-        color: '#000 !important',
+        backgroundColor: '#F7C408',
+        color: '#000',
         fontWeight: 'bold !important',
         height: '50px',
         minWidth: '180px !important',
