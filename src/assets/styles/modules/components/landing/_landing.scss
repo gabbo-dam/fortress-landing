@@ -510,9 +510,9 @@
                 }
 
                 position: absolute;
-                top: -75px;
+                top: -85px;
                 left: -20px;
-                animation: wobble 3s linear infinite;
+                animation: floating 3s linear infinite;
               }
             }
           }
@@ -1026,9 +1026,9 @@
                     left: -120px;
                   }
                   position: absolute;
-                  top: -69px;
+                  top: -75px;
                   left: -95px;
-                  animation: rotateAnim 3s linear infinite;
+                  animation: floating 3s linear infinite;
                 }
               }
             }
