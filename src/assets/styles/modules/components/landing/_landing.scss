@@ -140,7 +140,7 @@
             .content {
               @media screen and (max-width: 800px) {
                 text-align: center;
-                padding: 80px 0 20px 0;
+                padding: 30px 0 20px 0;
                 .sub-title {
                   font-size: 40px !important;
                   line-height: 38.68px;
@@ -185,14 +185,15 @@
               @media screen and (max-width: 800px) {
                 padding: 0 0 60px 0;
                 .description {
+                  text-align: center;
                   .piston-aircraft-image {
-                    left: -20px !important;
-                    height: 355px !important;
-                    width: 455px !important;
+                    left: 0px !important;
+                    height: auto !important;
+                    width: 100% !important;
                   }
                   .yellow-vector-image {
-                    height: 292px !important;
-                    width: 292px !important;
+                    height: 250px !important;
+                    width: 250px !important;
                   }
                 }
               }
@@ -208,6 +209,7 @@
                   top: 0px;
                   left: 100px;
                   animation: floating 3s infinite ease-in-out;
+
                 }
                 .yellow-vector-image {
                   height: 392px;
