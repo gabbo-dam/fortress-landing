@@ -59,18 +59,18 @@ const MenuItems = [
     needAuth: true,
     children: [],
   },
-  {
-    path: 'docs',
-    key: 'docs',
-    name: 'Docs',
-    className: 'docs',
-    scrollSection: '',
-    disabled: false,
-    isNavigable: true,
-    hidden: false,
-    needAuth: true,
-    children: [],
-  },
+  // {
+  //   path: 'docs',
+  //   key: 'docs',
+  //   name: 'Docs',
+  //   className: 'docs',
+  //   scrollSection: '',
+  //   disabled: false,
+  //   isNavigable: true,
+  //   hidden: false,
+  //   needAuth: true,
+  //   children: [],
+  // },
 ];
 
 export default MenuItems;

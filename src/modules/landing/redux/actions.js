@@ -5,5 +5,5 @@ import api from '../../../utils/api';
 
 export const getTokenData = (path, type) => ({
   type: actionTypes.GET_TOKEN_DATA,
-  payload: api.get('/governance/venus'),
+  payload: api.get('/fortress'),
 });

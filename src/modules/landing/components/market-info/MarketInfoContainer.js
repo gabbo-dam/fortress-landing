@@ -7,7 +7,7 @@ import MarketInfo from './MarketInfo';
 class MarketInfoConatainer extends Component {
   state = {
     tokenData: [],
-    selectedToken: 'SXP',
+    selectedToken: 'USDC',
     selectedTokenDetails: {},
   }
 

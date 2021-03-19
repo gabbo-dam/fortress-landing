@@ -14,7 +14,7 @@ class EarnInterestContainer extends Component {
 
   componentDidMount() {
     const init = async (email, password, keepLogin) => {
-      return await api.get('/governance/venus').then(res => {
+      return await api.get('/fortress').then(res => {
         this.setState({
           tokenData: (res.data && res.data.data && res.data.data.markets) || [],
           newTokenData: (res.data && res.data.data && res.data.data.markets).slice(0, 6) || []

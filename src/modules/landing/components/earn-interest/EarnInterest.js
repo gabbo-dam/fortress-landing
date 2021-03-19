@@ -128,7 +128,7 @@ const EarnIntereset = ({
                           {withFTS
                             ? (
                                 Number(token.supplyApy) +
-                                Number(token.supplyVenusApy)
+                                Number(token.supplyFortressApy)
                               ).toFixed(2)
                             : Number(token.supplyApy).toFixed(2)}
                           %

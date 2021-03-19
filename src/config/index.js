@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://api.venus.io/api';
+export const BASE_URL = 'https://apibsctestnet.fortress.loans/api';
