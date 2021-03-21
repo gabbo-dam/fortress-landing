@@ -68,7 +68,10 @@ const EarnIntereset = ({
                 stablecoins.
               </div>
               <div className="launchfortress-wrapper">
-                <Button className="launch-fortress-btn">
+                <Button
+                  className="launch-fortress-btn"
+                  onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_blank'); }}
+                >
                   Launch Fortress
                   <IconButton
                     className="arrow-button"

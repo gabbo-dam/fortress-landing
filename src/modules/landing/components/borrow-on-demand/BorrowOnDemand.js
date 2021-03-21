@@ -43,7 +43,10 @@ const BorrowOnDemand = ({ newTokenData, viewMoreToggle, onViewMoreClick }) => {
                 globally.
               </div>
               <div className="launchfortress-wrapper">
-                <Button className="launch-fortress-btn">
+                <Button
+                  onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_blank'); }}
+                  className="launch-fortress-btn"
+                >
                   Launch Fortress
                   <IconButton
                     className="arrow-button"

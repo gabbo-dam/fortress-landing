@@ -45,6 +45,7 @@ const MoneyMarketsSection = () => (
                 <Button
                   variant="contained"
                   className="launchapp-btn"
+                  onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_blank'); }}
                 >
                   Launch App
                 </Button>
