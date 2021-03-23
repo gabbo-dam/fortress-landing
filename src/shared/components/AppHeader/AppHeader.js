@@ -51,6 +51,17 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               {menuItem.name}
             </div>
           ))}
+          {isFooter && (
+            <div
+              className="menu-item"
+              onClick={() => {
+                window.open(`/Audit.pdf`, '_blank');
+              }}
+            >
+              Audit
+            </div>
+          )}
+          
           <div className="menu-item">
             
             <Brightness5OutlinedIcon
