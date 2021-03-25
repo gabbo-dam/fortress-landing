@@ -364,11 +364,12 @@
               margin: 0px 0 0 -40px;
               height: 300px;
               width: 300px;
-              animation: floating 3s infinite ease-in-out;
             }
             .rectangle {
               position: absolute;
               margin: 200px 0 0 170px;
+              offset-path: path('M0,50 a120,280 0 0,0 100,0');
+              animation: move 3000ms infinite alternate ease-in-out;
               @media screen and (max-width: 1215px) {
                 margin: 200px 0 0 100px;
               }
