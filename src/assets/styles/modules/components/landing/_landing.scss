@@ -368,7 +368,7 @@
             .rectangle {
               position: absolute;
               margin: 200px 0 0 170px;
-              offset-path: path('M0,50 a120,280 0 0,0 100,0');
+              offset-path: path('M60,70 a90,100 100 0,0 50,-80');
               animation: move 3000ms infinite alternate ease-in-out;
               @media screen and (max-width: 1215px) {
                 margin: 200px 0 0 100px;
