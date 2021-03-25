@@ -51,7 +51,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               {menuItem.name}
             </div>
           ))}
-          {isFooter && (
+          {
             <div
               className="menu-item"
               onClick={() => {
@@ -60,7 +60,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
             >
               Audit
             </div>
-          )}
+          }
           
           <div className="menu-item">
             
