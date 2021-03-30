@@ -45,6 +45,9 @@ const ProtocolInfo = () => (
                 <Button
                   // variant="primary"
                   className="read-whitepaper-btn yellow-border-btn"
+                  onClick={() => {
+                    window.open(`/Whitepaper.pdf`, '_blank');
+                  }}
                 >
                   Read the white paper
                   <IconButton

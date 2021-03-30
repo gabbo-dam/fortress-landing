@@ -90,7 +90,13 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
           </div>
         </div>
         <div className={`whitepaper-wrapper ${mobileMenuState && 'visible'}`}>
-          <Button variant="contained" className="whitepaper-btn">
+          <Button 
+            variant="contained"
+            className="whitepaper-btn"
+            onClick={() => {
+              window.open(`/Whitepaper.pdf`, '_blank');
+            }}
+          >
             White paper
           </Button>
         </div>
