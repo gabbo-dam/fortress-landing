@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import { useCountUp } from 'react-countup'
 
 import TwoColumnSectionContainer from '../../../../shared/components/TwoColumnSection/TwoColumnSectionContainer';
 import YelloVectorImage from '../../../../assets/icons/yellow-vector.png';
@@ -27,7 +28,18 @@ const marketInfoStates = [
   },
 ];
 
-const MoneyMarketsSection = () => (
+const MoneyMarketsSection = () => {
+  const { countUp, update } = useCountUp({
+    start: 0,
+    end: 508890999.29,
+    duration: 1,
+    separator: ',',
+   
+  })
+
+
+return(
+  
   <section className="moneymarket-section-container">
     <div className="moneymarket-section">
       {/* <TwoColumnSectionContainer
@@ -68,7 +80,11 @@ const MoneyMarketsSection = () => (
       <StyledHero>
         
           <Title className="title">Fortress Total Protocol Value</Title>
-          <Number >$508,890,999.29</Number>
+          <Number >$
+
+          
+          {countUp}
+          </Number>
           <Text className="title">A Decentralized Marketplace for <StyledText>Lenders and Borrowers</StyledText> with Borderless Stablecoins.</Text>
           <Button
             variant="contained"
@@ -100,7 +116,7 @@ const MoneyMarketsSection = () => (
       </div>
     </div> */}
   </section>
-);
+)} ;
 
 
 

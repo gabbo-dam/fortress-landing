@@ -8,7 +8,7 @@ import ProtocolInfoSection from './protocol-info/ProtocolInfoContainer';
 import EearnInterestSection from './earn-interest/EarnInterestContainer';
 import BorrowOnDemandSection from './borrow-on-demand/BorrowOnDemandContainer';
 import MarketInfoSection from './market-info/MarketInfoContainer';
-
+ 
 const Landing = ({ theme }) => (
   <div className={` landing ${theme}`}>
     <div className="money-market-wrapper">
@@ -70,7 +70,7 @@ const Landing = ({ theme }) => (
       <StableCoinInfoSection />
     </div>
     <EearnInterestSection />
-    <ProtocolInfoSection />
+    <ProtocolInfoSection theme={theme} />
     <BorrowOnDemandSection />
     <MarketInfoSection />
   </div>

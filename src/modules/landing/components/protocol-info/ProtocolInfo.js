@@ -11,7 +11,10 @@ import FortressImage from '../../../../assets/icons/fortress.svg';
 import bg2 from '../../../../assets/icons/bg2.svg'
 import bg3 from '../../../../assets/icons/bg3.svg'
 
-const ProtocolInfo = () => (
+const ProtocolInfo = ({ theme }) =>{
+  const cardtheme = () => theme === 'dark' ?  '#101010'  : '#F3F3F3';
+  return(
+  
   // <section className="protocolinfo-section-container" id="protocolinfo-section-container">
   //   <div className="protocolinfo-section">
   //     <TwoColumnSectionContainer
@@ -76,16 +79,16 @@ const ProtocolInfo = () => (
     <Text>Lorem Ipsum set qumija iauj</Text>
 
     <Grid>
-    <StyledCard></StyledCard>
-    <StyledCard></StyledCard>
-    <StyledCard></StyledCard>
-    <StyledCard></StyledCard>
+    <StyledCard style={{background:cardtheme()}}></StyledCard>
+    <StyledCard style={{background:cardtheme()}}></StyledCard>
+    <StyledCard style={{background:cardtheme()}}></StyledCard>
+    <StyledCard style={{background:cardtheme()}}></StyledCard>
     </Grid>
     <Title className="title">Auditors</Title>
     <Text>Lorem Ipsum set qumija iauj</Text>
     <Grid>
-    <StyledCard></StyledCard>
-    <StyledCard></StyledCard>
+    <StyledCard style={{background:cardtheme()}}></StyledCard>
+    <StyledCard style={{background:cardtheme()}}></StyledCard>
     </Grid>
   
   </Container>
@@ -107,7 +110,7 @@ const ProtocolInfo = () => (
     </StyledSection>
     </Background>
   </>
-);
+)};
 
 const Background = styled.div`
 background-image: url(${bg2});
@@ -137,6 +140,8 @@ const Title = styled.h2`
   text-transform: capitalize;
   color: #FFFFFF;
 
+  margin: 94px 0 14px 0;
+
   @media (max-width: 768px) {
     font-style: normal;
     font-weight: bold;
@@ -160,6 +165,7 @@ const Text = styled.p`
   line-height: 23px;
   /* identical to box height */
 
+  margin 0 0 54px 0;
 
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -183,6 +189,7 @@ const StyledCard = styled.div`
   width: 100%;
   height: 225px;
   background-color: #F3F3F3;
+  border-radius: 12px;
 
   @media (max-width: 768px) {
       width: 100%;
@@ -214,7 +221,8 @@ const Title2 = styled.h3`
 font-style: normal;
 font-weight: bold;
 font-size: 36px;
-line-height: 111%;
+
+
 /* identical to box height, or 40px */
 
 letter-spacing: -0.02em;
