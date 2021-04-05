@@ -4,40 +4,40 @@
   .MuiButton-root {
     border-radius: 10px;
   }
-  .ball {
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
-    offset-distance: 100%;
-    &.ball1 {
-      offset-path: path('M-200,300a400,400 0 1,0 800,0a400,400 0 1,0 -800,0');
-      animation: ball 5s linear infinite;
-    }
-    &.ball2 {
-      offset-path: path('M-450,300a650,650 0 1,0 1300,0a650,650 0 1,0 -1300,0');
-      animation: ball 6s linear infinite;
-    }
-    &.ball3 {
-      offset-path: path('M-700,300a900,900 0 1,0 1800,0a900,900 0 1,0 -1800,0');
-      animation: ball 7s linear infinite;
-    }
-    &.ball4 {
-      offset-path: path(
-        'M-1050,300a1250,1250 0 1,0 2500,0a1250,1250 0 1,0 -2500,0'
-      );
-      animation: ball 8s linear infinite;
-    }
-    &.ball5 {
-      offset-path: path(
-        'M-1350,300a1550,1550 0 1,0 3100,0a1550,1550 0 1,0 -3100,0'
-      );
-      animation: ball 9s linear infinite;
-    }
-  }
+  // .ball {
+  //   width: 8px;
+  //   height: 8px;
+  //   background-color: white;
+  //   border-radius: 50%;
+  //   offset-distance: 100%;
+  //   &.ball1 {
+  //     offset-path: path('M-200,300a400,400 0 1,0 800,0a400,400 0 1,0 -800,0');
+  //     animation: ball 5s linear infinite;
+  //   }
+  //   &.ball2 {
+  //     offset-path: path('M-450,300a650,650 0 1,0 1300,0a650,650 0 1,0 -1300,0');
+  //     animation: ball 6s linear infinite;
+  //   }
+  //   &.ball3 {
+  //     offset-path: path('M-700,300a900,900 0 1,0 1800,0a900,900 0 1,0 -1800,0');
+  //     animation: ball 7s linear infinite;
+  //   }
+  //   &.ball4 {
+  //     offset-path: path(
+  //       'M-1050,300a1250,1250 0 1,0 2500,0a1250,1250 0 1,0 -2500,0'
+  //     );
+  //     animation: ball 8s linear infinite;
+  //   }
+  //   &.ball5 {
+  //     offset-path: path(
+  //       'M-1350,300a1550,1550 0 1,0 3100,0a1550,1550 0 1,0 -3100,0'
+  //     );
+  //     animation: ball 9s linear infinite;
+  //   }
+  // }
 
   .money-market-wrapper {
-    background-image: url('../../../../icons/moneymarket-background.svg');
+    background-image: url('../../../../icons/bg.svg');
     color: $text-color-1500;
     position: relative;
     overflow: hidden;
@@ -47,81 +47,81 @@
       width: 100%;
       overflow: hidden;
     }
-    .ellipse_img_vector {
-      height: 100%;
-      width: 100%;
-      .ellipse {
-        position: absolute;
-      }
-      .white-dot {
-        height: 8px;
-        width: 8px;
-        background-color: #fff;
-        border-radius: 4px;
-        position: absolute;
-      }
-      // .ellipse1-wrapper {
-      //   height: 100%;
-      //   width: 100%;
-      // }
-      // .ellipse2-wrapper {
-      //   height: 100%;
-      //   width: 100%;
-      // }
-      // .ellipse3-wrapper {
-      //   height: 100%;
-      //   width: 100%;
-      // }
-      // .ellipse4-wrapper {
-      //   height: 100%;
-      //   width: 100%;
-      // }
-      // .ellipse5-wrapper {
-      //   height: 100%;
-      //   width: 100%;
-      // }
-      .ellipse1 {
-        height: 800px;
-        width: 700px;
-      }
-      .ellipse1-white-dot {
-        left: 500px;
-        top: 125px;
-      }
-      .ellipse2 {
-        height: 960px;
-        width: 900px;
-      }
-      .ellipse2-white-dot {
-        left: 691px;
-        top: 580px;
-      }
-      .ellipse3 {
-        height: 1200px;
-        width: 1200px;
-      }
-      .ellipse3-white-dot {
-        left: 957px;
-        top: 160px;
-      }
-      .ellipse4 {
-        width: 1500px;
-        height: 1400px;
-      }
-      .ellipse4-white-dot {
-        left: 1210px;
-        top: 626px;
-      }
-      .ellipse5 {
-        height: 2000px;
-        width: 1400px;
-        margin-left: 200px;
-      }
-      .ellipse5-white-dot {
-        left: 1537px;
-        top: 100px;
-      }
-    }
+    // .ellipse_img_vector {
+    //   height: 100%;
+    //   width: 100%;
+    //   .ellipse {
+    //     position: absolute;
+    //   }
+    //   .white-dot {
+    //     height: 8px;
+    //     width: 8px;
+    //     background-color: #fff;
+    //     border-radius: 4px;
+    //     position: absolute;
+    //   }
+    //   // .ellipse1-wrapper {
+    //   //   height: 100%;
+    //   //   width: 100%;
+    //   // }
+    //   // .ellipse2-wrapper {
+    //   //   height: 100%;
+    //   //   width: 100%;
+    //   // }
+    //   // .ellipse3-wrapper {
+    //   //   height: 100%;
+    //   //   width: 100%;
+    //   // }
+    //   // .ellipse4-wrapper {
+    //   //   height: 100%;
+    //   //   width: 100%;
+    //   // }
+    //   // .ellipse5-wrapper {
+    //   //   height: 100%;
+    //   //   width: 100%;
+    //   // }
+    //   .ellipse1 {
+    //     height: 800px;
+    //     width: 700px;
+    //   }
+    //   .ellipse1-white-dot {
+    //     left: 500px;
+    //     top: 125px;
+    //   }
+    //   .ellipse2 {
+    //     height: 960px;
+    //     width: 900px;
+    //   }
+    //   .ellipse2-white-dot {
+    //     left: 691px;
+    //     top: 580px;
+    //   }
+    //   .ellipse3 {
+    //     height: 1200px;
+    //     width: 1200px;
+    //   }
+    //   .ellipse3-white-dot {
+    //     left: 957px;
+    //     top: 160px;
+    //   }
+    //   .ellipse4 {
+    //     width: 1500px;
+    //     height: 1400px;
+    //   }
+    //   .ellipse4-white-dot {
+    //     left: 1210px;
+    //     top: 626px;
+    //   }
+    //   .ellipse5 {
+    //     height: 2000px;
+    //     width: 1400px;
+    //     margin-left: 200px;
+    //   }
+    //   .ellipse5-white-dot {
+    //     left: 1537px;
+    //     top: 100px;
+    //   }
+    // }
     .moneymarket-section-container {
       padding: 0 16%;
       position: relative;

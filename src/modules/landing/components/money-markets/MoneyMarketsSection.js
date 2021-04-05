@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 
 import TwoColumnSectionContainer from '../../../../shared/components/TwoColumnSection/TwoColumnSectionContainer';
 import YelloVectorImage from '../../../../assets/icons/yellow-vector.png';
@@ -29,7 +30,7 @@ const marketInfoStates = [
 const MoneyMarketsSection = () => (
   <section className="moneymarket-section-container">
     <div className="moneymarket-section">
-      <TwoColumnSectionContainer
+      {/* <TwoColumnSectionContainer
         className="moneymarket-two-column-section"
         leftSection={{
           title: (
@@ -62,9 +63,26 @@ const MoneyMarketsSection = () => (
           ),
         }}
         widthRatio="4:5"
-      />
+      /> */}
+      
+      <StyledHero>
+        
+          <Title className="title">Fortress Total Protocol Value</Title>
+          <Number >$508,890,999.29</Number>
+          <Text className="title">A Decentralized Marketplace for <StyledText>Lenders and Borrowers</StyledText> with Borderless Stablecoins.</Text>
+          <Button
+            variant="contained"
+            className="launchapp-btn"
+            onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_blank'); }}
+          >
+            Enter App
+          </Button>
+        
+      </StyledHero>
+      
+      
     </div>
-    <div className="market-info-wrapper">
+    {/* <div className="market-info-wrapper">
       <div className="market-info-content">
         {
           marketInfoStates.map(marketInfo => (
@@ -80,8 +98,110 @@ const MoneyMarketsSection = () => (
           ))
         }
       </div>
-    </div>
+    </div> */}
   </section>
 );
+
+
+
+const Title = styled.h1`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  
+  margin: 0 0 29px 0;
+  text-align: center;
+
+  text-transform: capitalize;
+
+ 
+
+  @media (max-width: 768px) {
+
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  /* identical to box height, or 20px */
+  margin: 200px 0 0 0;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+
+
+
+    }
+`
+const Number = styled.p`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 102px;
+  /* identical to box height */
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #F7C408;
+
+  @media (max-width: 768px) {
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 51px;
+  /* identical to box height */
+
+  margin: 0;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #F7C408;
+  }
+`
+const Text = styled.p`
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  margin: 26px 0 71px 0;
+  text-transform: capitalize;
+  width: 56%;
+
+
+  @media (max-width: 768px) {
+    font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  width: 100%;
+
+
+  }
+  
+`
+const StyledText = styled.span`
+  font-weight: bold;
+`
+
+const StyledHero = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    height: 100%;
+  }
+`
+const Flex = styled.div`
+
+`
 
 export default MoneyMarketsSection;

@@ -36,33 +36,9 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
           rounded
           style={{ display: 'none'}}
         />
+        
         <div className={`menu-items ${mobileMenuState && 'visible'}`}>
-          {menuItems.map((menuItem) => (
-            <div
-              className="menu-item"
-              onClick={() => {
-                setMobileMenuState(false);
-                menuItem.scrollSection &&
-                  document
-                    .getElementById(menuItem.scrollSection)
-                    .scrollIntoView({ block: 'start', behavior: 'smooth' });
-              }}
-            >
-              {menuItem.name}
-            </div>
-          ))}
-          {
-            <div
-              className="menu-item"
-              onClick={() => {
-                window.open(`/Audit.pdf`, '_blank');
-              }}
-            >
-              Audit
-            </div>
-          }
-          
-          <div className="menu-item">
+        <div className="menu-item">
             
             <Brightness5OutlinedIcon
               className="brightness"
@@ -88,8 +64,52 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               }
             />
           </div>
+          {/* {menuItems.map((menuItem) => (
+            <div
+              className="menu-item"
+              onClick={() => {
+                setMobileMenuState(false);
+                menuItem.scrollSection &&
+                  document
+                    .getElementById(menuItem.scrollSection)
+                    .scrollIntoView({ block: 'start', behavior: 'smooth' });
+              }}
+            >
+              {menuItem.name}
+            </div>
+          ))} */}
+          {
+            <>
+              <div
+                className="menu-item"
+                onClick={() => {
+                  window.open(`/`, '_blank');
+                }}
+              >
+                DOCS
+              </div>
+              <div
+                className="menu-item"
+                onClick={() => {
+                  window.open(`/`, '_blank');
+                }}
+              >
+                WHITE PAPER
+              </div>
+              <div
+                className="menu-item"
+                onClick={() => {
+                  window.open(`/Audit.pdf`, '_blank');
+                }}
+              >
+                AUDITS AND SECURITY
+              </div>
+            </>
+          }
+          
+          
         </div>
-        <div className={`whitepaper-wrapper ${mobileMenuState && 'visible'}`}>
+        {/* <div className={`whitepaper-wrapper ${mobileMenuState && 'visible'}`}>
           <Button 
             variant="contained"
             className="whitepaper-btn"
@@ -99,7 +119,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
           >
             White paper
           </Button>
-        </div>
+        </div> */}
       </header>
     </div>
   );

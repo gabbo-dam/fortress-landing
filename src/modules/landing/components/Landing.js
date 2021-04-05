@@ -22,7 +22,7 @@ const Landing = ({ theme }) => (
                 style={{ position: 'absolute' }}
               />
             ))}
-            <svg width="1920" height="1300" fill="none" color="black">
+            {/* <svg width="1920" height="1300" fill="none" color="black">
               <path
                 d="M-200,300a400,400 0 1,0 800,0a400,400 0 1,0 -800,0"
                 stroke={theme === 'dark' ? 'white' : 'black'}
@@ -61,7 +61,7 @@ const Landing = ({ theme }) => (
                 strokeOpacity=".1"
                 strokeWidth="1"
               />
-            </svg>
+            </svg> */}
           </div>
         </div>
       </div>
