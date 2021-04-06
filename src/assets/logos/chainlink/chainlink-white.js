@@ -1,6 +1,6 @@
 import * as React from "react"
 
-function ChainLink(props) {
+function ChainLinkWhite(props) {
   return (
     <svg
       width={285}
@@ -35,4 +35,4 @@ function ChainLink(props) {
   )
 }
 
-export default ChainLink
+export default ChainLinkWhite

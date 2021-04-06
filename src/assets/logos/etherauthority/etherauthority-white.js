@@ -1,6 +1,6 @@
 import React from "react";
 
-function EtherAuthority() {
+function EtherAuthorityWhite() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -34,4 +34,4 @@ function EtherAuthority() {
   );
 }
 
-export default EtherAuthority;
+export default EtherAuthorityWhite;

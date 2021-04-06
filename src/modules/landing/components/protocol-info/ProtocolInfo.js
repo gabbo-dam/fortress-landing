@@ -13,13 +13,18 @@ import bg3 from '../../../../assets/icons/bg3.svg'
 import Jetswap from '../../../../assets/logos/jetswap'
 import Jetswapfinance from '../../../../assets/logos/jetswapfinance'
 import BandProtocol from '../../../../assets/logos/bandprotocol'
-import ChainLink from '../../../../assets/logos/chainlink'
-import EtherAuthority from '../../../../assets/logos/etherauthority';
+import ChainLinkWhite from '../../../../assets/logos/chainlink/chainlink-white'
+import ChainLinkDark from '../../../../assets/logos/chainlink/chainlink-dark'
 import Hash0x from '../../../../assets/logos/hash0x';
+import EtherAuthorityWhite from '../../../../assets/logos/etherauthority/etherauthority-white';
+import EtherAuthorityDark from '../../../../assets/logos/etherauthority/etherauthority-dark.png';
 
 
 const ProtocolInfo = ({ theme }) =>{
   const cardtheme = () => theme === 'dark' ?  '#101010'  : '#F3F3F3';
+  const inputtheme = () => theme === 'dark' ?  '#0C0C0C'  : '#F8F8F8';
+  const inputbordertheme = () => theme === 'dark' ?  '#272727'  : '#CFCFCF';
+  const colortheme = () => theme === 'dark' ?  '#fff'  : '#000';
   return(
   
   // <section className="protocolinfo-section-container" id="protocolinfo-section-container">
@@ -87,26 +92,27 @@ const ProtocolInfo = ({ theme }) =>{
 
     <Grid>
       <StyledCard style={{background:cardtheme()}}>
-        <Jetswap />
+        <Jetswap fill={colortheme()} />
       </StyledCard>
       <StyledCard style={{background:cardtheme()}}>
-        <Jetswapfinance />
+        <Jetswapfinance fill={colortheme()} />
       </StyledCard>
       <StyledCard style={{background:cardtheme()}}>
-        <BandProtocol />
+        <BandProtocol fill={colortheme()}/>
       </StyledCard>
       <StyledCard style={{background:cardtheme()}}>
-        <ChainLink />
+      {theme==='dark' ? <ChainLinkWhite /> : <ChainLinkDark />}      
+        
       </StyledCard>
     </Grid>
     <Title className="title">Auditors</Title>
     <Text>Lorem Ipsum set qumija iauj</Text>
     <Grid>
     <StyledCard style={{background:cardtheme()}}>
-    <EtherAuthority />
+      {theme==='dark' ? <EtherAuthorityWhite /> : <img src={EtherAuthorityDark} alt='EtherAutority' />}
     </StyledCard>
     <StyledCard style={{background:cardtheme()}}>
-      <Hash0x />
+      <Hash0x fill={colortheme()} />
     </StyledCard>
     </Grid>
   
@@ -117,8 +123,9 @@ const ProtocolInfo = ({ theme }) =>{
         <Title2 className="title">STAY IN TOUCH</Title2>
         
         <Text2 className="title">EMAIL SUBSCRIPTION</Text2>
-        <Input placeholder='enter your email address..'></Input>
+        <Input style={{background: inputtheme(), borderColor: inputbordertheme()}} placeholder='enter your email address..'></Input>
         <Button
+          style={{marginBottom: '87px'}}
           variant="contained"
           className="launchapp-btn"
           // onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_blank'); }}
@@ -215,7 +222,8 @@ const StyledCard = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-
+      max-width: 260px;
+      padding 25px;
       width: 100%;
       height: 145px;
       margin: 0 auto;
@@ -300,13 +308,14 @@ const Input = styled.input`
   max-width: 400px;
   width: 100%;
   height: 60px;
-  background: #0C0C0C;
   border: 1px solid #272727;
   box-sizing: border-box;
   border-radius: 12px;
   color: #ffffff;
   text-align: center;
   font-size: 18px;
+
+  outline: none;
 
   ::placeholder {
     color: rgba(147,147,147,0.3);
