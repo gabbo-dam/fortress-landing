@@ -23,7 +23,7 @@ const MainTemplate = ({
     </div>
     {
       !hideFooter && (
-        <AppFooter />
+        <AppFooter theme={theme} />
       )
     }
   </div>
