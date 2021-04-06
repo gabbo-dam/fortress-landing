@@ -91,29 +91,40 @@ const ProtocolInfo = ({ theme }) =>{
     <Text>Lorem Ipsum set qumija iauj</Text>
 
     <Grid>
-      <StyledCard style={{background:cardtheme()}}>
-        <Jetswap fill={colortheme()} />
-      </StyledCard>
-      <StyledCard style={{background:cardtheme()}}>
-        <Jetswapfinance fill={colortheme()} />
-      </StyledCard>
-      <StyledCard style={{background:cardtheme()}}>
-        <BandProtocol fill={colortheme()}/>
-      </StyledCard>
-      <StyledCard style={{background:cardtheme()}}>
-      {theme==='dark' ? <ChainLinkWhite /> : <ChainLinkDark />}      
-        
-      </StyledCard>
+      <Anchor href='/'>
+        <StyledCard style={{background:cardtheme()}}>
+          <Jetswapfinance fill={colortheme()} />
+        </StyledCard>
+      </Anchor>
+      <Anchor href='/'>
+        <StyledCard style={{background:cardtheme()}}>
+          <Jetswap fill={colortheme()} />
+        </StyledCard>
+      </Anchor>
+      <Anchor href='/'>
+        <StyledCard style={{background:cardtheme()}}>
+          <BandProtocol fill={colortheme()}/>
+        </StyledCard>
+      </Anchor>
+      <Anchor href='/'>
+        <StyledCard style={{background:cardtheme()}}>
+        {theme==='dark' ? <ChainLinkWhite /> : <ChainLinkDark />}      
+        </StyledCard>
+      </Anchor>
     </Grid>
     <Title className="title">Auditors</Title>
     <Text>Lorem Ipsum set qumija iauj</Text>
     <Grid>
-    <StyledCard style={{background:cardtheme()}}>
-      {theme==='dark' ? <EtherAuthorityWhite /> : <img src={EtherAuthorityDark} alt='EtherAutority' />}
-    </StyledCard>
-    <StyledCard style={{background:cardtheme()}}>
-      <Hash0x fill={colortheme()} />
-    </StyledCard>
+    <Anchor href='/'>
+      <StyledCard style={{background:cardtheme()}}>
+        {theme==='dark' ? <EtherAuthorityWhite /> : <img src={EtherAuthorityDark} alt='EtherAutority' />}
+      </StyledCard>
+    </Anchor>
+    <Anchor href='/'>
+      <StyledCard style={{background:cardtheme()}}>
+        <Hash0x fill={colortheme()} />
+      </StyledCard>
+    </Anchor>
     </Grid>
   
   </Container>
@@ -137,6 +148,11 @@ const ProtocolInfo = ({ theme }) =>{
     </Background>
   </>
 )};
+
+const Anchor = styled.a`
+
+`
+
 
 const Background = styled.div`
 background-image: url(${bg2});
@@ -220,6 +236,29 @@ const StyledCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform .5s;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+    border-radius: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
 
   @media (max-width: 768px) {
       max-width: 260px;

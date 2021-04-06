@@ -50,7 +50,7 @@ const AppFooter = ({theme}) => {
           <Instagram fill={colortheme()}/> 
           <Telegram fill={colortheme()}/> 
           <Github fill={colortheme()}/> 
-          <Discord fill={colortheme()}/> 
+          {/* <Discord fill={colortheme()}/>  */}
         </SocialMediaIcon>
         <SocialMedia style={{color: colortheme()}}>
         <Block>    
@@ -65,18 +65,16 @@ const AppFooter = ({theme}) => {
         <Block>
           <Github fill={colortheme()}/> <Social>Github</Social> <br />
         </Block>
-        <Block>
+        {/* <Block>
           <Discord fill={colortheme()}/> <Social>Discord</Social> <br />
-        </Block>
+        </Block> */}
         </SocialMedia>
         <Grid style={{color: colortheme()}}>
           
           <Anchor>Aave Protocol</Anchor>
-          <Anchor>Flash Loans</Anchor>
           <Anchor>Careers</Anchor>
           <Anchor>Privacy Policy</Anchor>
           <Anchor>Developers</Anchor>
-          <Anchor>Rate Switching</Anchor>
           <Anchor>Branding</Anchor>
           <Anchor>Cookie Policy</Anchor>
           <Anchor>Security</Anchor>
@@ -85,7 +83,6 @@ const AppFooter = ({theme}) => {
           <Anchor>ATokens</Anchor>
           <Anchor>Aavenomics</Anchor>
           <Anchor>Contact</Anchor>
-          <Anchor>Bug Bounty</Anchor>
           <Anchor>Ecosystem</Anchor>
           <Anchor>Terms of Use</Anchor>
         </Grid>
@@ -114,16 +111,19 @@ const AppFooter = ({theme}) => {
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);  
+  grid-template-rows: repeat(4, 1fr);  
+  width: 70%;
+  height: 275px;
 
-  margin-left: 150px;
-  grid-auto-flow: column;
+  // grid-auto-flow: column;
 
   @media (max-width: 768px){
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-auto-flow: row;
     margin: 0 auto;
+    width: auto;
+    height:auto;
     text-align: center;
   }
 `
@@ -168,8 +168,8 @@ justify-content: space-between;
 const SocialMedia = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(5, 1fr);  
-
+  grid-template-rows: repeat(4, 1fr);  
+  width: 20%;
   grid-auto-flow: column;
   
 

@@ -6,7 +6,7 @@ function Twitter(props) {
       xmlns="http://www.w3.org/2000/svg"
       width="28"
       height="23"
-      fill="none"
+      fill="none" 
       viewBox="0 0 28 23"
       {...props}
     >
