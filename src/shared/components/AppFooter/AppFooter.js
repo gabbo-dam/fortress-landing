@@ -54,16 +54,16 @@ const AppFooter = ({theme}) => {
         </SocialMediaIcon>
         <SocialMedia style={{color: colortheme()}}>
         <Block>    
-          <Twitter fill={colortheme()}/> <Social>Twitter</Social> <br />
+          <Twitter style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Twitter</Social> <br />
         </Block>
         <Block>
-          <Instagram fill={colortheme()}/> <Social>Instagram</Social> <br />
+          <Instagram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Instagram</Social> <br />
         </Block>
         <Block>
-          <Telegram fill={colortheme()}/> <Social>Telegram</Social> <br />
+          <Telegram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Telegram</Social> <br />
         </Block>
         <Block>
-          <Github fill={colortheme()}/> <Social>Github</Social> <br />
+          <Github style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Github</Social> <br />
         </Block>
         {/* <Block>
           <Discord fill={colortheme()}/> <Social>Discord</Social> <br />
