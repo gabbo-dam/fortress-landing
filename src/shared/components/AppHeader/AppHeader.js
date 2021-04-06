@@ -96,14 +96,14 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               >
                 WHITE PAPER
               </div>
-              <div
+              {/* <div
                 className="menu-item"
                 onClick={() => {
                   window.open(`/Audit.pdf`, '_blank');
                 }}
               >
                 AUDITS AND SECURITY
-              </div>
+              </div> */}
             </>
           }
           

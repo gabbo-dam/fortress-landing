@@ -16,6 +16,7 @@ import Wave2 from '../../../../assets/icons/wave2.svg';
 import Wave2_light from '../../../../assets/icons/wave2_light.svg';
 import Wave3 from '../../../../assets/icons/wave3.svg';
 import Wave3_light from '../../../../assets/icons/wave3_light.svg';
+import Assets from './components/Assets'
 
 const EarnIntereset = ({
   newTokenData,
@@ -223,6 +224,22 @@ const EarnIntereset = ({
         </div>
       </Container2>
       </Flex>
+      <Table>
+        <TableFlex>
+          <TableTitle style={{color: colortheme()}}>Assets</TableTitle>
+          <TableTitle style={{color: colortheme()}}>Supplied</TableTitle>
+          <TableTitle style={{color: colortheme()}}>Borrowed</TableTitle>
+          <TableTitle style={{color: colortheme()}}>Supply APY*</TableTitle>
+          <TableTitle style={{color: colortheme()}}>Borrow APR*</TableTitle>
+        </TableFlex>
+        <Assets theme={theme}/>
+        <Assets theme={theme}/>
+        <Assets theme={theme}/>
+        <Assets theme={theme}/>
+        <Assets theme={theme}/>
+        <Assets theme={theme}s/>
+      </Table>
+
     </Container>
     </>
   );
@@ -237,6 +254,7 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
+
 const Container1 = styled.div``
 const Container2 = styled.div``
 const Flex = styled.div`
@@ -248,6 +266,44 @@ align-items: center;
   flex-direction: column;
 }
 `
+const TableFlex = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 83%;
+
+@media (max-width:768px){
+  flex-direction: row;
+  width: 105%;
+  justify-content: space-around;
+}
+`
+const TableTitle = styled.h3`
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 111%;
+
+/* identical to box height, or 27px */
+
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+@media (max-width:768px){
+  font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 111%;
+/* or 14px */
+
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #000000;
+}
+`
+const Table = styled.div``
+
 
 const Title = styled.h2`
 
