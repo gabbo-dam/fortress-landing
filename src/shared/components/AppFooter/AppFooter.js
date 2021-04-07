@@ -39,54 +39,54 @@ const AppFooter = ({theme}) => {
       {/* <AppHeader isFooter /> */}
       <Flex2>
         <LogoFooter fill={colortheme()} />
-        <SocialMediaIcon>
-          <Anchor><Twitter fill={colortheme()}/> </Anchor>
-          <Anchor><Instagram fill={colortheme()}/> </Anchor>
-          <Anchor><Telegram fill={colortheme()}/> </Anchor>
-          <Anchor><Github fill={colortheme()}/> </Anchor>
-          <Anchor><Discord fill={colortheme()}/> </Anchor>
-        </SocialMediaIcon>
+        <Copy className="licence-details">
+            © 2021 Developed by Jetfuel Finance Dev Team
+        </Copy>
       </Flex2>
       <Divider />
       <Flex>
-        
-        {/* <SocialMedia style={{color: colortheme()}}>
+        <SocialMediaIcon>
+          <Twitter fill={colortheme()}/> 
+          <Instagram fill={colortheme()}/> 
+          <Telegram fill={colortheme()}/> 
+          <Github fill={colortheme()}/> 
+          {/* <Discord fill={colortheme()}/>  */}
+        </SocialMediaIcon>
+        <SocialMedia style={{color: colortheme()}}>
         <Block>    
-          <Anchor><Twitter style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Twitter</Social></Anchor> <br />
+          <Twitter style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Twitter</Social> <br />
         </Block>
         <Block>
-          <Anchor><Instagram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Instagram</Social></Anchor> <br />
+          <Instagram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Instagram</Social> <br />
         </Block>
         <Block>
-          <Anchor><Telegram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Telegram</Social></Anchor> <br />
+          <Telegram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Telegram</Social> <br />
         </Block>
         <Block>
-          <Anchor><Github style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Github</Social></Anchor> <br />
+          <Github style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Github</Social> <br />
         </Block>
-        <Block>
+        {/* <Block>
           <Discord fill={colortheme()}/> <Social>Discord</Social> <br />
-        </Block>
-        </SocialMedia> */}
+        </Block> */}
+        </SocialMedia>
         <Grid style={{color: colortheme()}}>
-        <Text><Anchor>Aave Protocol</Anchor></Text>
-        <Text><Anchor>Careers</Anchor></Text>
-        <Text><Anchor>Audits and Security</Anchor></Text>
-        <Text><Anchor>Privacy Policy</Anchor></Text>
-        <Text><Anchor>Developers</Anchor></Text>
-        <Text><Anchor>Branding</Anchor></Text>
-        <Text><Anchor>Cookie Policy</Anchor></Text>
-        <Text><Anchor>Security</Anchor></Text>
-        <Text><Anchor>Whitepaper</Anchor></Text>
-        <Text><Anchor>Blog</Anchor></Text>
-        <Text><Anchor>ATokens</Anchor></Text>
-        <Text><Anchor>Aavenomics</Anchor></Text>
-        <Text><Anchor>Contact</Anchor></Text>
-        <Text><Anchor>Ecosystem</Anchor></Text>
-        <Text><Anchor>Terms of Use</Anchor></Text>
+          
+          <Anchor>Aave Protocol</Anchor>
+          <Anchor>Careers</Anchor>
+          <Anchor>Privacy Policy</Anchor>
+          <Anchor>Developers</Anchor>
+          <Anchor>Branding</Anchor>
+          <Anchor>Cookie Policy</Anchor>
+          <Anchor>Security</Anchor>
+          <Anchor>Whitepaper</Anchor>
+          <Anchor>Blog</Anchor>
+          <Anchor>ATokens</Anchor>
+          <Anchor>Aavenomics</Anchor>
+          <Anchor>Contact</Anchor>
+          <Anchor>Ecosystem</Anchor>
+          <Anchor>Terms of Use</Anchor>
         </Grid>
-        <Copy className="licence-details">
-          Copyright © 2021 FORTRESS
-        </Copy>
+        
         </Flex>
       {/* <div className="app-details">
         
@@ -114,7 +114,6 @@ const Grid = styled.div`
   grid-template-rows: repeat(4, 1fr);  
   width: 70%;
   height: 275px;
-  margin: 0 auto;
 
   // grid-auto-flow: column;
 
@@ -130,14 +129,7 @@ const Grid = styled.div`
 `
 
 const Anchor = styled.a`
-
-cursor: pointer;
-
-`
-
-const Text = styled.p`
 width: 150px;
-margin: 0;
 @media (max-width: 768px){
   height: 50px;
 }
@@ -158,9 +150,7 @@ margin: 35px 0 0 0 ;
 `
 const Copy = styled.div`
 color: #939393;
-display:flex;
-align-items: flex-end;
-margin: 0 0 0 50px;
+diplay:block;
 
 @media (max-width: 768px){
   display:none;
@@ -195,10 +185,8 @@ display: inline-block;
 margin: 0 0 0 20px;
 `
 const SocialMediaIcon = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 20%;
-  
+  display: none;
+
 
   @media (max-width: 768px){
 

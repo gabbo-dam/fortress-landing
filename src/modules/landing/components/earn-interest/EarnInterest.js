@@ -17,6 +17,8 @@ import Wave2_light from '../../../../assets/icons/wave2_light.svg';
 import Wave3 from '../../../../assets/icons/wave3.svg';
 import Wave3_light from '../../../../assets/icons/wave3_light.svg';
 import Assets from './components/Assets'
+import AssetsMobile from './components/AssetsMobile'
+import Eth from '../../../../assets/logos/eth/eth.svg'
 
 const EarnIntereset = ({
   newTokenData,
@@ -224,23 +226,38 @@ const EarnIntereset = ({
         </div>
       </Container2>
       </Flex>
+      </Container>
       <Table>
-        <TableFlex>
-          <TableTitle style={{color: colortheme()}}>Assets</TableTitle>
-          <TableTitle style={{color: colortheme()}}>Supplied</TableTitle>
-          <TableTitle style={{color: colortheme()}}>Borrowed</TableTitle>
-          <TableTitle style={{color: colortheme()}}>Supply APY*</TableTitle>
-          <TableTitle style={{color: colortheme()}}>Borrow APR*</TableTitle>
-        </TableFlex>
-        <Assets theme={theme}/>
-        <Assets theme={theme}/>
-        <Assets theme={theme}/>
-        <Assets theme={theme}/>
-        <Assets theme={theme}/>
-        <Assets theme={theme}s/>
+      <Mobile>
+         <TableFlex2>
+            <TableTitle style={{color: colortheme()}}>Assets</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Supply APY*</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Borrow APR*</TableTitle>
+          </TableFlex2>
+        <AssetsMobile theme={theme} />
+        <AssetsMobile theme={theme} />
+        <AssetsMobile theme={theme} />
+        <AssetsMobile theme={theme} />
+        <AssetsMobile theme={theme} />
+        <AssetsMobile theme={theme} />
+        <AssetsMobile theme={theme} />
+      </Mobile>
+        <DeskTop>
+          <TableFlex>
+            <TableTitle style={{color: colortheme()}}>Assets</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Supplied</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Borrowed</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Supply APY*</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Borrow APY*</TableTitle>
+          </TableFlex>
+            <Assets theme={theme}/>
+            <Assets theme={theme}/>
+            <Assets theme={theme}/>
+            <Assets theme={theme}/>
+            <Assets theme={theme}/>
+            <Assets theme={theme}/>
+        </DeskTop>
       </Table>
-
-    </Container>
     </>
   );
 };
@@ -249,11 +266,115 @@ const mapStateToProps = (state) => ({
   theme: state.landing.theme,
 });
 
+const MobileTable = styled.div`
+  
+`
+
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
 `
 
+const DeskTop = styled.div`
+display: block;
+@media (max-width:768px){
+  Display: none;
+}
+`
+const Mobile = styled.div`
+display: none;
+@media (max-width:768px){
+  Display: block;
+}
+`
+const Asset = styled.p`
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 111%;
+/* identical to box height, or 27px */
+
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+@media (max-width:768px){
+  font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 111%;
+/* or 14px */
+
+text-align: center;
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #000000;
+}
+
+`
+const SupplyAPY = styled.p`
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 111%;
+/* identical to box height, or 27px */
+
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+@media (max-width:768px){
+  font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 111%;
+/* or 14px */
+
+text-align: center;
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #000000;
+}
+`
+
+const BorrowAPR = styled.p`
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 111%;
+/* identical to box height, or 27px */
+
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+@media (max-width:768px){
+  font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 111%;
+/* or 14px */
+
+text-align: center;
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #000000;
+}
+`
+
+const StyledEth = styled.img`
+margin: 0 10px -5px 0;
+
+@media (max-width: 768px){
+    width: 15px;
+    margin: 0 10px -5px -15px;
+}
+
+`
 
 const Container1 = styled.div``
 const Container2 = styled.div``
@@ -267,17 +388,40 @@ align-items: center;
 }
 `
 const TableFlex = styled.div`
-display: flex;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
 justify-content: space-between;
 align-items: center;
-width: 83%;
+width: 100%;
+text-align: center;
+
 
 @media (max-width:768px){
-  flex-direction: row;
-  width: 105%;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  
   justify-content: space-around;
 }
 `
+
+const TableFlex2 = styled.div`
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: space-between;
+align-items: center;
+width: 100%;
+text-align: center;
+
+@media (max-width:768px){
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  
+  border-radius: 13px;
+  justify-content: space-around;
+}
+`
+
 const TableTitle = styled.h3`
 font-style: normal;
 font-weight: normal;
@@ -292,7 +436,7 @@ text-transform: capitalize;
 @media (max-width:768px){
   font-style: normal;
 font-weight: normal;
-font-size: 10px;
+font-size: 13px;
 line-height: 111%;
 /* or 14px */
 
@@ -302,7 +446,15 @@ text-transform: capitalize;
 color: #000000;
 }
 `
-const Table = styled.div``
+const Table = styled.div`
+width: 80%;
+margin: 0 auto;
+
+@media (max-width: 768px) {
+  width: 100%;
+  margin: 0 auto;
+}
+`
 
 
 const Title = styled.h2`
