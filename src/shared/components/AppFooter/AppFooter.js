@@ -50,20 +50,20 @@ const AppFooter = ({theme}) => {
         </SocialMediaIconMobile>
         <Grid style={{color: colortheme()}}>
           
-          <Anchor>Aave Protocol</Anchor>
-          <Anchor>Careers</Anchor>
-          <Anchor>Privacy Policy</Anchor>
-          <Anchor>Developers</Anchor>
-          <Anchor>Branding</Anchor>
-          <Anchor>Cookie Policy</Anchor>
-          <Anchor>Security</Anchor>
-          <Anchor>Whitepaper</Anchor>
-          <Anchor>Blog</Anchor>
-          <Anchor>ATokens</Anchor>
-          <Anchor>Aavenomics</Anchor>
-          <Anchor>Contact</Anchor>
-          <Anchor>Ecosystem</Anchor>
-          <Anchor>Terms of Use</Anchor>
+          <Anchor href='/'>Aave Protocol</Anchor>
+          <Anchor href='/'>Careers</Anchor>
+          <Anchor href='/'>Privacy Policy</Anchor>
+          <Anchor href='/'>Developers</Anchor>
+          <Anchor href='/'>Branding</Anchor>
+          <Anchor href='/'>Cookie Policy</Anchor>
+          <Anchor href='/'>Security</Anchor>
+          <Anchor href='/'>Whitepaper</Anchor>
+          <Anchor href='/'>Blog</Anchor>
+          <Anchor href='/'>ATokens</Anchor>
+          <Anchor href='/'>Aavenomics</Anchor>
+          <Anchor href='/'>Contact</Anchor>
+          <Anchor href='/'>Ecosystem</Anchor>
+          <Anchor href='/'>Terms of Use</Anchor>
         </Grid> 
       </Flex2>
       <Divider />
