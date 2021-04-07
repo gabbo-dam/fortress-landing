@@ -23,6 +23,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
       payload: mode,
     });
   };
+  const colortheme = () => theme === 'dark' ?  '#fff'  : '#000';
   return (
     <div className="app-header-container" id="app-header">
       <header className={`app-header ${mobileMenuState}`}>
@@ -100,6 +101,23 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               >
                 WHITE PAPER
               </div>
+
+              <MobileFooter>
+                <Grid style={{color: colortheme()}}>
+                  
+                  <Anchor>Aave Protocol</Anchor>
+
+                  <Anchor>Privacy Policy</Anchor>
+                  <Anchor>Developers</Anchor>
+                  <Anchor>Branding</Anchor>
+                  <Anchor>Cookie Policy</Anchor>
+                  <Anchor>Security</Anchor>
+                  <Anchor>Whitepaper</Anchor>
+                  <Anchor>Blog</Anchor>
+                  <Anchor>Contact</Anchor>
+                  <Anchor>Terms of Use</Anchor>
+                </Grid> 
+              </MobileFooter>
               {/* <div
                 className="menu-item"
                 onClick={() => {
@@ -132,6 +150,44 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
 const mapStateToProps = (state) => ({
   theme: state.landing.theme,
 });
+
+const MobileFooter = styled.div`
+display: none; 
+
+@media (max-width:768px) {
+  display: block;
+  
+}
+`
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);  
+  width: 70%;
+  height: 200px;
+  margin-right: -60px;
+  // grid-auto-flow: column;
+
+  @media (max-width: 768px){
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    margin: 50px auto 0 auto;
+    width: auto;
+    height:auto;
+    text-align: center;
+    align-items: center;
+    
+  }
+`
+
+const Anchor = styled.a`
+
+@media (max-width: 768px){
+  height: 50px;
+  
+}
+`
 
 const Img = styled.img`
 

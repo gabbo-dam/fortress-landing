@@ -10,6 +10,7 @@ import BUSDImage from '../../../../assets/icons/busd.svg';
 import FortressImage from '../../../../assets/icons/fortress.svg';
 import bg2 from '../../../../assets/icons/bg2.svg'
 import bg3 from '../../../../assets/icons/bg3.svg'
+import bg4 from '../../../../assets/icons/bg4.svg'
 import Jetswap from '../../../../assets/logos/jetswap'
 import Jetswapfinance from '../../../../assets/logos/jetswapfinance'
 import BandProtocol from '../../../../assets/logos/bandprotocol'
@@ -25,6 +26,7 @@ const ProtocolInfo = ({ theme }) =>{
   const inputtheme = () => theme === 'dark' ?  '#0C0C0C'  : '#F8F8F8';
   const inputbordertheme = () => theme === 'dark' ?  '#272727'  : '#CFCFCF';
   const colortheme = () => theme === 'dark' ?  '#fff'  : '#000';
+  const bgtheme = () => theme === 'dark' ?  bg2  : bg4;
   return(
   
   // <section className="protocolinfo-section-container" id="protocolinfo-section-container">
@@ -85,7 +87,7 @@ const ProtocolInfo = ({ theme }) =>{
   //   </div>
   // </section>
   <>
-  <Background >
+  <Background style={{backgroundImage: `url(${bgtheme()})`}}>
   <Container>
     <Title className="title">Collaborations</Title>
     <Text>Lorem Ipsum set qumija iauj</Text>
