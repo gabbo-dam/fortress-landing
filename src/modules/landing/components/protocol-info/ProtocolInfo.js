@@ -90,7 +90,7 @@ const ProtocolInfo = ({ theme }) =>{
   <Background style={{backgroundImage: `url(${bgtheme()})`}}>
   <Container>
     <Title className="title">Collaborations</Title>
-    <Text>Lorem Ipsum set qumija iauj</Text>
+    <Text>These collaboraters actively contribute to the Fortress Protocol</Text>
 
     <Grid>
       <Anchor href='/'>
@@ -115,7 +115,7 @@ const ProtocolInfo = ({ theme }) =>{
       </Anchor>
     </Grid>
     <Title className="title">Auditors</Title>
-    <Text>Lorem Ipsum set qumija iauj</Text>
+    <Text>Fortress has been rigorously analyzed by top-tier security audit companies</Text>
     <Grid>
     <Anchor href='/'>
       <StyledCard style={{background:cardtheme()}}>

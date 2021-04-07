@@ -33,7 +33,7 @@ grid-template-columns: repeat(6, 1fr);
 justify-content: space-between;
 align-items: center;
 text-align: center;
-border: 1px solid rgba(52,52,52,0.6);
+border: 1px solid #e7e7e7;
 border-radius: 13px;
 margin-bottom: 15px;
 

@@ -195,7 +195,7 @@ const EarnIntereset = ({
       <Flex>
         <Container1>
           <Title style={{color: colortheme()}}>Assets</Title>
-          <Text>lorem ipsum set qumija iauj</Text>
+          <Text>Supply and borrow up to 11 assets to begin earning FTS</Text>
         </Container1>
         <Container2>
           <div style={{display: 'flex'}} className="with-fts">
