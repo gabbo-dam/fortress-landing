@@ -162,9 +162,7 @@ justify-content: space-between;
 
 @media (max-width: 768px){
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 `
 const SocialMedia = styled.div`
@@ -194,8 +192,7 @@ const SocialMediaIcon = styled.div`
 
     display: flex;
     justify-content: space-around;
-    width: 80%;
-    margin: 50px 0 0 0;
+    margin: 0 0 50px 0;
   }
 `
 
@@ -204,10 +201,6 @@ const Divider = styled.div`
   height: 1px;
   background: rgba(52, 52, 52, 0.6);  
   margin: 40px 0 0 0 ;
-  @media (max-width: 768px){
-
-    margin: 20px 0 0 0 ;
-  }
 `
 
 export default AppFooter;

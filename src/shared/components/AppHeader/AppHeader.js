@@ -38,7 +38,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
         />
         
         <div className={`menu-items ${mobileMenuState && 'visible'}`}>
-        <div className="menu-item">
+          <div className="menu-item">
             
             <Brightness5OutlinedIcon
               className="brightness"
@@ -59,7 +59,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
             <Brightness2OutlinedIcon
               className="brightness"
               onClick={() => toggleTheme('dark')}
-              style={
+              style={ 
                 theme === 'dark' ? { color: '#f7c408' } : { color: '#1B1B1B' }
               }
             />
