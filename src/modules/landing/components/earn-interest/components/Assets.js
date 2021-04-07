@@ -6,12 +6,12 @@ import Eth from '../../../../../assets/logos/eth/eth.svg'
 
 const Assets = ({ theme }) =>{
     const colortheme = () => theme === 'dark' ?  '#fff'  : '#000';
-    var bordertheme = () => theme === 'dark' ?  'rgba(21, 21, 21, 0.4)'  : 'rgba(233, 233, 233, 0.2)';
+    var bordertheme = () => theme === 'dark' ?  'rgba(52,52,52,0.6)'  : '#E7E7E7';
     
     return(
       <>
         
-        <TableFlex> 
+        <TableFlex  bordertheme={ bordertheme()} style={{border: `1px solid ${bordertheme()}`}}> 
           <Asset style={{color: colortheme()}}><StyledEth src={Eth} alt='eth'/>ETH</Asset>
           <Supplied style={{color: colortheme()}}>$1.06M</Supplied>
           <Borrowed style={{color: colortheme()}}>$1.06M</Borrowed>
@@ -33,8 +33,7 @@ grid-template-columns: repeat(6, 1fr);
 justify-content: space-between;
 align-items: center;
 text-align: center;
-
-border: 1px solid  #242424;
+border: 1px solid rgba(52,52,52,0.6);
 border-radius: 13px;
 margin-bottom: 15px;
 

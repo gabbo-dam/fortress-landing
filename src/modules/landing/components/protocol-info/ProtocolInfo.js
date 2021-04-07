@@ -136,7 +136,7 @@ const ProtocolInfo = ({ theme }) =>{
         <Title2 className="title">STAY IN TOUCH</Title2>
         
         <Text2 className="title">EMAIL SUBSCRIPTION</Text2>
-        <Input style={{background: inputtheme(), borderColor: inputbordertheme()}} placeholder='enter your email address..'></Input>
+        <Input style={{color: colortheme(),background: inputtheme(), borderColor: inputbordertheme()}} placeholder='enter your email address..'></Input>
         <Button
           style={{marginBottom: '87px'}}
           variant="contained"
