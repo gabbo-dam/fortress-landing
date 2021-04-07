@@ -230,7 +230,7 @@ const Text = styled.p`
 const StyledCard = styled.div`
   max-width: 409px;
   width: 100%;
-  height: 225px;
+  height: 187px;
   background-color: #F3F3F3;
   border-radius: 12px;
   display: flex;

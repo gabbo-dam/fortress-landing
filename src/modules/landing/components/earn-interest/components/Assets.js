@@ -6,6 +6,7 @@ import arrow from '../../../../../assets/logos/arrow/arrow-right.svg'
 
 const Assets = ({ theme }) =>{
     const colortheme = () => theme === 'dark' ?  '#fff'  : '#000';
+    var bordertheme = () => theme === 'dark' ?  'rgba(21, 21, 21, 0.4)'  : 'rgba(233, 233, 233, 0.2)';
     return(
       <>
         
@@ -39,7 +40,7 @@ margin-bottom: 15px;
 &:hover{
 
   border: 1px solid  rgba(247, 196, 8, 0.3) !important;
-  background-color: rgba(233,233,233,0.2) !important;
+  
 }
 
 @media (max-width:768px){

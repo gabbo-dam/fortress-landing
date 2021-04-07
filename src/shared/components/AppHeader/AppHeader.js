@@ -7,6 +7,8 @@ import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 import { Turn as Hamburger } from 'hamburger-react';
 import { connect } from 'react-redux';
 import { TOGGLE_THEME } from '../../../modules/landing/redux/actionTypes';
+import LightButton from '../../../assets/icons/buttonlight.svg'
+import DarkButton from '../../../assets/icons/buttondark.svg'
 
 const AppHeader = ({ isFooter, dispatch, theme }) => {
   const [mobileMenuState, setMobileMenuState] = useState(false);
@@ -32,7 +34,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
           className="menu-icon"
           toggle={toggleMenu}
           size={24}
-          color="#f7c408"
+          color={theme === 'light' ?  '#000000'  :  '#FFFFFF' }
           rounded
           style={{ display: 'none'}}
         />
@@ -40,7 +42,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
         <div className={`menu-items ${mobileMenuState && 'visible'}`}>
           <div className="menu-item">
             
-            <Brightness5OutlinedIcon
+            {/* <Brightness5OutlinedIcon
               className="brightness"
               onClick={() => toggleTheme('light')}
               style={
@@ -62,7 +64,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               style={ 
                 theme === 'dark' ? { color: '#f7c408' } : { color: '#1B1B1B' }
               }
-            />
+            /> */}
           </div>
           {/* {menuItems.map((menuItem) => (
             <div
@@ -80,6 +82,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
           ))} */}
           {
             <>
+              {theme === 'light' ? <img src={LightButton} onClick={() => toggleTheme('dark')} /> : <img src={DarkButton} onClick={() => toggleTheme('light')}/>}
               <div
                 className="menu-item"
                 onClick={() => {

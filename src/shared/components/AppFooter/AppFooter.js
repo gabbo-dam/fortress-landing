@@ -39,36 +39,6 @@ const AppFooter = ({theme}) => {
       {/* <AppHeader isFooter /> */}
       <Flex2>
         <LogoFooter fill={colortheme()} />
-        <Copy className="licence-details">
-            © 2021 Developed by Jetfuel Finance Dev Team
-        </Copy>
-      </Flex2>
-      <Divider />
-      <Flex>
-        <SocialMediaIcon>
-          <Twitter fill={colortheme()}/> 
-          <Instagram fill={colortheme()}/> 
-          <Telegram fill={colortheme()}/> 
-          <Github fill={colortheme()}/> 
-          {/* <Discord fill={colortheme()}/>  */}
-        </SocialMediaIcon>
-        <SocialMedia style={{color: colortheme()}}>
-        <Block>    
-          <Twitter style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Twitter</Social> <br />
-        </Block>
-        <Block>
-          <Instagram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Instagram</Social> <br />
-        </Block>
-        <Block>
-          <Telegram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Telegram</Social> <br />
-        </Block>
-        <Block>
-          <Github style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Github</Social> <br />
-        </Block>
-        {/* <Block>
-          <Discord fill={colortheme()}/> <Social>Discord</Social> <br />
-        </Block> */}
-        </SocialMedia>
         <Grid style={{color: colortheme()}}>
           
           <Anchor>Aave Protocol</Anchor>
@@ -85,7 +55,39 @@ const AppFooter = ({theme}) => {
           <Anchor>Contact</Anchor>
           <Anchor>Ecosystem</Anchor>
           <Anchor>Terms of Use</Anchor>
-        </Grid>
+        </Grid> 
+      </Flex2>
+      <Divider />
+      
+      <Flex>
+      <Copy className="licence-details">
+            © 2021 Developed by Jetfuel Finance Dev Team
+      </Copy>
+        <SocialMediaIcon>
+          <Twitter fill={colortheme()}/> 
+          <Instagram fill={colortheme()}/> 
+          <Telegram fill={colortheme()}/> 
+          <Github fill={colortheme()}/> 
+          {/* <Discord fill={colortheme()}/>  */}
+        </SocialMediaIcon>
+        {/* <SocialMedia style={{color: colortheme()}}>
+        <Block>    
+          <Twitter style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Twitter</Social> <br />
+        </Block>
+        <Block>
+          <Instagram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Instagram</Social> <br />
+        </Block>
+        <Block>
+          <Telegram style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Telegram</Social> <br />
+        </Block>
+        <Block>
+          <Github style={{margin:'0 0 -5px 0' }} fill={colortheme()}/> <Social>Github</Social> <br />
+        </Block>
+        <Block>
+          <Discord fill={colortheme()}/> <Social>Discord</Social> <br />
+        </Block>
+        </SocialMedia> */}
+        
         
         </Flex>
       {/* <div className="app-details">
@@ -113,8 +115,8 @@ const Grid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);  
   width: 70%;
-  height: 275px;
-
+  height: 200px;
+  margin-right: -60px;
   // grid-auto-flow: column;
 
   @media (max-width: 768px){
@@ -142,6 +144,7 @@ margin: 0 0 32px 0;
 const Flex = styled.div`
 display: flex;
 margin: 35px 0 0 0 ;
+justify-content: space-between;
 
 @media (max-width: 768px){
   flex-direction: column;
@@ -185,8 +188,9 @@ display: inline-block;
 margin: 0 0 0 20px;
 `
 const SocialMediaIcon = styled.div`
-  display: none;
-
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
 
   @media (max-width: 768px){
 

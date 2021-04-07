@@ -41,6 +41,11 @@
     color: $text-color-1500;
     position: relative;
     overflow: hidden;
+
+    @media (max-width:768px){
+      background-image: url('../../../../icons/mobilebg.svg');
+    }
+
     .ellipse_img_vector-wrapper {
       position: absolute;
       height: 1424px;
