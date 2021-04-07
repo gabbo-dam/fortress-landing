@@ -141,7 +141,7 @@ const ProtocolInfo = ({ theme }) =>{
           style={{marginBottom: '87px'}}
           variant="contained"
           className="launchapp-btn"
-          // onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_blank'); }}
+          onClick={() => { window.open(`#`, '_blank'); }}
         >
           SUBSCRIBE
         </Button>

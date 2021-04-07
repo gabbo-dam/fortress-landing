@@ -50,20 +50,20 @@ const AppFooter = ({theme}) => {
         </SocialMediaIconMobile>
         <Grid style={{color: colortheme()}}>
           
-          <Anchor href='/'>Aave Protocol</Anchor>
-          <Anchor href='/'>Careers</Anchor>
-          <Anchor href='/'>Privacy Policy</Anchor>
-          <Anchor href='/'>Developers</Anchor>
-          <Anchor href='/'>Branding</Anchor>
-          <Anchor href='/'>Cookie Policy</Anchor>
-          <Anchor href='/'>Security</Anchor>
-          <Anchor href='/'>Whitepaper</Anchor>
-          <Anchor href='/'>Blog</Anchor>
-          <Anchor href='/'>ATokens</Anchor>
-          <Anchor href='/'>Aavenomics</Anchor>
-          <Anchor href='/'>Contact</Anchor>
-          <Anchor href='/'>Ecosystem</Anchor>
-          <Anchor href='/'>Terms of Use</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Aave Protocol</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Careers</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Privacy Policy</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Developers</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Branding</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Cookie Policy</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Security</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Whitepaper</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Blog</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>ATokens</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Aavenomics</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Contact</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Ecosystem</Anchor>
+          <Anchor style={{color: colortheme()}} href='/'>Terms of Use</Anchor>
         </Grid> 
       </Flex2>
       <Divider />
@@ -140,9 +140,10 @@ const Grid = styled.div`
 `
 
 const Anchor = styled.a`
-width: 150px;
+text-decoration: none;
 @media (max-width: 768px){
   height: 50px;
+  text-decoration: none;
 }
 `
 
