@@ -231,8 +231,8 @@ const EarnIntereset = ({
       <Mobile>
          <TableFlex2>
             <TableTitle style={{color: colortheme()}}>Assets</TableTitle>
-            <TableTitle style={{color: colortheme()}}>Supply APY*</TableTitle>
-            <TableTitle style={{color: colortheme()}}>Borrow APY*</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Supply APY</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Borrow APY</TableTitle>
           </TableFlex2>
         <AssetsMobile theme={theme} />
         <AssetsMobile theme={theme} />
@@ -247,8 +247,8 @@ const EarnIntereset = ({
             <TableTitle style={{color: colortheme()}}>Assets</TableTitle>
             <TableTitle style={{color: colortheme()}}>Supplied</TableTitle>
             <TableTitle style={{color: colortheme()}}>Borrowed</TableTitle>
-            <TableTitle style={{color: colortheme()}}>Supply APY*</TableTitle>
-            <TableTitle style={{color: colortheme()}}>Borrow APY*</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Supply APY</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Borrow APY</TableTitle>
           </TableFlex>
             <Assets theme={theme}/>
             <Assets theme={theme}/>
@@ -413,7 +413,7 @@ width: 100%;
 text-align: center;
 
 @media (max-width:768px){
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr) 15%;
   width: 80%;
   margin: 0 auto;
   

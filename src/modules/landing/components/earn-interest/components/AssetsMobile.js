@@ -16,7 +16,7 @@ const Assets = ({ theme }) =>{
           
           <TableFlex3>
             <Asset style={{color: colortheme()}}><StyledEth src={Eth} alt='eth'/>ETH</Asset>
-            <SupplyAPY style={{color: colortheme()}}>🠕 0.97%</SupplyAPY>
+            <SupplyAPY style={{color: colortheme()}}>0.97%</SupplyAPY>
             <BorrowAPY style={{color: colortheme()}}>4.21%</BorrowAPY>
             <StyledArrow onClick={() => setTab(!tab)}>
             <ArrowDown colortheme={colortheme()} ></ArrowDown>
@@ -80,7 +80,7 @@ width: 100%;
 text-align: center;
 
 @media (max-width:768px){
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr) 15%;
   width: 80%;
   margin: 0 auto 15px auto;
   border: 1px solid  #242424; 
@@ -276,7 +276,7 @@ color: #000000;
 const GoToMarket = styled.a`
 
 
-
+  color: #F7C408 !important;
 
   @media (max-width:768px){
     font-style: normal;

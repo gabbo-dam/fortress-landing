@@ -15,7 +15,7 @@ const Assets = ({ theme }) =>{
           <Asset style={{color: colortheme()}}><StyledEth src={Eth} alt='eth'/>ETH</Asset>
           <Supplied style={{color: colortheme()}}>$1.06M</Supplied>
           <Borrowed style={{color: colortheme()}}>$1.06M</Borrowed>
-          <SupplyAPY style={{color: colortheme()}}>🠕 0.97%</SupplyAPY>
+          <SupplyAPY style={{color: colortheme()}}>0.97%</SupplyAPY>
           <BorrowAPY style={{color: colortheme()}}>4.21%</BorrowAPY>
           <GoToMarket style={{color: colortheme()}}>GO TO MARKET ➙ </GoToMarket>
         </TableFlex>
