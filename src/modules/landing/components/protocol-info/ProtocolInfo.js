@@ -273,7 +273,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4407ac75ed5a414303f372d95f10981dd345463a
   @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
   }
