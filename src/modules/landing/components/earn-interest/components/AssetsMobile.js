@@ -2,7 +2,7 @@ import React , { useState } from 'react'
 import styled from 'styled-components'
 
 import Eth from '../../../../../assets/logos/eth/eth.svg'
-import arrow from '../../../../../assets/icons/arrowdown.svg'
+import ArrowDown from '../../../../../assets/logos/arrow'
 
 
 const Assets = ({ theme }) =>{
@@ -18,10 +18,9 @@ const Assets = ({ theme }) =>{
             <Asset style={{color: colortheme()}}><StyledEth src={Eth} alt='eth'/>ETH</Asset>
             <SupplyAPY style={{color: colortheme()}}>🠕 0.97%</SupplyAPY>
             <BorrowAPY style={{color: colortheme()}}>4.21%</BorrowAPY>
-            <Img src={arrow} onClick={() => {
-              setTab(!tab)
-
-              }}></Img>
+            <StyledArrow onClick={() => setTab(!tab)}>
+            <ArrowDown colortheme={colortheme()} ></ArrowDown>
+            </StyledArrow>
             {tab === true && 
             <>
               
@@ -51,8 +50,8 @@ const Img = styled.img`
 
 margin-left: 25px;
 `
-const Img2 = styled.img`
-
+const StyledArrow = styled.div`
+margin-left: 0px;
 `
 
 const TableFlex2 = styled.div`

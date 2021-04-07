@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Eth from '../../../../../assets/logos/eth/eth.svg'
-import arrow from '../../../../../assets/logos/arrow/arrow-right.svg'
+
 
 const Assets = ({ theme }) =>{
     const colortheme = () => theme === 'dark' ?  '#fff'  : '#000';
