@@ -38,7 +38,16 @@ const AppFooter = ({theme}) => {
     <div className="footer">
       {/* <AppHeader isFooter /> */}
       <Flex2>
-        <LogoFooter fill={colortheme()} />
+        <Logo>
+          <LogoFooter fill={colortheme()} />
+        </Logo>
+        <SocialMediaIconMobile>
+          <Twitter fill={colortheme()}/> 
+          <Instagram fill={colortheme()}/> 
+          <Telegram fill={colortheme()}/> 
+          <Github fill={colortheme()}/> 
+          
+        </SocialMediaIconMobile>
         <Grid style={{color: colortheme()}}>
           
           <Anchor>Aave Protocol</Anchor>
@@ -68,7 +77,7 @@ const AppFooter = ({theme}) => {
           <Instagram fill={colortheme()}/> 
           <Telegram fill={colortheme()}/> 
           <Github fill={colortheme()}/> 
-          {/* <Discord fill={colortheme()}/>  */}
+          
         </SocialMediaIcon>
         {/* <SocialMedia style={{color: colortheme()}}>
         <Block>    
@@ -140,6 +149,11 @@ width: 150px;
 const Block = styled.div`
 margin: 0 0 32px 0;
 `
+const Logo = styled.div`
+@media (max-width: 768px){
+  margin: 0 auto;
+}
+`
 
 const Flex = styled.div`
 display: flex;
@@ -166,6 +180,8 @@ justify-content: space-between;
 @media (max-width: 768px){
   display: flex;
   justify-content: center;
+  
+  flex-direction: column;
 }
 `
 const SocialMedia = styled.div`
@@ -194,9 +210,21 @@ const SocialMediaIcon = styled.div`
 
   @media (max-width: 768px){
 
-    display: flex;
+    display: none;
     justify-content: space-around;
     margin: 0 0 50px 0;
+  }
+`
+const SocialMediaIconMobile = styled.div`
+  display: none;
+
+
+  @media (max-width: 768px){
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    
   }
 `
 

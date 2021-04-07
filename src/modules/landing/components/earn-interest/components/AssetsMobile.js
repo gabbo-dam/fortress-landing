@@ -22,7 +22,7 @@ const Assets = ({ theme }) =>{
             <ArrowDown colortheme={colortheme()} ></ArrowDown>
             </StyledArrow>
             {tab === true && 
-            <>
+            <>  
               
               <TableTitle style={{color: colortheme()}}>Supplied</TableTitle>
               <TableTitle style={{color: colortheme()}}>Borrowed</TableTitle>
