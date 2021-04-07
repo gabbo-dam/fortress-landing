@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components'
 import NewAppLogo from '../../../assets/icons/new-app-logo.svg';
 import menuItems from './MenuItems';
 import { Button } from '@material-ui/core';
@@ -82,7 +83,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
           ))} */}
           {
             <>
-              {theme === 'light' ? <img src={LightButton} onClick={() => toggleTheme('dark')} /> : <img src={DarkButton} onClick={() => toggleTheme('light')}/>}
+              {theme === 'light' ? <Img src={LightButton} onClick={() => toggleTheme('dark')} /> : <Img src={DarkButton} onClick={() => toggleTheme('light')}/>}
               <div
                 className="menu-item"
                 onClick={() => {
@@ -131,5 +132,14 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
 const mapStateToProps = (state) => ({
   theme: state.landing.theme,
 });
+
+const Img = styled.img`
+
+
+@media (max-width:768px) {
+  text-align: center;
+  width: 100%;
+}
+`
 
 export default connect(mapStateToProps)(AppHeader);

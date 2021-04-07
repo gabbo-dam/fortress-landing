@@ -7,6 +7,7 @@ import arrow from '../../../../../assets/logos/arrow/arrow-right.svg'
 const Assets = ({ theme }) =>{
     const colortheme = () => theme === 'dark' ?  '#fff'  : '#000';
     var bordertheme = () => theme === 'dark' ?  'rgba(21, 21, 21, 0.4)'  : 'rgba(233, 233, 233, 0.2)';
+    
     return(
       <>
         

@@ -232,7 +232,7 @@ const EarnIntereset = ({
          <TableFlex2>
             <TableTitle style={{color: colortheme()}}>Assets</TableTitle>
             <TableTitle style={{color: colortheme()}}>Supply APY*</TableTitle>
-            <TableTitle style={{color: colortheme()}}>Borrow APR*</TableTitle>
+            <TableTitle style={{color: colortheme()}}>Borrow APY*</TableTitle>
           </TableFlex2>
         <AssetsMobile theme={theme} />
         <AssetsMobile theme={theme} />
@@ -413,7 +413,7 @@ width: 100%;
 text-align: center;
 
 @media (max-width:768px){
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   width: 80%;
   margin: 0 auto;
   
