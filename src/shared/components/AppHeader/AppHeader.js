@@ -88,7 +88,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               <div
                 className="menu-item"
                 onClick={() => {
-                  window.open(`/`, '_blank');
+                  window.open(`https://jetfuel-finance-1.gitbook.io/fortress/`, '_blank');
                 }}
               >
                 DOCS
@@ -96,7 +96,7 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               <div
                 className="menu-item"
                 onClick={() => {
-                  window.open(`/`, '_blank');
+                  window.open(`/Whitepaper.pdf`, '_blank');
                 }}
               >
                 WHITE PAPER
@@ -105,17 +105,15 @@ const AppHeader = ({ isFooter, dispatch, theme }) => {
               <MobileFooter>
                 <Grid style={{color: colortheme()}}>
                   
-                  <Anchor style={{color: colortheme()}} href='/'>Aave Protocol</Anchor>
-
-                  <Anchor style={{color: colortheme()}} href='/'>Privacy Policy</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Developers</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Branding</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Cookie Policy</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Security</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Whitepaper</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Blog</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Contact</Anchor>
-                  <Anchor style={{color: colortheme()}} href='/'>Terms of Use</Anchor>
+                  <Anchor style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/'>Fortress Protocol</Anchor>
+                  <Anchor style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/protocol-documentation/getting-started'>Developers</Anchor>
+                  <Anchor style={{color: colortheme()}} href='/Audit'>Security</Anchor>
+                  <Anchor style={{color: colortheme()}} href='/Whitepaper.pdf'>Whitepaper</Anchor>
+                  <Anchor style={{color: colortheme()}} href='https://jetfuelfinance.medium.com/'>Blog</Anchor>
+                  <Anchor style={{color: colortheme()}} href='mailto:jetfuelfinance@gmail.com'>Contact</Anchor>
+                  <Anchor style={{color: colortheme()}} href='/Fortress-Privacy-Policy.pdf'>Privacy Policy</Anchor>
+                  <Anchor style={{color: colortheme()}} href='/Fortress-Cookie-Policy.pdf'>Cookie Policy</Anchor>
+                  <Anchor style={{color: colortheme()}} href='/Fortress-Terms-of-Use.pdf'>Terms of Use</Anchor>
                 </Grid> 
               </MobileFooter>
               {/* <div
