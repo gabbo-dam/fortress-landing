@@ -89,7 +89,7 @@ return(
           <Button
             variant="contained"
             className="launchapp-btn"
-            onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_blank'); }}
+            onClick={() => { window.open(`https://bsctestnet.fortress.loans`, '_self'); }}
           >
             Enter App
           </Button>
