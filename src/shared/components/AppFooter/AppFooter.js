@@ -51,16 +51,23 @@ const AppFooter = ({theme}) => {
         <Grid style={{color: colortheme()}}>
           
           <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/'>Fortress Protocol</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='/Whitepaper.pdf'>Whitepaper</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='/Audit.pdf'>Security</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='mailto:jetfuelfinane@gmail.com'>Careers</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/fts-tokenomics'>Tokenomics</Anchor>
+
           <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuelfinance.medium.com/'>Blog</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Privacy-Policy.pdf'>Privacy Policy</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='mailto:jetfuelfinance@gmail.com'>Contact</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/protocol-documentation/getting-started'>Developers</Anchor>
-          <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Terms-of-Use.pdf'>Terms of Use</Anchor>
+
           <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Cookie-Policy.pdf'>Cookie Policy</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Terms-of-Use.pdf'>Terms of Use</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Privacy-Policy.pdf'>Privacy Policy</Anchor>
+
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Audit.pdf'>Security</Anchor>
+
+          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuelfinance.medium.com'>Fortress Economics</Anchor>
+          
+          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/protocol-documentation/getting-started'>Developers</Anchor>
+
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Whitepaper.pdf'>Whitepaper</Anchor>
+          
+          <Anchor target='_blank' style={{color: colortheme()}} href='mailto:jetfuelfinance@gmail.com'>Contact</Anchor>
+          
         </Grid> 
       </Flex2>
       <Divider />
