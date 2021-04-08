@@ -93,22 +93,22 @@ const ProtocolInfo = ({ theme }) =>{
     <Text>These collaboraters actively contribute to the Fortress Protocol</Text>
 
     <Grid>
-      <Anchor href='/'>
+      <Anchor href='https://jetfuel.finance'>
         <StyledCard style={{background:cardtheme()}}>
           <Jetswapfinance fill={colortheme()} />
         </StyledCard>
       </Anchor>
-      <Anchor href='/'>
+      <Anchor href='#'>
         <StyledCard style={{background:cardtheme()}}>
           <Jetswap fill={colortheme()} />
         </StyledCard>
       </Anchor>
-      <Anchor href='/'>
+      <Anchor href='https://bandprotocol.com'>
         <StyledCard style={{background:cardtheme()}}>
           <BandProtocol fill={colortheme()}/>
         </StyledCard>
       </Anchor>
-      <Anchor href='/'>
+      <Anchor href='https://chain.link'>
         <StyledCard style={{background:cardtheme()}}>
         {theme==='dark' ? <ChainLinkWhite /> : <ChainLinkDark />}      
         </StyledCard>
