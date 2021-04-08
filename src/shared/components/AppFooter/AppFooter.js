@@ -77,10 +77,10 @@ const AppFooter = ({theme}) => {
             © 2021 Developed by Jetfuel Finance Dev Team
       </Copy>
         <SocialMediaIcon>
-          <Anchor target='_blank' href='/'><Twitter fill={colortheme()}/></Anchor>
-          <Anchor target='_blank' href='/'><Medium fill={colortheme()}/> </Anchor>
-          <Anchor target='_blank' href='/'><Telegram fill={colortheme()}/> </Anchor>
-          <Anchor target='_blank' href='/'><Github fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='https://twitter.com/Jetfuelfinance'><Twitter fill={colortheme()}/></Anchor>
+          <Anchor target='_blank' href='https://jetfuelfinance.medium.com'><Medium fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='https://t.me/jetfuelfinance'><Telegram fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='https://github.com/jetfuelfinance'><Github fill={colortheme()}/> </Anchor>
           
         </SocialMediaIcon>
         {/* <SocialMedia style={{color: colortheme()}}>
