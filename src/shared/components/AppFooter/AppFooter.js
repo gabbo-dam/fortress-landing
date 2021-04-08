@@ -42,25 +42,25 @@ const AppFooter = ({theme}) => {
           <LogoFooter fill={colortheme()} />
         </Logo>
         <SocialMediaIconMobile>
-          <Anchor href='/'><Twitter fill={colortheme()}/> </Anchor>
-          <Anchor href='/'><Medium fill={colortheme()}/> </Anchor>
-          <Anchor href='/'><Telegram fill={colortheme()}/> </Anchor>
-          <Anchor href='/'><Github fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='/'><Twitter fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='/'><Medium fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='/'><Telegram fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='/'><Github fill={colortheme()}/> </Anchor>
           
         </SocialMediaIconMobile>
         <Grid style={{color: colortheme()}}>
           
-          <Anchor style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/'>Fortress Protocol</Anchor>
-          <Anchor style={{color: colortheme()}} href='/Whitepaper.pdf'>Whitepaper</Anchor>
-          <Anchor style={{color: colortheme()}} href='/Audit.pdf'>Security</Anchor>
-          <Anchor style={{color: colortheme()}} href='mailto:jetfuelfinane@gmail.com'>Careers</Anchor>
-          <Anchor style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/fts-tokenomics'>Tokenomics</Anchor>
-          <Anchor style={{color: colortheme()}} href='https://jetfuelfinance.medium.com/'>Blog</Anchor>
-          <Anchor style={{color: colortheme()}} href='/Fortress-Privacy-Policy.pdf'>Privacy Policy</Anchor>
-          <Anchor style={{color: colortheme()}} href='mailto:jetfuelfinance@gmail.com'>Contact</Anchor>
-          <Anchor style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/protocol-documentation/getting-started'>Developers</Anchor>
-          <Anchor style={{color: colortheme()}} href='/Fortress-Terms-of-Use.pdf'>Terms of Use</Anchor>
-          <Anchor style={{color: colortheme()}} href='/Fortress-Cookie-Policy.pdf'>Cookie Policy</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/'>Fortress Protocol</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Whitepaper.pdf'>Whitepaper</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Audit.pdf'>Security</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='mailto:jetfuelfinane@gmail.com'>Careers</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/fts-tokenomics'>Tokenomics</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuelfinance.medium.com/'>Blog</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Privacy-Policy.pdf'>Privacy Policy</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='mailto:jetfuelfinance@gmail.com'>Contact</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='https://jetfuel-finance-1.gitbook.io/fortress/protocol-documentation/getting-started'>Developers</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Terms-of-Use.pdf'>Terms of Use</Anchor>
+          <Anchor target='_blank' style={{color: colortheme()}} href='/Fortress-Cookie-Policy.pdf'>Cookie Policy</Anchor>
         </Grid> 
       </Flex2>
       <Divider />
@@ -70,10 +70,10 @@ const AppFooter = ({theme}) => {
             © 2021 Developed by Jetfuel Finance Dev Team
       </Copy>
         <SocialMediaIcon>
-          <Anchor href='/'><Twitter fill={colortheme()}/></Anchor>
-          <Anchor href='/'><Medium fill={colortheme()}/> </Anchor>
-          <Anchor href='/'><Telegram fill={colortheme()}/> </Anchor>
-          <Anchor href='/'><Github fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='/'><Twitter fill={colortheme()}/></Anchor>
+          <Anchor target='_blank' href='/'><Medium fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='/'><Telegram fill={colortheme()}/> </Anchor>
+          <Anchor target='_blank' href='/'><Github fill={colortheme()}/> </Anchor>
           
         </SocialMediaIcon>
         {/* <SocialMedia style={{color: colortheme()}}>

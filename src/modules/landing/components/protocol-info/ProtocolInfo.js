@@ -93,22 +93,22 @@ const ProtocolInfo = ({ theme }) =>{
     <Text>These collaboraters actively contribute to the Fortress Protocol</Text>
 
     <Grid>
-      <Anchor href='https://jetfuel.finance'>
+      <Anchor href='https://jetfuel.finance' target='_blank'>
         <StyledCard style={{background:cardtheme()}}>
           <Jetswapfinance fill={colortheme()} />
         </StyledCard>
       </Anchor>
-      <Anchor href='#'>
+      <Anchor href='#' target='_blank'>
         <StyledCard style={{background:cardtheme()}}>
           <Jetswap fill={colortheme()} />
         </StyledCard>
       </Anchor>
-      <Anchor href='https://bandprotocol.com'>
+      <Anchor href='https://bandprotocol.com' target='_blank'>
         <StyledCard style={{background:cardtheme()}}>
           <BandProtocol fill={colortheme()}/>
         </StyledCard>
       </Anchor>
-      <Anchor href='https://chain.link'>
+      <Anchor href='https://chain.link' target='_blank'>
         <StyledCard style={{background:cardtheme()}}>
         {theme==='dark' ? <ChainLinkWhite /> : <ChainLinkDark />}      
         </StyledCard>
@@ -117,12 +117,12 @@ const ProtocolInfo = ({ theme }) =>{
     <Title className="title">Auditors</Title>
     <Text>Fortress has been rigorously analyzed by top-tier security audit companies</Text>
     <Grid>
-    <Anchor href='/'>
+    <Anchor href='/' target='_blank'>
       <StyledCard style={{background:cardtheme()}}>
         {theme==='dark' ? <EtherAuthorityWhite /> : <img src={EtherAuthorityDark} alt='EtherAutority' />}
       </StyledCard>
     </Anchor>
-    <Anchor href='/'>
+    <Anchor href='/' target='_blank'>
       <StyledCard style={{background:cardtheme()}}>
         <Hash0x fill={colortheme()} />
       </StyledCard>
