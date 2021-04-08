@@ -8,7 +8,7 @@ import TwitterIcon from '../../../assets/icons/twitter.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 import LogoFooter from '../../../assets/logos/fortressfooter'
 import Twitter from '../../../assets/logos/social/twitter'
-import Instagram from '../../../assets/logos/social/instagram'
+import Medium from '../../../assets/logos/social/medium'
 import Telegram from '../../../assets/logos/social/telegram'
 import Github from '../../../assets/logos/social/github'
 import Discord from '../../../assets/logos/social/discord'
@@ -42,10 +42,10 @@ const AppFooter = ({theme}) => {
           <LogoFooter fill={colortheme()} />
         </Logo>
         <SocialMediaIconMobile>
-          <Twitter fill={colortheme()}/> 
-          <Instagram fill={colortheme()}/> 
-          <Telegram fill={colortheme()}/> 
-          <Github fill={colortheme()}/> 
+          <Anchor href='/'><Twitter fill={colortheme()}/> </Anchor>
+          <Anchor href='/'><Medium fill={colortheme()}/> </Anchor>
+          <Anchor href='/'><Telegram fill={colortheme()}/> </Anchor>
+          <Anchor href='/'><Github fill={colortheme()}/> </Anchor>
           
         </SocialMediaIconMobile>
         <Grid style={{color: colortheme()}}>
@@ -73,10 +73,10 @@ const AppFooter = ({theme}) => {
             © 2021 Developed by Jetfuel Finance Dev Team
       </Copy>
         <SocialMediaIcon>
-          <Twitter fill={colortheme()}/> 
-          <Instagram fill={colortheme()}/> 
-          <Telegram fill={colortheme()}/> 
-          <Github fill={colortheme()}/> 
+          <Anchor href='/'><Twitter fill={colortheme()}/></Anchor>
+          <Anchor href='/'><Medium fill={colortheme()}/> </Anchor>
+          <Anchor href='/'><Telegram fill={colortheme()}/> </Anchor>
+          <Anchor href='/'><Github fill={colortheme()}/> </Anchor>
           
         </SocialMediaIcon>
         {/* <SocialMedia style={{color: colortheme()}}>
@@ -233,7 +233,7 @@ const Divider = styled.div`
   width: 100%;
   height: 1px;
   background: rgba(52, 52, 52, 0.6);  
-  margin: 40px 0 0 0 ;
+  margin: 0 0 0 0 ;
 `
 
 export default AppFooter;
