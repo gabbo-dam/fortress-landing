@@ -5,9 +5,18 @@ import { connect } from "react-redux";
 import Landing from "./Landing";
 import { noop } from "../../../utils";
 import * as landingActions from "../redux/actions";
+let interval = null;
+
 class LandingContainer extends Component {
   componentDidMount() {
-    this.props.getTokenData();
+    const { getTokenData } = this.props;
+    interval = setInterval(function () {
+      getTokenData();
+    }, 3000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(interval);
   }
 
   render() {

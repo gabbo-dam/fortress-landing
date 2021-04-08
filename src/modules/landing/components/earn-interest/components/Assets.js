@@ -50,7 +50,12 @@ const Assets = ({ theme, token, withFTS }) => {
           )}
           %
         </BorrowAPY>
-        <GoToMarket style={{ color: colortheme() }}>GO TO MARKET ➙ </GoToMarket>
+        <GoToMarket
+          style={{ color: colortheme() }}
+          href={`https://bsctestnet.fortress.loans/market/${token.underlyingSymbol}`}
+        >
+          GO TO MARKET ➙{" "}
+        </GoToMarket>
       </TableFlex>
     </>
   );

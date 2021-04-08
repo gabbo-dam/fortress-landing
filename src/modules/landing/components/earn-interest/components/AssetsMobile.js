@@ -49,7 +49,10 @@ const Assets = ({ theme, token, withFTS }) => {
             <>
               <TableTitle style={{ color: colortheme() }}>Supplied</TableTitle>
               <TableTitle style={{ color: colortheme() }}>Borrowed</TableTitle>
-              <GoToMarket style={{ color: colortheme() }}>
+              <GoToMarket
+                style={{ color: colortheme() }}
+                href={`https://bsctestnet.fortress.loans/market/${token.underlyingSymbol}`}
+              >
                 GO TO MARKET
               </GoToMarket>
               <Supplied style={{ color: colortheme() }}>

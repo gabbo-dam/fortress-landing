@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
 import CountUp from "react-countup";
@@ -8,8 +8,18 @@ import BEP20VectorIcon from "../../../../assets/icons/bep20-vector.svg";
 import ScalableVectorIcon from "../../../../assets/icons/scalable-vector.svg";
 import { Button } from "@material-ui/core";
 
+function usePrevious(value) {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
+}
+
 const MoneyMarketsSection = ({ tokenData }) => {
   const [tvl, setTvl] = useState(0);
+  const prevTvl = usePrevious(tvl);
+
   useEffect(() => {
     if (tokenData && tokenData.markets) {
       let temp = new BigNumber(0);
@@ -27,7 +37,7 @@ const MoneyMarketsSection = ({ tokenData }) => {
           <Title className="title">Fortress Total Protocol Value</Title>
           <Number>
             <CountUp
-              start={0}
+              start={prevTvl}
               end={tvl}
               duration={1}
               separator=","
